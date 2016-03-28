@@ -167,6 +167,7 @@ and tet.TET_DATE_HEURE between \'' . $_GET['from'] . ' 00:00:00' . '\' and \'' .
     /**
      * run the script
      * select count(*) from compte_fid where car_numero_carte = xxx
+     * check customer's loyalty subscription
      */
     if(isset($_GET['numbercardfidelity'])){
         if(!empty($_GET['numbercardfidelity'])){
@@ -216,27 +217,37 @@ get_loyalty($LoyaltyDB);
  *  File Read & Write functions
  */
 
-function openAndWriteALine($line,$filename){
+function openAndWriteALine($filename,$line){
 
-    echo "openAndWriteALine";
+    //echo "openAndWriteALine";
 
     if (is_writable($filename)) {
         //open the file
         if (!$fh = fopen($filename, 'a')) {
-            echo "Can't open".$filename;
+            // echo "Can't open".$filename;
             exit;
         }
         // 写入内容
-        if (fwrite($fh, $line) === FALSE) {
-            echo "Can't write".$filename;
+        if (fwrite($fh, $line."\n\r\n\r") === FALSE) {
+            // echo "Can't write".$filename;
             exit;
         }
         else{
-            echo 'Write '.$line.' successfully';
+            // echo 'Write '.$line.' successfully';
         }
 
         fclose($fh);
     } else {
-        echo "File $filename not writtable";
+        // echo "File $filename not writtable";
     }
+}
+
+/**
+ * Note the time after the execution
+ */
+function log_execution_duration($begin,$query){
+
+    $diff = microtime(true)-$begin;
+    $date = date("D M d, Y G:i");
+    openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 }

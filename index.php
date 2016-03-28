@@ -24,10 +24,11 @@ include 'php/Manager.php';
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css" media="screen">
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css" media="screen">
     <link rel="stylesheet" href="css/alertify.min.css">
-      <link rel="stylesheet" href="css/themes/default.min.css">
-      <link rel="stylesheet" href="css/themes/semantic.min.css">
+    <link rel="stylesheet" href="css/themes/default.min.css">
+    <link rel="stylesheet" href="css/themes/semantic.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
-      <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/footer-distributed.css">
+    <script src="js/jquery.js"></script>
   </head>
   <body style="background-color: #f5f5f5">
   <!--
@@ -111,6 +112,33 @@ include 'php/Manager.php';
   }
   ?>
 </div>
+
+  <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+          <a href="#"><i class="fa fa-code"></i></a>
+          <a href="#"><i class="fa fa-code-fork"></i></a>
+          <a href="#"><i class="fa fa-cogs"></i></a>
+          <a href="#"><i class="fa fa-coffee"></i></a>
+
+      </div>
+
+      <div class="footer-left">
+
+          <p class="footer-links">
+              <a href="#"></a>
+
+              <a href="https://docs.google.com/spreadsheets/d/1YI82ZDBDmFSFRalvvcYVZAUpkTi2EmoXUuWCOr7sfGY/edit#gid=2022421715">
+                  Project</a>
+              ·
+              <a href="mailto:shichen.zhao@decathlon.com">Contact</a>
+          </p>
+
+          <p>Provided by Decathlon IT - Asia Commerce Support Team &copy; 2016</p>
+      </div>
+
+  </footer>
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>

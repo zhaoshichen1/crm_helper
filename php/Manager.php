@@ -143,9 +143,7 @@ class Manager{
 
 		$dataQuery = "SELECT " . $this->delCommat($header) . " FROM $table WHERE " . $this->delCommat($option);
 
-		$this->setQuery($dataQuery);
-
-		$data = $this->fetch($this->query);
+		$data = $this->query($dataQuery);
 
 		if($isSingle) {
 			return $data[0];
@@ -169,13 +167,8 @@ class Manager{
 
 		$this->setQuery($query);
 		$data = $this->fetch($this->query);
-
-
-		/**
-		 * Note the time after the execution
-		 */
-		$diff = microtime(true)-$msc;
-		openAndWriteALine("log\Log.txt","Execution Time for ".$query." is ".$diff." ms");
+		
+		log_execution_duration($msc,$query);
 
 		return $data;
 	}
@@ -193,12 +186,7 @@ class Manager{
 			array_push($result,$response);
 		}
 
-		/**
-		 * Note the time after the execution
-		 */
-		$diff = microtime(true)-$msc;
-		openAndWriteALine("../log/Log.txt","Execution Time for ".$query." is ".$diff." ms");
-
+		log_execution_duration($msc,$query);
 		return $result;
 	}
 }

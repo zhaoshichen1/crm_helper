@@ -270,7 +270,7 @@ $(document).ready(function() {
 
                 var response = "No";
                 var color = "#FF0000";
-                console.log(data==1);
+                console.log(data);
                 if (data == 1) {
                     response = "Yes";
                     color = "#00FF00";

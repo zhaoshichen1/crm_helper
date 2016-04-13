@@ -27,13 +27,13 @@
                         <label for="fromFindCard" style="font-size: 1.7em">From:</label>
                     </div>
                     <div class="col-lg-3">
-                        <input id="fromFindCard" class="form-control" type="text" style="text-align: center;font-size: 1em">
+                        <input id="fromFindCard" class="form-control" type="text" style="text-align: center">
                     </div>
                     <div class="col-lg-2">
                         <label for="toFindCard" style="font-size: 1.7em">To:</label>
                     </div>
                     <div class="col-lg-3">
-                        <input id="toFindCard" class="form-control" type="text" style="text-align: center;font-size: 1em">
+                        <input id="toFindCard" class="form-control" type="text" style="text-align: center">
                     </div>
                     <div class="col-lg-1"></div>
                 </div>
@@ -67,6 +67,7 @@
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
+                <hr>
                 <div class="row">
                     <div class="col-lg-12"><div id="answerfindcardnumber" style="margin: 0 20px; font-size: 2.2em; text-align: center;color: #6C7A89;font-weight: 700"></div></div>
                 </div>
@@ -79,12 +80,12 @@
                 </div>
                 <div class="row" style="margin-top: 40px;">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
+                    <div class="col-lg-4">
                         <label for="cardTransfer" style="font-size: 1.7em">Card No. </label>
                     </div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
-                        <input id="cardTransfer" class="form-control" type="number" style="text-align: center;"></div><div class="col-lg-2"></div>
-                </div><br/>
+                    <div class="col-lg-4">
+                        <input id="cardTransfer" class="form-control" type="number" style="text-align: center"></div><div class="col-lg-2"></div>
+                </div><hr><br/>
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="answerTransfer" style="margin: 0 20px; font-size: 1.5em; text-align: center;">
@@ -102,48 +103,10 @@
                         </div>
                     </div>
                 </div>
-                <br/>
+                <hr><br/>
                 <div class="row" id="rowReset">
                     <div class="col-lg-12">
                         <div id="treat" style="margin: 0 20px; font-size: 1.5em; text-align: center;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="loyalcontener" id="triggerCompletePurchase">
-                <div class="row" style="margin-top: 25px;">
-                    <div class="col-lg-12 demo" style="text-align: center"><h3>Get complete purchase! </h3></div>
-                </div>
-                <div class="row" style="margin-top: 25px;">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-2">
-                        <label for="PurchasefromFindCard" style="font-size: 1.7em">From:</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input id="PurchasefromFindCard" class="form-control" type="text" style="text-align: center;font-size: 1em">
-                    </div>
-                    <div class="col-lg-2">
-                        <label for="PurchasetoFindCard" style="font-size: 1.7em">To:</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input id="PurchasetoFindCard" class="form-control" type="text" style="font-size: 1em;text-align: center">
-                    </div>
-                    <div class="col-lg-1"></div>
-                </div>
-                <div class="row" style="margin-top: 40px;">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
-                        <label for="cardCompletePurchase" style="font-size: 1.7em">Card No. </label>
-                    </div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
-                        <input id="cardCompletePurchase" class="form-control" type="number" style="text-align: center;"></div><div class="col-lg-2"></div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="answerCompletePurchase" style="margin: 0 20px; font-size: 1.5em; text-align: center;">
                         </div>
                     </div>
                 </div>

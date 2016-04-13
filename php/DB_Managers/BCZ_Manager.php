@@ -1,10 +1,24 @@
 <?php
 
+include '../Util/Tool.php';
+
 /**
- * Class Manager
+ * Chinese Time - UTF+8
+ */
+date_default_timezone_set("Asia/Hong_Kong");
+
+/**
+ * Display all the errors on the interface to help troubleshooting
+ */
+error_reporting(-1);
+ini_set('display_errors', 'On');
+
+
+/**
+ * Class Manager - used for Loyalty
  * Used to manage all the information of one connection to the DB
  */
-class Manager{
+class BCZ_Manager{
 
 	/**
 	 * @var the bdd schema like "loyalty", "purchase" in BCZ
@@ -16,7 +30,7 @@ class Manager{
 	 */
 	private $host;
 
-	private $user;
+	private $user;	
 	private $password;
 
 	/**
@@ -167,8 +181,13 @@ class Manager{
 
 		$this->setQuery($query);
 		$data = $this->fetch($this->query);
-		
-		log_execution_duration($msc,$query);
+
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 		return $data;
 	}
@@ -186,7 +205,38 @@ class Manager{
 			array_push($result,$response);
 		}
 
-		log_execution_duration($msc,$query);
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
 		return $result;
+	}
+
+	public function queryMultipleCSV($output,$query,$file_name,$header_array){
+
+		// enlarge the mssql timeout duration
+		ini_set('mssql.connect_timeout',10);
+		ini_set('mssql.timeout',120);
+
+		/**
+		 * Note the time before the execution
+		 */
+		$msc = microtime(true);
+
+		$this->setQuery($query);
+		while($response = mssql_fetch_row($this->query)) {
+			fputcsv($output, $response);
+		}
+
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
 	}
 }

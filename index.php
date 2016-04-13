@@ -8,15 +8,15 @@ if(isset($_GET['p']))
 
 error_reporting(-1);
 ini_set('display_errors', 'On');
-include 'php/credential.php';
-include 'php/Manager.php';
+
+echo $p
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CRM helper</title>
+    <title>"H" of Customer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
@@ -25,7 +25,6 @@ include 'php/Manager.php';
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css" media="screen">
     <link rel="stylesheet" href="css/alertify.min.css">
     <link rel="stylesheet" href="css/themes/default.min.css">
-    <link rel="stylesheet" href="css/themes/semantic.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="css/footer-distributed.css">
     <script src="js/jquery.js"></script>
@@ -68,7 +67,7 @@ include 'php/Manager.php';
   <nav class="navbar navbar-default navbar-fixed-top" style="font-weight: 700;">
       <div class="container" >
           <div class="navbar-header">
-              <a class="navbar-brand" href="">CRM helper</a>
+              <a class="navbar-brand" href="">"H" of Customer</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -142,8 +141,20 @@ include 'php/Manager.php';
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/app.js"></script>
+
+  <!-- load all the main page JS files -->
+  <script src="js/Main_page/Display.js"></script>
+  <script src="js/Main_page/Select_Scripts.js"></script>
+  <script src="js/Main_page/Time&Record.js"></script>
+  <script src="js/Main_page/Triggers.js"></script>
+  <script src="js/Main_page/Update_Scripts.js"></script>
+  <script src="js/Main_page/Waiting.js"></script>
+
+  <!-- incredible beautiful js file -->
   <script src="js/alertify.min.js"></script>
+
+  <!-- nb of execution record js -->
+  <script src="js/BackOffice/nb_execution_record.js"></script>
   </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-include 'Manager.php';
+include '../DB_Managers/BCZ_Manager.php';
 
 /**
  * The objective is to show the information of the problem
@@ -79,20 +79,9 @@ function treat_rti($response){
 function get_loyalty($db){
 
     /**
-     * Chinese Time - UTF+8
-     */
-    date_default_timezone_set("Asia/Hong_Kong");
-
-    /**
-     * Display all the errors on the interface to help troubleshooting
-     */
-    error_reporting(-1);
-    ini_set('display_errors', 'On');
-
-    /**
      * Construct the object for the Data Request
      */
-    $LoyaltyManager = new Manager($db->host,$db->user,$db->password,$db->port);
+    $LoyaltyManager = new BCZ_Manager($db->host,$db->user,$db->password,$db->port);
 
     if(isset($_GET['loyalty_reset'])){
         $LoyaltyManager->setBdd("loyalty");
@@ -211,43 +200,3 @@ $LoyaltyDB->port = 1433;
 
 get_loyalty($LoyaltyDB);
 
-
-/**
- *  ________________________________________________________
- *  File Read & Write functions
- */
-
-function openAndWriteALine($filename,$line){
-
-    //echo "openAndWriteALine";
-
-    if (is_writable($filename)) {
-        //open the file
-        if (!$fh = fopen($filename, 'a')) {
-            // echo "Can't open".$filename;
-            exit;
-        }
-        // 写入内容
-        if (fwrite($fh, $line."\n\r\n\r") === FALSE) {
-            // echo "Can't write".$filename;
-            exit;
-        }
-        else{
-            // echo 'Write '.$line.' successfully';
-        }
-
-        fclose($fh);
-    } else {
-        // echo "File $filename not writtable";
-    }
-}
-
-/**
- * Note the time after the execution
- */
-function log_execution_duration($begin,$query){
-
-    $diff = microtime(true)-$begin;
-    $date = date("D M d, Y G:i");
-    openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
-}

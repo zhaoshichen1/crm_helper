@@ -1,2 +1,318 @@
 testtesttest
 test
+Date: Wed Mar 30, 2016 2:48
+Query: 
+Execution Duration is 0 ms
+
+
+Date: Wed Mar 30, 2016 2:48
+Query: "select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.00099992752075195 ms
+
+
+Date: Wed Mar 30, 2016 2:50
+Query: "select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.0079998970031738 ms
+
+
+Date: Wed Mar 30, 2016 2:50
+Query: 
+Execution Duration is 0.013000011444092 ms
+
+
+Date: Wed Mar 30, 2016 2:50
+Query: 
+Execution Duration is 0.00099992752075195 ms
+
+
+Date: Wed Mar 30, 2016 2:50
+Query: "select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.0039999485015869 ms
+
+
+Date: Wed Mar 30, 2016 2:54
+Query: 
+Execution Duration is 0.003000020980835 ms
+
+
+Date: Wed Mar 30, 2016 2:54
+Query: "select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.0080001354217529 ms
+
+
+Date: Wed Mar 30, 2016 2:55
+Query: select * from personne limit 5
+Execution Duration is 0.010999917984009 ms
+
+
+Date: Wed Mar 30, 2016 2:55
+Query: select * from personne limit 5
+Execution Duration is 0.012001037597656 ms
+
+
+Date: Wed Mar 30, 2016 2:58
+Query: select * from personne limit 5
+Execution Duration is 0.0070009231567383 ms
+
+
+Date: Wed Mar 30, 2016 2:58
+Query: select * from personne limit 5
+Execution Duration is 0.0060000419616699 ms
+
+
+Date: Wed Mar 30, 2016 3:47
+Query: "select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.0089998245239258 ms
+
+
+Date: Wed Mar 30, 2016 17:49
+Query: "select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.005000114440918 ms
+
+
+Date: Wed Mar 30, 2016 17:49
+Query: "select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result"
+Execution Duration is 0.005000114440918 ms
+
+
+Date: Wed Mar 30, 2016 17:51
+Query: select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.54250812530518 ms
+
+
+Date: Wed Mar 30, 2016 17:52
+Query: select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.78251218795776 ms
+
+
+Date: Wed Mar 30, 2016 17:52
+Query: select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.14500212669373 ms
+
+
+Date: Wed Mar 30, 2016 17:52
+Query: select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.38500595092773 ms
+
+
+Date: Wed Mar 30, 2016 17:52
+Query: select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.11250114440918 ms
+
+
+Date: Wed Mar 30, 2016 17:52
+Query: select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.35250496864319 ms
+
+
+Date: Wed Mar 30, 2016 17:53
+Query: select count(*) from (select tel_portable, count(*)
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.13250207901001 ms
+
+
+Date: Wed Mar 30, 2016 17:53
+Query: select sum(result.c) from (select tel_portable, count(*) as c
+from personne
+where tel_portable is not null
+and tel_portable <> ''
+and code_pays_tiers_habituel in ('CN')
+group by tel_portable
+having count(*) >1) as result
+Execution Duration is 0.37000584602356 ms
+
+
+Date: Fri Apr 08, 2016 2:49
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.29882979393005 ms
+
+
+Date: Fri Apr 08, 2016 2:50
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.29499292373657 ms
+
+
+Date: Fri Apr 08, 2016 2:58
+Query: select * from pages
+Execution Duration is 0.0002589225769043 ms
+
+
+Date: Fri Apr 08, 2016 2:59
+Query: select * from pages
+Execution Duration is 0.0002598762512207 ms
+
+
+Date: Fri Apr 08, 2016 3:37
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00034809112548828 ms
+
+
+Date: Fri Apr 08, 2016 3:45
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00039196014404297 ms
+
+
+Date: Fri Apr 08, 2016 3:56
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00066494941711426 ms
+
+
+Date: Fri Apr 08, 2016 4:01
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00028705596923828 ms
+
+
+Date: Fri Apr 08, 2016 4:01
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00029802322387695 ms
+
+
+Date: Fri Apr 08, 2016 4:02
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00018692016601562 ms
+
+
+Date: Fri Apr 08, 2016 4:03
+Query: select page_id,page_name from pages;
+Execution Duration is 0.00022292137145996 ms
+
+
+Date: Fri Apr 08, 2016 4:04
+Query: select page_id,page_name from pages;
+Execution Duration is 0.00029110908508301 ms
+
+
+Date: Fri Apr 08, 2016 4:15
+Query: select page_id,page_name from pages;
+Execution Duration is 0.0004119873046875 ms
+
+
+Date: Fri Apr 08, 2016 18:30
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.0005948543548584 ms
+
+
+Date: Fri Apr 08, 2016 18:30
+Query: select page_id,page_name from pages;
+Execution Duration is 0.002288818359375 ms
+
+
+Date: Fri Apr 08, 2016 18:34
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00041699409484863 ms
+
+
+Date: Fri Apr 08, 2016 18:34
+Query: select page_id,page_name from pages;
+Execution Duration is 0.00021100044250488 ms
+
+
+Date: Fri Apr 08, 2016 19:16
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.00044488906860352 ms
+
+
+Date: Fri Apr 08, 2016 19:17
+Query: select page_id,page_name from pages;
+Execution Duration is 0.00020599365234375 ms
+
+
+Date: Fri Apr 08, 2016 19:18
+Query: select uid from users where username='hoc_admin' and password='a7454da34c1d0943841d33974cd7c749' limit 1
+Execution Duration is 0.005000114440918 ms
+
+
+Date: Wed Apr 13, 2016 12:07
+Query: select * from nb_execution where func_id = 500002 and date_exec = '2016-04-13'
+Execution Duration is 0.005000114440918 ms
+
+
+Date: Wed Apr 13, 2016 12:07
+Query: insert into nb_execution (func_id,date_exec,nb) values (500002,'2016-04-13',1);
+Execution Duration is 0 ms
+
+
+

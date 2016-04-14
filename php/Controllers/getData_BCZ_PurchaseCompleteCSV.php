@@ -27,8 +27,23 @@ function get_BCZ($db){
                 $from = $_GET['from'];
                 $to = $_GET['to'];
 
+                if(isset($_GET['fromBegin'])){
+                    echo "fromBegin";
+                    $sql = "select c.TET_ID, c.TIR_NUM_TIERS, e.TET_NUM_CAISSE, e.TET_NUM_HOTESSE, e.TET_NUM_TRANS, d.ELG_NUM_ELT_GESTION,
+d.TDE_QUANTITE, d.TDE_MONTANT, d.TDE_QUANTITE*d.TDE_MONTANT as Total_Price, e.TET_DATE_HEURE
+from
+ticket_carte_central c
+inner join ticket_detail_central d
+on c.tir_num_tiers = d.tir_num_tiers and c.tet_id = d.tet_id and c.tti_num_type_tiers = d.tti_num_type_tiers and c.tir_sous_num_tiers = d.tir_sous_num_tiers
+inner join ticket_en_tete_central e
+on c.tir_num_tiers = e.tir_num_tiers and c.tet_id = e.tet_id and c.tti_num_type_tiers = e.tti_num_type_tiers and c.tir_sous_num_tiers = e.tir_sous_num_tiers
+where c.car_numero_carte = '".$card_nb."'
+order by e.TET_DATE_HEURE desc, e.TET_ID, d.ELG_NUM_ELT_GESTION;";
+                }
+                else{
 
-                $sql = "select c.TET_ID, c.TIR_NUM_TIERS, e.TET_NUM_CAISSE, e.TET_NUM_HOTESSE, e.TET_NUM_TRANS, d.ELG_NUM_ELT_GESTION,
+                    echo "chooseTime";
+                    $sql = "select c.TET_ID, c.TIR_NUM_TIERS, e.TET_NUM_CAISSE, e.TET_NUM_HOTESSE, e.TET_NUM_TRANS, d.ELG_NUM_ELT_GESTION,
 d.TDE_QUANTITE, d.TDE_MONTANT, d.TDE_QUANTITE*d.TDE_MONTANT as Total_Price, e.TET_DATE_HEURE
 from
 ticket_carte_central c
@@ -38,6 +53,7 @@ inner join ticket_en_tete_central e
 on c.tir_num_tiers = e.tir_num_tiers and c.tet_id = e.tet_id and c.tti_num_type_tiers = e.tti_num_type_tiers and c.tir_sous_num_tiers = e.tir_sous_num_tiers
 where c.car_numero_carte = '".$card_nb."' and e.tet_date_heure > '".$from."' and e.tet_date_heure < '".$to."'
 order by e.TET_DATE_HEURE desc, e.TET_ID, d.ELG_NUM_ELT_GESTION;";
+                }
 
                 $header = array('tet_id','store_number','till','num_cashier','num_transaction','item_id','quantity','price','total_amount','transaction_time');
                 $file_name = "purchase_".date('Y-m-d')."_".$card_nb.".csv";

@@ -79,7 +79,7 @@
                 </div>
                 <div class="row" style="margin-top: 40px;">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
+                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:32%">
                         <label for="cardTransfer" style="font-size: 1.7em">Card No. </label>
                     </div>
                     <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
@@ -119,6 +119,24 @@
                 <div class="row" style="margin-top: 25px;">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-2">
+                        <label for="time_choice" style="font-size: 1.7em">Time Range?</label>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle btn-lg"
+                                    data-toggle="dropdown" style="margin-left:20%;margin-top:10%" id="ButtonTime">
+                                Custom Range <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a onclick="click_on_From_Begin()">From Begining</a></li>
+                                <li><a onclick="click_on_custom()">Custom Range</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px;" id="ChooseTime">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
                         <label for="PurchasefromFindCard" style="font-size: 1.7em">From:</label>
                     </div>
                     <div class="col-lg-3">
@@ -134,7 +152,7 @@
                 </div>
                 <div class="row" style="margin-top: 40px;">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
+                    <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:32%">
                         <label for="cardCompletePurchase" style="font-size: 1.7em">Card No. </label>
                     </div>
                     <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">

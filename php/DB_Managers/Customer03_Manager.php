@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -153,5 +151,31 @@ class Customer03_Manager{
         openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $result;
+    }
+
+    /**
+     * Run the query without fetch the result
+     * @param $query
+     * @return object the response
+     */
+    public function queryUpdate($query){
+
+        //var_dump($this->session);
+
+        /**
+         * Note the time before the execution
+         */
+        $msc = microtime(true);
+
+        //var_dump($query);
+        $this->setQuery($query);
+
+        /**
+         * Note the time after the execution
+         */
+        $diff = microtime(true)-$msc;
+        $date = date("D M d, Y G:i");
+        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
     }
 }

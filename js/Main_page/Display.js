@@ -78,7 +78,8 @@ function displayTheTransferRecord(response,card_number){
     // ask user whether he needs to download CSV file or not
     if(display_length < result.length){
 
-        var newRow = table.insertRow(6);
+        var newRow = table.insertRow(6
+        );
         var indexNb = newRow.insertCell(0);
         var dateNb = newRow.insertCell(1);
         var storeNb = newRow.insertCell(2);
@@ -114,4 +115,14 @@ function displayTheTransferRecord(response,card_number){
      * after the insert, stop the loading image
      */
     $("#treat").empty();
+}
+
+function click_on_custom(){
+    document.getElementById("ChooseTime").style.display = "";
+    document.getElementById("ButtonTime").textContent = "Custom Range"
+}
+
+function click_on_From_Begin(){
+    document.getElementById("ChooseTime").style.display = "none";
+    document.getElementById("ButtonTime").textContent = "From Beginning";
 }

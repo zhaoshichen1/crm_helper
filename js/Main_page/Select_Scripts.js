@@ -20,7 +20,7 @@ function getDuplicate() {
     var telephone_nb = 0, accounts_nb = 0;
 
     $.ajax({
-            url: 'php/Controllers/getData2.php',
+            url: 'php/Controllers/getData_Customer03.php',
             method: 'GET',
             data: {
                 tel_dup:'key'
@@ -31,7 +31,7 @@ function getDuplicate() {
         });
 
     $.ajax({
-            url: 'php/Controllers/getData2.php',
+            url: 'php/Controllers/getData_Customer03.php',
             method: 'GET',
             data: {
                 account_dup:'key'
@@ -74,7 +74,7 @@ function getDataEcheckKo() {
     console.log('card number' + card_number);
 
     $.ajax({
-            url: "php/Controllers/getData_BCZ1.php",
+            url: "php/Controllers/getData_BCZ_All.php",
             method: "GET",
             data: {
                 loyalty_echeckko_cardnumber: card_number
@@ -127,7 +127,7 @@ function getDataFindCard() {
     var from_date = $("#fromFindCard").val();
     var to_date = $("#toFindCard").val();
     $.ajax({
-            url: 'php/Controllers/getData_BCZ1.php',
+            url: 'php/Controllers/getData_BCZ_All.php',
             method: 'GET',
             data: {
                 storenumberfindcard: store_number,
@@ -161,7 +161,7 @@ function getDataSubFidelity() {
     waitingfidelity();
     var card_number = $("#cardNumberfidelity").val();
     $.ajax({
-            url: "php/Controllers/getData_BCZ1.php",
+            url: "php/Controllers/getData_BCZ_All.php",
             method: "GET",
             data: {numbercardfidelity: card_number}
         })
@@ -175,6 +175,34 @@ function getDataSubFidelity() {
             if (data == 1) {
                 response = "Yes";
                 color = "#00FF00";
+            }
+
+                // propose the user to repair it
+            else{
+                alertify.confirm("Be Careful! Launch the script for auto-repair now?",
+                    function(){
+                        alertify.success('Repair script launched');
+
+                        // use Ajax to call the PHP for the repair, but attention, we need to feed enough values
+                        $.ajax({
+                                url: 'php/Controllers/getData_BCZ_All.php',
+                                method: 'GET',
+                                data: {
+                                    storenumberfindcard: store_number,
+                                    tillnumberfindcard: till_number,
+                                    transnumberfindcard: trans_number,
+                                    from: from_date,
+                                    to: to_date
+                                }
+                            })
+                            .done(function (data) {
+                                alertExecutionTime(giveDifferenceInMS(begin));
+                                $("#answerfindcardnumber").empty().append(data);
+                            });
+                    },
+                    function(){
+                        alertify.error('Repair script cancelled');
+                    });
             }
             $("#answersubfidelity").empty().append(response).css('color', color);
 
@@ -214,7 +242,7 @@ function getTransfer(){
     console.log('card number' + card_number);
 
     $.ajax({
-            url: "php/Controllers/getData_BCZ1.php",
+            url: "php/Controllers/getData_BCZ_All.php",
             method: "GET",
             data: {
                 cardTransfer: card_number
@@ -256,18 +284,27 @@ function getCompletePurchaseHistory() {
     }
 
     else {
-        if($('#PurchasefromFindCard').val() == ""||$('#PurchasetoFindCard').val() == ""){
-            alert("Please give the valid date!");
-            $("#answerCompletePurchase").empty();
-            return;
-        }
-        else {
+
+
 
             // wait two seconds and then remove the loading icon
             setTimeout(function(){
                 $("#answerCompletePurchase").empty();
             },2000);
-            window.location = 'php/Controllers/getData_BCZ2_PurchaseCompleteCSV.php?numbercardcompletepurchase='+card_number+'&from='+from+'&to='+to;
+
+            // which means we could choose time
+            if(document.getElementById("ChooseTime").style.display == ""){
+                window.location = 'php/Controllers/getData_BCZ_PurchaseCompleteCSV.php?numbercardcompletepurchase='+card_number+'&from='+from+'&to='+to;
+                if($('#PurchasefromFindCard').val() == ""||$('#PurchasetoFindCard').val() == ""){
+                    alert("Please give the valid date!");
+                    $("#answerCompletePurchase").empty();
+                    return;
+                }
+            }
+                // which means choose from beginning
+            else{
+                window.location = 'php/Controllers/getData_BCZ_PurchaseCompleteCSV.php?fromBegin=true&numbercardcompletepurchase='+card_number+'&from='+from+'&to='+to;
+            }
         }
-    }
+
 }

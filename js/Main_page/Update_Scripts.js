@@ -30,7 +30,7 @@ function updateReservoirAvantage() {
      * originally no problem ( no error code ) - to check
      */
     $.ajax({
-            url: "php/Controllers/getData_BCZ1.php",
+            url: "php/Controllers/getData_BCZ_All.php",
             method: "GET",
             data: {
                 loyalty_echeckko_cardnumber: card_number
@@ -45,7 +45,7 @@ function updateReservoirAvantage() {
             }
             else {
                 $.ajax({
-                        url: "php/Controllers/getData_BCZ1.php",
+                        url: "php/Controllers/getData_BCZ_All.php",
                         method: "GET",
                         data: {
                             loyalty_reset: card_number

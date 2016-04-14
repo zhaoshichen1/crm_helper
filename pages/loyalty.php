@@ -9,7 +9,7 @@
                     </div>
                     <div class="row" style="margin-top: 40px;">
                         <div class="col-lg-2"></div>
-                        <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">
+                        <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:31%">
                             <label for="cardNumberfidelity" style="font-size: 1.7em">Card No. </label>
                         </div>
                         <div class="col-lg-4" style="padding-left:2px;padding-right:2px;width:37%">

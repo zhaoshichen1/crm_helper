@@ -315,4 +315,24 @@ having count(*) >1) as result
 Execution Duration is 0 ms
 
 
+Date: Wed Apr 13, 2016 21:30
+Query: select * from nb_execution where func_id = 500006 and date_exec = '2016-04-13'
+Execution Duration is 0.00099992752075195 ms
+
+
+Date: Wed Apr 13, 2016 21:30
+Query: insert into nb_execution (func_id,date_exec,nb) values (500006,'2016-04-13',1);
+Execution Duration is 0 ms
+
+
+Date: Wed Apr 13, 2016 21:31
+Query: select * from nb_execution where func_id = 500006 and date_exec = '2016-04-13'
+Execution Duration is 0 ms
+
+
+Date: Wed Apr 13, 2016 21:31
+Query: insert into nb_execution (func_id,date_exec,nb) values (500006,'2016-04-13',1);
+Execution Duration is 0 ms
+
+
 

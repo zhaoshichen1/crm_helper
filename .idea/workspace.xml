@@ -4,17 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/pages/backoffice/login_success.php" description="&lt;div&gt;" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="Go to Github?">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/Controllers/Update/Loyalty/subscription_one_guy.php" />
+    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Main_page/Display.js" afterPath="$PROJECT_DIR$/js/Main_page/Display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Main_page/Select_Scripts.js" afterPath="$PROJECT_DIR$/js/Main_page/Select_Scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Main_page/Update_Scripts.js" afterPath="$PROJECT_DIR$/js/Main_page/Update_Scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/Log.txt" afterPath="$PROJECT_DIR$/log/Log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loyalty.php" afterPath="$PROJECT_DIR$/pages/loyalty.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/purchase.php" afterPath="$PROJECT_DIR$/pages/purchase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/voucher.php" afterPath="$PROJECT_DIR$/pages/voucher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php" afterPath="$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" afterPath="$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" />
     </list>
     <ignored path="crm_helper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,74 +28,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Select_Scripts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/Main_page/Select_Scripts.js">
+      <file leaf-file-name="updateData_BCZ_SubscriptionForOneGuy.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24394463">
-              <caret line="185" column="112" selection-start-line="185" selection-start-column="112" selection-end-line="185" selection-end-column="112" />
+            <state vertical-scroll-proportion="0.3090909">
+              <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#6#89#0#PHP" expanded="true" />
+                <marker date="1460701909061" expanded="true" signature="1490:1545" placeholder="select id fr... personne" />
+                <marker date="1460701909061" expanded="true" signature="1490:1547" placeholder="select id fr... personne" />
+                <marker date="1460701909061" expanded="true" signature="1490:1560" placeholder="select id fr... personne" />
+                <marker date="1460701909061" expanded="true" signature="1490:1625" placeholder="select * fro... ${$response}" />
+                <marker date="1460701909061" expanded="true" signature="2201:2273" placeholder="select per_i... compte_fid" />
+                <marker date="1460701909061" expanded="true" signature="2201:2286" placeholder="select per_i... compte_fid" />
+                <marker date="1460701909061" expanded="true" signature="2201:2287" placeholder="select per_i... compte_fid" />
+                <marker date="1460701909061" expanded="true" signature="2461:2493" placeholder="insert into compte_fid... " />
+                <marker date="1460701909061" expanded="true" signature="2461:2508" placeholder="insert into compte_fid... " />
+                <marker date="1460701909061" expanded="true" signature="2461:2522" placeholder="insert into compte_fid... " />
+                <marker date="1460701909061" expanded="true" signature="2670:2732" placeholder="select * fro... histo_adhesion_fid" />
+                <marker date="1460701909061" expanded="true" signature="2670:2762" placeholder="select * fro... histo_adhesion_fid" />
+                <marker date="1460701909061" expanded="true" signature="2842:2882" placeholder="insert into histo_adhesion_fid... " />
+                <marker date="1460701909061" expanded="true" signature="2842:2940" placeholder="insert into histo_adhesion_fid... " />
+                <marker date="1460701909061" expanded="true" signature="2842:2942" placeholder="insert into histo_adhesion_fid... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loyalty.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/loyalty.php">
+      <file leaf-file-name="BCZ_Manager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/DB_Managers/BCZ_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.535714">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="purchase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/purchase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714">
-              <caret line="126" column="103" selection-start-line="126" selection-start-column="103" selection-end-line="126" selection-end-column="103" />
+            <state vertical-scroll-proportion="-4.1454544">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voucher.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/voucher.php">
+      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Util/Tool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.214286">
-              <caret line="27" column="46" selection-start-line="24" selection-start-column="0" selection-end-line="30" selection-end-column="22" />
+            <state vertical-scroll-proportion="-3.2105262">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getData_Customer03.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/getData_Customer03.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7142856">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1460700167145" expanded="true" signature="1141:1351" placeholder="select count... tel_portable" />
+                <marker date="1460700167145" expanded="true" signature="1163:1340" placeholder="select tel_p... personne" />
+                <marker date="1460700167145" expanded="true" signature="1353:1410" placeholder="select * fro... personne" />
+                <marker date="1460700167145" expanded="true" signature="1515:1735" placeholder="select * fro... personne" />
+                <marker date="1460700167145" expanded="true" signature="1542:1724" placeholder="select tel_p... personne" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscription_one_guy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Controllers/Update/Loyalty/subscription_one_guy.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.392857">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state vertical-scroll-proportion="-8.142858">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1460627430707" expanded="true" signature="1497:1552" placeholder="select id fr... personne" />
-                <marker date="1460627430707" expanded="true" signature="1497:1554" placeholder="select id fr... personne" />
-                <marker date="1460627430707" expanded="true" signature="1497:1567" placeholder="select id fr... personne" />
-                <marker date="1460627430707" expanded="true" signature="1497:1632" placeholder="select * fro... ${$response}" />
-                <marker date="1460627430707" expanded="true" signature="2173:2245" placeholder="select per_i... compte_fid" />
-                <marker date="1460627430707" expanded="true" signature="2173:2266" placeholder="select per_i... compte_fid" />
-                <marker date="1460627430707" expanded="true" signature="2173:2267" placeholder="select per_i... compte_fid" />
-                <marker date="1460627430707" expanded="true" signature="2405:2437" placeholder="insert into compte_fid... " />
-                <marker date="1460627430707" expanded="true" signature="2405:2452" placeholder="insert into compte_fid... " />
-                <marker date="1460627430707" expanded="true" signature="2405:2466" placeholder="insert into compte_fid... " />
-                <marker date="1460627430707" expanded="true" signature="2614:2676" placeholder="select * fro... histo_adhesion_fid" />
-                <marker date="1460627430707" expanded="true" signature="2614:2706" placeholder="select * fro... histo_adhesion_fid" />
-                <marker date="1460627430707" expanded="true" signature="2785:2825" placeholder="insert into histo_adhesion_fid... " />
-                <marker date="1460627430707" expanded="true" signature="2785:2883" placeholder="insert into histo_adhesion_fid... " />
-                <marker date="1460627430707" expanded="true" signature="2785:2885" placeholder="insert into histo_adhesion_fid... " />
+                <marker date="1460700172062" expanded="true" signature="347:448" placeholder="..." />
+                <marker date="1460700172062" expanded="true" signature="947:1023" placeholder="select uid f... users" />
+                <marker date="1460700172062" expanded="true" signature="1445:1546" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -112,20 +108,20 @@
       <file leaf-file-name="Customer03_Manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.142858">
-              <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+            <state vertical-scroll-proportion="-8.821428">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData_BCZ_PurchaseTransferCSV.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php">
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1460548245569" expanded="true" signature="534:1377" placeholder="select conve... purchase_transfer" />
+                <marker date="1460548245570" expanded="true" signature="208:294" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -134,36 +130,56 @@
       <file leaf-file-name="MySQL_Manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.357143">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="139" selection-end-column="5" />
+            <state vertical-scroll-proportion="-10.178572">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData3_internalData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Controllers/getData3_internalData.php">
+      <file leaf-file-name="nb_execution_record.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/nb_execution_record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.0">
-              <caret line="83" column="24" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="24" />
+            <state vertical-scroll-proportion="15.607142">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <marker date="1460123341428" expanded="true" signature="2725:2751" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:874" placeholder="select * fro... " />
+                <marker date="1460700181107" expanded="true" signature="867:909" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:910" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:934" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:936" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:948" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="867:949" placeholder="select * fro... nb_execution" />
+                <marker date="1460700181107" expanded="true" signature="1134:1190" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1209" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1234" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1235" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1279" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1281" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1282" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1283" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1303" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1134:1305" placeholder="insert into nb_execution... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1599" placeholder="update nb_ex... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1600" placeholder="update nb_ex... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1660" placeholder="update nb_ex... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1661" placeholder="update nb_ex... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1706" placeholder="update nb_ex... " />
+                <marker date="1460700181107" expanded="true" signature="1550:1708" placeholder="update nb_ex... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData_BCZ_All.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_All.php">
+      <file leaf-file-name="getData_BCZ_PurchaseCompleteCSV.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.877193">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="88" selection-end-column="28" />
+            <state vertical-scroll-proportion="-2.0357144">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="33" />
               <folding>
-                <marker date="1460548336567" expanded="true" signature="2693:2768" placeholder="update reser... " />
-                <marker date="1460548336567" expanded="true" signature="4635:5212" placeholder="select tcc.c... ticket_carte_central" />
-                <marker date="1460548336567" expanded="true" signature="5866:5956" placeholder="select count... compte_fid" />
-                <marker date="1460548336567" expanded="true" signature="6369:6376" placeholder="select temp.... convert" />
-                <marker date="1460548336567" expanded="true" signature="6369:7215" placeholder="select conve... purchase_transfer" />
+                <marker date="1460700158525" expanded="true" signature="919:1641" placeholder="select c.TET... ticket_carte_central" />
+                <marker date="1460700158525" expanded="true" signature="1753:2543" placeholder="select c.TET... ticket_carte_central" />
+                <marker date="1460700158525" expanded="true" signature="2566:3305" placeholder="//..." />
               </folding>
             </state>
           </provider>
@@ -187,10 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/Util/Tool.php" />
-        <option value="$PROJECT_DIR$/php/Controllers/getData2.php" />
-        <option value="$PROJECT_DIR$/php/Util/Execution_Record.php" />
-        <option value="$PROJECT_DIR$/css/font-awesome.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/backoffice/index.html" />
         <option value="$PROJECT_DIR$/php/Util/MySQL_Info.php" />
@@ -198,7 +210,6 @@
         <option value="$PROJECT_DIR$/pages/backoffice/login_failed.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/demo.css" />
-        <option value="$PROJECT_DIR$/php/Controllers/login.php" />
         <option value="$PROJECT_DIR$/php/Controllers/logout.php" />
         <option value="$PROJECT_DIR$/js/cbpHorizontalMenu.min.js" />
         <option value="$PROJECT_DIR$/css/menu/component.css" />
@@ -208,10 +219,7 @@
         <option value="$PROJECT_DIR$/pages/backoffice/index.php" />
         <option value="$PROJECT_DIR$/pages/backoffice/success_modules/function_list.php" />
         <option value="$PROJECT_DIR$/js/BackOffice/nb_execution_record.js" />
-        <option value="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" />
-        <option value="$PROJECT_DIR$/php/Controllers/nb_execution_record.php" />
         <option value="$PROJECT_DIR$/pages/backoffice/success_modules/record_list.php" />
-        <option value="$PROJECT_DIR$/php/Controllers/getData3_internalData.php" />
         <option value="$PROJECT_DIR$/Google_API/client_id.json" />
         <option value="$PROJECT_DIR$/Google_API/quickstart_test.php" />
         <option value="$PROJECT_DIR$/php/Util/Test_of_CSV.php" />
@@ -222,22 +230,30 @@
         <option value="$PROJECT_DIR$/php/Controllers/getData.php" />
         <option value="$PROJECT_DIR$/js/Main_page/Update_Scripts.js" />
         <option value="$PROJECT_DIR$/js/Main_page/Time&amp;Record.js" />
-        <option value="$PROJECT_DIR$/php/DB_Managers/BCZ_Manager.php" />
         <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ2.php" />
         <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ1.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/js/BackOffice/display_function.js" />
         <option value="$PROJECT_DIR$/php/Models/Functionality_record.php" />
-        <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php" />
         <option value="$PROJECT_DIR$/pages/voucher.php" />
         <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ2_PurchaseCompleteCSV.php" />
         <option value="$PROJECT_DIR$/pages/purchase.php" />
         <option value="$PROJECT_DIR$/js/Main_page/Display.js" />
-        <option value="$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php" />
-        <option value="$PROJECT_DIR$/php/Controllers/Update/Loyalty/subscription_one_guy.php" />
         <option value="$PROJECT_DIR$/pages/loyalty.php" />
         <option value="$PROJECT_DIR$/js/Main_page/Select_Scripts.js" />
+        <option value="$PROJECT_DIR$/php/Controllers/getData3_internalData.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ_All.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/getData_Customer03.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/login.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/nb_execution_record.php" />
+        <option value="$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php" />
+        <option value="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/Update/Loyalty/subscription_one_guy.php" />
+        <option value="$PROJECT_DIR$/php/DB_Managers/BCZ_Manager.php" />
+        <option value="$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" />
       </list>
     </option>
   </component>
@@ -283,7 +299,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -398,54 +414,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Update" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HOC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Update" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Loyalty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HOC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -538,7 +506,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,15 +517,15 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp32\www\HOC\js\BackOffice" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp32\www\HOC\php\Controllers" />
       <recent name="D:\wamp32\www\HOC\Google_API" />
       <recent name="$PROJECT_DIR$/css/fonts" />
       <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/pages/backoffice" />
-      <recent name="D:\wamp32\www\HOC\pages\backoffice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp32\www\HOC\js\BackOffice" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.crm_helper">
@@ -627,7 +595,19 @@
       <option name="project" value="LOCAL" />
       <updated>1460601773209</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Succesfully connect to Customer 03 Preprod DB. Almost finish the functionality of subscription for 1 people. But the front-office is still missing.">
+      <created>1460628542087</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460628542087</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The BCZ_Manager is not working properly: root cause: the call to Tool.php. Changed the structure in order to solve this problem.">
+      <created>1460701152719</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1460701152719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -635,27 +615,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36530015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23464566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23464566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -673,7 +653,9 @@
     <MESSAGE value="Go to BitBucket??" />
     <MESSAGE value="Go to Github?" />
     <MESSAGE value="Rename several files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename several files" />
+    <MESSAGE value="Succesfully connect to Customer 03 Preprod DB. Almost finish the functionality of subscription for 1 people. But the front-office is still missing." />
+    <MESSAGE value="The BCZ_Manager is not working properly: root cause: the call to Tool.php. Changed the structure in order to solve this problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="The BCZ_Manager is not working properly: root cause: the call to Tool.php. Changed the structure in order to solve this problem." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,13 +679,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/Util/Execution_Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/ring.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -802,38 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/nb_execution_record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.857142">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <marker date="1460548245571" expanded="true" signature="833:840" placeholder="select * fro... " />
-            <marker date="1460548245571" expanded="true" signature="833:875" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="833:876" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="833:900" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="833:902" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="833:914" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="833:915" placeholder="select * fro... nb_execution" />
-            <marker date="1460548245571" expanded="true" signature="1100:1156" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1175" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1200" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1201" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1245" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1247" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1248" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1249" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1269" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1100:1271" placeholder="insert into nb_execution... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1565" placeholder="update nb_ex... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1566" placeholder="update nb_ex... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1626" placeholder="update nb_ex... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1627" placeholder="update nb_ex... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1672" placeholder="update nb_ex... " />
-            <marker date="1460548245571" expanded="true" signature="1516:1674" placeholder="update nb_ex... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/Util/MySQL_Info.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.785714">
@@ -852,13 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -969,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,15 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="109" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="109" />
-          <folding>
-            <marker date="1460548245560" expanded="true" signature="268:322" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="465:488" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="614:637" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="774:796" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="930:953" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="1074:1097" placeholder="..." />
-            <marker date="1460548245560" expanded="true" signature="1243:1266" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,130 +933,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="73" selection-start-line="126" selection-start-column="73" selection-end-line="126" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_Customer03.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <marker date="1460548245567" expanded="true" signature="1106:1316" placeholder="select count... tel_portable" />
-            <marker date="1460548245567" expanded="true" signature="1128:1305" placeholder="select tel_p... personne" />
-            <marker date="1460548245567" expanded="true" signature="1318:1375" placeholder="select * fro... personne" />
-            <marker date="1460548245567" expanded="true" signature="1480:1700" placeholder="select * fro... personne" />
-            <marker date="1460548245567" expanded="true" signature="1507:1689" placeholder="select tel_p... personne" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Util/Tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.785714">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.67857">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <marker date="1460554916642" expanded="true" signature="884:1606" placeholder="select c.TET... ticket_carte_central" />
-            <marker date="1460554916642" expanded="true" signature="1718:2508" placeholder="select c.TET... ticket_carte_central" />
-            <marker date="1460554916642" expanded="true" signature="2531:3270" placeholder="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/DB_Managers/BCZ_Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-155.39285">
-          <caret line="229" column="58" selection-start-line="229" selection-start-column="58" selection-end-line="229" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_All.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.877193">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="88" selection-end-column="28" />
-          <folding>
-            <marker date="1460548336567" expanded="true" signature="2693:2768" placeholder="update reser... " />
-            <marker date="1460548336567" expanded="true" signature="4635:5212" placeholder="select tcc.c... ticket_carte_central" />
-            <marker date="1460548336567" expanded="true" signature="5866:5956" placeholder="select count... compte_fid" />
-            <marker date="1460548336567" expanded="true" signature="6369:6376" placeholder="select temp.... convert" />
-            <marker date="1460548336567" expanded="true" signature="6369:7215" placeholder="select conve... purchase_transfer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/getData3_internalData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.0">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="24" />
-          <folding>
-            <marker date="1460123341428" expanded="true" signature="2725:2751" placeholder="select * fro... nb_execution" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <marker date="1460548245569" expanded="true" signature="534:1377" placeholder="select conve... purchase_transfer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.357143">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="139" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.142858">
-          <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controllers/Update/Loyalty/subscription_one_guy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.392857">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1460627430707" expanded="true" signature="1497:1552" placeholder="select id fr... personne" />
-            <marker date="1460627430707" expanded="true" signature="1497:1554" placeholder="select id fr... personne" />
-            <marker date="1460627430707" expanded="true" signature="1497:1567" placeholder="select id fr... personne" />
-            <marker date="1460627430707" expanded="true" signature="1497:1632" placeholder="select * fro... ${$response}" />
-            <marker date="1460627430707" expanded="true" signature="2173:2245" placeholder="select per_i... compte_fid" />
-            <marker date="1460627430707" expanded="true" signature="2173:2266" placeholder="select per_i... compte_fid" />
-            <marker date="1460627430707" expanded="true" signature="2173:2267" placeholder="select per_i... compte_fid" />
-            <marker date="1460627430707" expanded="true" signature="2405:2437" placeholder="insert into compte_fid... " />
-            <marker date="1460627430707" expanded="true" signature="2405:2452" placeholder="insert into compte_fid... " />
-            <marker date="1460627430707" expanded="true" signature="2405:2466" placeholder="insert into compte_fid... " />
-            <marker date="1460627430707" expanded="true" signature="2614:2676" placeholder="select * fro... histo_adhesion_fid" />
-            <marker date="1460627430707" expanded="true" signature="2614:2706" placeholder="select * fro... histo_adhesion_fid" />
-            <marker date="1460627430707" expanded="true" signature="2785:2825" placeholder="insert into histo_adhesion_fid... " />
-            <marker date="1460627430707" expanded="true" signature="2785:2883" placeholder="insert into histo_adhesion_fid... " />
-            <marker date="1460627430707" expanded="true" signature="2785:2885" placeholder="insert into histo_adhesion_fid... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/purchase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
+        <state vertical-scroll-proportion="0.0">
           <caret line="126" column="103" selection-start-line="126" selection-start-column="103" selection-end-line="126" selection-end-column="103" />
           <folding />
         </state>
@@ -1140,30 +946,197 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/voucher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.214286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="46" selection-start-line="24" selection-start-column="0" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/loyalty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.535714">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Main_page/Select_Scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24394463">
-          <caret line="185" column="112" selection-start-line="185" selection-start-column="112" selection-end-line="185" selection-end-column="112" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="194" column="47" selection-start-line="194" selection-start-column="47" selection-end-line="194" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/getData3_internalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1460700154126" expanded="true" signature="2759:2785" placeholder="select * fro... nb_execution" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_All.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1460700154111" expanded="true" signature="2728:2803" placeholder="update reser... " />
+            <marker date="1460700154111" expanded="true" signature="4670:5247" placeholder="select tcc.c... ticket_carte_central" />
+            <marker date="1460700154111" expanded="true" signature="5901:5991" placeholder="select count... compte_fid" />
+            <marker date="1460700154111" expanded="true" signature="6404:6411" placeholder="select temp.... convert" />
+            <marker date="1460700154111" expanded="true" signature="6404:7250" placeholder="select conve... purchase_transfer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1460700163256" expanded="true" signature="569:1412" placeholder="select conve... purchase_transfer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_Customer03.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1460700167145" expanded="true" signature="1141:1351" placeholder="select count... tel_portable" />
+            <marker date="1460700167145" expanded="true" signature="1163:1340" placeholder="select tel_p... personne" />
+            <marker date="1460700167145" expanded="true" signature="1353:1410" placeholder="select * fro... personne" />
+            <marker date="1460700167145" expanded="true" signature="1515:1735" placeholder="select * fro... personne" />
+            <marker date="1460700167145" expanded="true" signature="1542:1724" placeholder="select tel_p... personne" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.142858">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1460700172062" expanded="true" signature="347:448" placeholder="..." />
+            <marker date="1460700172062" expanded="true" signature="947:1023" placeholder="select uid f... users" />
+            <marker date="1460700172062" expanded="true" signature="1445:1546" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460548245570" expanded="true" signature="208:294" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/nb_execution_record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.607142">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1460700181107" expanded="true" signature="867:874" placeholder="select * fro... " />
+            <marker date="1460700181107" expanded="true" signature="867:909" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="867:910" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="867:934" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="867:936" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="867:948" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="867:949" placeholder="select * fro... nb_execution" />
+            <marker date="1460700181107" expanded="true" signature="1134:1190" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1209" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1234" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1235" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1279" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1281" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1282" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1283" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1303" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1134:1305" placeholder="insert into nb_execution... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1599" placeholder="update nb_ex... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1600" placeholder="update nb_ex... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1660" placeholder="update nb_ex... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1661" placeholder="update nb_ex... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1706" placeholder="update nb_ex... " />
+            <marker date="1460700181107" expanded="true" signature="1550:1708" placeholder="update nb_ex... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0357144">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <marker date="1460700158525" expanded="true" signature="919:1641" placeholder="select c.TET... ticket_carte_central" />
+            <marker date="1460700158525" expanded="true" signature="1753:2543" placeholder="select c.TET... ticket_carte_central" />
+            <marker date="1460700158525" expanded="true" signature="2566:3305" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.821428">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Util/Tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2105262">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/DB_Managers/BCZ_Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1454544">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3090909">
+          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1460701909061" expanded="true" signature="1490:1545" placeholder="select id fr... personne" />
+            <marker date="1460701909061" expanded="true" signature="1490:1547" placeholder="select id fr... personne" />
+            <marker date="1460701909061" expanded="true" signature="1490:1560" placeholder="select id fr... personne" />
+            <marker date="1460701909061" expanded="true" signature="1490:1625" placeholder="select * fro... ${$response}" />
+            <marker date="1460701909061" expanded="true" signature="2201:2273" placeholder="select per_i... compte_fid" />
+            <marker date="1460701909061" expanded="true" signature="2201:2286" placeholder="select per_i... compte_fid" />
+            <marker date="1460701909061" expanded="true" signature="2201:2287" placeholder="select per_i... compte_fid" />
+            <marker date="1460701909061" expanded="true" signature="2461:2493" placeholder="insert into compte_fid... " />
+            <marker date="1460701909061" expanded="true" signature="2461:2508" placeholder="insert into compte_fid... " />
+            <marker date="1460701909061" expanded="true" signature="2461:2522" placeholder="insert into compte_fid... " />
+            <marker date="1460701909061" expanded="true" signature="2670:2732" placeholder="select * fro... histo_adhesion_fid" />
+            <marker date="1460701909061" expanded="true" signature="2670:2762" placeholder="select * fro... histo_adhesion_fid" />
+            <marker date="1460701909061" expanded="true" signature="2842:2882" placeholder="insert into histo_adhesion_fid... " />
+            <marker date="1460701909061" expanded="true" signature="2842:2940" placeholder="insert into histo_adhesion_fid... " />
+            <marker date="1460701909061" expanded="true" signature="2842:2942" placeholder="insert into histo_adhesion_fid... " />
           </folding>
         </state>
       </provider>

@@ -9,6 +9,8 @@
  * Time: 1:24 PM
  */
 include '../DB_Managers/MySQL_Manager.php';
+include_once  '../Util/Tool.php';
+
 
 //登录
 if((!isset($_POST['submit']))||(!isset($_POST['login']))||(!isset($_POST['password']))){

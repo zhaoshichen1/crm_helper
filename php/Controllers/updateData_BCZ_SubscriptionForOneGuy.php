@@ -6,7 +6,7 @@
  * Time: 10:16 AM
  */
 
-include_once  '../../../Util/Tool.php';
+include_once '../../../Util/Tool.php';
 include '../../../DB_Managers/Customer03_Manager.php';
 include '../../../DB_Managers/BCZ_Manager.php';
 
@@ -53,7 +53,7 @@ function get_customer($db_customer03,$db_BCZ){
 
     if((isset($_GET['subscriptionOneGuy']))&&(isset($_GET['cardNumber']))){
 
-        $card_nb = 2090000011111;
+        $card_nb = $_GET['cardNumber'];
 
         $select_id_query = "select id from customer03.personne where numero_carte = '".$card_nb."'";
 
@@ -68,28 +68,30 @@ function get_customer($db_customer03,$db_BCZ){
             // get the id from customer 03
             $real_id =  $response->id;
 
-            // then connect to the BCZ
-            $LoyaltyManager = new BCZ_Manager($db_BCZ->host,$db_BCZ->user,$db_BCZ->password,$db_BCZ->port);
-
-            // then run the first check in compte_fid and histo_adhesion_fid
-            $LoyaltyManager->setBdd("loyalty");
-            $response = $LoyaltyManager->query("select per_identifiant_per from compte_fid where per_identifiant_per = '".$select_id_query."'");
-
-            // if this customer doesn't exist in compte_fid
-            if(!$response){
-                $LoyaltyManager->queryUpdate("insert into compte_fid values ('".$card_nb."','".$real_id."')");
-            }
-            // if this customer exist already, we do nothing
-            else{}
-
-            $response2 = $LoyaltyManager->query("select * from histo_adhesion_fid where per_identifiant_per = '".$card_nb."' and adhesion = 1");
-            if(!$response2){
-                $LoyaltyManager->queryUpdate("insert into histo_adhesion_fid values ('".$real_id."',CONVERT(VARCHAR, GETDATE(), 23),1,'SYNCHRO')");
-            }
-            // if this customer exist already, we do nothing
-            else{}
-
-            print "Repair finished";
+            var_dump($real_id);
+//
+//            // then connect to the BCZ
+//            $LoyaltyManager = new BCZ_Manager($db_BCZ->host,$db_BCZ->user,$db_BCZ->password,$db_BCZ->port);
+//
+//            // then run the first check in compte_fid and histo_adhesion_fid
+//            $LoyaltyManager->setBdd("loyalty");
+//            $response = $LoyaltyManager->query("select per_identifiant_per from compte_fid where per_identifiant_per = '".$select_id_query."'");
+//
+//            // if this customer doesn't exist in compte_fid
+//            if(!$response){
+//                $LoyaltyManager->queryUpdate("insert into compte_fid values ('".$card_nb."','".$real_id."')");
+//            }
+//            // if this customer exist already, we do nothing
+//            else{}
+//
+//            $response2 = $LoyaltyManager->query("select * from histo_adhesion_fid where per_identifiant_per = '".$card_nb."' and adhesion = 1");
+//            if(!$response2){
+//                $LoyaltyManager->queryUpdate("insert into histo_adhesion_fid values ('".$real_id."',CONVERT(VARCHAR, GETDATE(), 23),1,'SYNCHRO')");
+//            }
+//            // if this customer exist already, we do nothing
+//            else{}
+//
+//            print "Repair finished";
         }
 
 

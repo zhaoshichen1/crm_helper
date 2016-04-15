@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -12,6 +10,7 @@ date_default_timezone_set("Asia/Hong_Kong");
  */
 error_reporting(-1);
 ini_set('display_errors', 'On');
+
 
 
 /**
@@ -238,5 +237,27 @@ class BCZ_Manager{
 		$date = date("D M d, Y G:i");
 		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
+	}
+
+	/**
+	 * Run the query
+	 * @param $query
+	 * @return object the response
+	 */
+	public function queryUpdate($query){
+
+		/**
+		 * Note the time before the execution
+		 */
+		$msc = microtime(true);
+
+		$this->setQuery($query);
+
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 	}
 }

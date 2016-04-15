@@ -1,6 +1,8 @@
 <?php
 
 include '../DB_Managers/BCZ_Manager.php';
+include_once  '../Util/Tool.php';
+
 
 /**
  * The objective is to show the information of the problem

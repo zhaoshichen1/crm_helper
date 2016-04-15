@@ -11,6 +11,7 @@ date_default_timezone_set("Asia/Hong_Kong");
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
+include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.

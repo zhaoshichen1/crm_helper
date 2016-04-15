@@ -1,6 +1,8 @@
 <?php
 
 include '../DB_Managers/Customer03_Manager.php';
+include_once  '../Util/Tool.php';
+
 
 /**
  * Set up the CustomerDB basic information for the connection

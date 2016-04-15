@@ -1,6 +1,8 @@
 <?php
 
 include '../DB_Managers/BCZ_Manager.php';
+include_once  '../Util/Tool.php';
+
 
 /**
  * The core function called by Ajax to run the scripts

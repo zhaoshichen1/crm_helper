@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -14,6 +12,7 @@ error_reporting(-1);
 
 ini_set('display_errors', 'On');
 
+include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.

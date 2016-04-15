@@ -58,6 +58,7 @@ function get_customer($db_customer03,$db_BCZ){
         $select_id_query = "select id from customer03.personne where numero_carte = '".$card_nb."'";
 
         $response = $CustomerManager->query($select_id_query);
+        var_dump($response);
 
         //.if the response is false ( no result )
         if(!$response){
@@ -75,12 +76,12 @@ function get_customer($db_customer03,$db_BCZ){
 
             // then run the first check in compte_fid and histo_adhesion_fid
             $LoyaltyManager->setBdd("loyalty");
-            $response = $LoyaltyManager->query("select per_identifiant_per from compte_fid where per_identifiant_per = '".$real_id."'");
+            $response1 = $LoyaltyManager->query("select * from compte_fid where per_identifiant_per = '".$real_id."'");
 
-            //var_dump($response);
+            var_dump($response1);
 
             // if this customer doesn't exist in compte_fid
-            if(!$response){
+            if(!$response1){
                 $LoyaltyManager->queryUpdate("insert into compte_fid values ('".$card_nb."','".$real_id."')");
             }
             // if this customer exist already, we do nothing
@@ -93,6 +94,7 @@ function get_customer($db_customer03,$db_BCZ){
             }
             // if this customer exist already, we do nothing
             else{}
+            var_dump($response2);
 
             print "Repair finished";
         }

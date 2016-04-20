@@ -131,7 +131,7 @@ echo $p
               <a href="https://docs.google.com/spreadsheets/d/1YI82ZDBDmFSFRalvvcYVZAUpkTi2EmoXUuWCOr7sfGY/edit#gid=2022421715">
                   Project</a>
               ·
-              <a href="mailto:shichen.zhao@decathlon.com">Contact</a>
+              <a href="https://docs.google.com/a/decathlon.com/forms/d/1Hq3v9bzscrTPlW7e4ZnAra0K-_LTBxYTX8_gD4eWA7A/viewform">Contact</a>
           </p>
 
           <p>Provided by Decathlon IT - Asia Commerce Support Team &copy; 2016</p>

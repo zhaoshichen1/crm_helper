@@ -11,9 +11,11 @@ ini_set('display_errors', 'On');
     <title>"H" of Customer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/footer-distributed.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
 </head>
 <body style="background-color: #f5f5f5">
-<h1>Under Construction ... </h1>
+<img id="image" src="../images/under-construction.jpg" style="margin-top:3%">
 </body>
 </div>
 
@@ -47,4 +49,19 @@ ini_set('display_errors', 'On');
 
 </footer>
 
+<script type="text/javascript">
+
+    /**
+     * use javascript to change the size of the picture dynamically
+     */
+    function size_calculate(){
+        var globalW = document.body.offsetWidth;
+        var imageW = document.getElementById("image").offsetWidth;
+        var percentage = (globalW-imageW)/2/globalW*100;
+        document.getElementById("image").style.marginLeft = percentage+"%";
+    }
+    window.onload = size_calculate();
+</script>
+
 </html>
+

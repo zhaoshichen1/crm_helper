@@ -1,7 +1,7 @@
 <?php
 
-include '../DB_Managers/Customer03_Manager.php';
-include_once  '../Util/Tool.php';
+include '../../../php/DB_Managers/Customer03_Manager.php';
+include_once  '../../../php/Util/Tool.php';
 
 
 /**

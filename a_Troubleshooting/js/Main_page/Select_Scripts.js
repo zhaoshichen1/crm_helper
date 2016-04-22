@@ -185,19 +185,16 @@ function getDataSubFidelity() {
 
                         // use Ajax to call the PHP for the repair, but attention, we need to feed enough values
                         $.ajax({
-                                url: 'php/Controllers/getData_BCZ_All.php',
+                                url: 'php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php',
                                 method: 'GET',
                                 data: {
-                                    storenumberfindcard: store_number,
-                                    tillnumberfindcard: till_number,
-                                    transnumberfindcard: trans_number,
-                                    from: from_date,
-                                    to: to_date
+                                    subscriptionOneGuy: true,
+                                    cardNumber: card_number
                                 }
                             })
                             .done(function (data) {
                                 alertExecutionTime(giveDifferenceInMS(begin));
-                                $("#answerfindcardnumber").empty().append(data);
+                                console.log(data);
                             });
                     },
                     function(){

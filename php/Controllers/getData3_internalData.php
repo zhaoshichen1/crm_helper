@@ -9,7 +9,7 @@
 include "../DB_Managers/MySQL_Manager.php";
 include "../Models/Page.php";
 include "../Models/Functionality_record.php";
-include_once  '../Util/Tool.php';
+include_once '../Util/Tool.php';
 
 $MySqlDB = new stdClass();
 $MySqlDB->host = 'localhost';

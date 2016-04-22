@@ -69,7 +69,7 @@ ini_set('display_errors', 'On');
 <script src="../../js/cbpHorizontalMenu.min.js"></script>
 <script src="../../js/menu/Dashboard.js"></script>
 <script src="../../js/table/jquery.stickyheader.js"></script>
-<script src="../../js/alertify.min.js";></script>
+<script src="../../js/alertify.min.js" ;></script>
 
 <script>
 	$(function() {

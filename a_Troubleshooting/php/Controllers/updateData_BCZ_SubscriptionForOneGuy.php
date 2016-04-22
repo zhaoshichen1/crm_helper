@@ -6,17 +6,16 @@
  * Time: 10:16 AM
  */
 
-include_once '../../../Util/Tool.php';
-include '../DB_Managers/Customer03_Manager.php';
-include '../DB_Managers/BCZ_Manager.php';
-
+include '../../../php/DB_Managers/Customer03_Manager.php';
+include '../../../php/DB_Managers/BCZ_Manager.php';
+include_once  '../../../php/Util/Tool.php';
 /**
  * Set up the CustomerDB basic information for the connection
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
 $CustomerDB->user = 'crm_helper';
-$CustomerDB->password = 'decathlon';
+$CustomerDB->password = 'decathlon1';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 

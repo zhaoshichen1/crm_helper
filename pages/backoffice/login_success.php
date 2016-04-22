@@ -49,7 +49,7 @@ if(!isset($_SESSION['username'])){
                             <div>
                                 <h4>Account</h4>
                                 <ul>
-                                    <li><a href="../../php/Controllers/logout.php">Logout</a></li>
+                                    <li><a href="../../../php/Controllers/logout.php">Logout</a></li>
                                 </ul>
                             </div>
                         </div><!-- /cbp-hrsub-inner -->

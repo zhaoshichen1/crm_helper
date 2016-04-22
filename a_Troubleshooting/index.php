@@ -19,15 +19,15 @@ echo $p
     <title>"H" of Customer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.theme.min.css" media="screen">
-    <link rel="stylesheet" href="css/alertify.min.css">
-    <link rel="stylesheet" href="css/themes/default.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
-    <link rel="stylesheet" href="css/footer-distributed.css">
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.structure.min.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.min.css" media="screen">
+    <link rel="stylesheet" href="../css/alertify.min.css">
+    <link rel="stylesheet" href="../css/themes/default.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="../css/footer-distributed.css">
+    <script src="../js/jquery.js"></script>
   </head>
   <body style="background-color: #f5f5f5">
   <!--
@@ -126,12 +126,15 @@ echo $p
       <div class="footer-left">
 
           <p class="footer-links">
-              <a href="#"></a>
-
-              <a href="https://docs.google.com/spreadsheets/d/1YI82ZDBDmFSFRalvvcYVZAUpkTi2EmoXUuWCOr7sfGY/edit#gid=2022421715">
-                  Project</a>
+              <a href="index.php">Troubleshoot</a>
               ·
-              <a href="https://docs.google.com/a/decathlon.com/forms/d/1Hq3v9bzscrTPlW7e4ZnAra0K-_LTBxYTX8_gD4eWA7A/viewform">Contact</a>
+              <a href="../a_Reporting/index.php">Report</a>
+              ·
+              <a href="../a_Monitoring/index.php">Monitor</a>
+              ·
+              <a href=
+                 "https://docs.google.com/a/decathlon.com/forms/d/1Hq3v9bzscrTPlW7e4ZnAra0K-_LTBxYTX8_gD4eWA7A/viewform">
+                  Contact</a>
           </p>
 
           <p>Provided by Decathlon IT - Asia Commerce Support Team &copy; 2016</p>
@@ -139,8 +142,8 @@ echo $p
 
   </footer>
 
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
 
   <!-- load all the main page JS files -->
   <script src="js/Main_page/Display.js"></script>
@@ -151,10 +154,10 @@ echo $p
   <script src="js/Main_page/Waiting.js"></script>
 
   <!-- incredible beautiful js file -->
-  <script src="js/alertify.min.js"></script>
+  <script src="../js/alertify.min.js"></script>
 
   <!-- nb of execution record js -->
-  <script src="js/BackOffice/nb_execution_record.js"></script>
+  <script src="../js/BackOffice/nb_execution_record.js"></script>
   </body>
 
 </html>

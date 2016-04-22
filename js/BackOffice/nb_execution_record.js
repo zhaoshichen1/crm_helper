@@ -17,7 +17,7 @@ function record_execution(fid) {
     var current_date = d.yyyymmdd();
 
     $.ajax({
-            url: 'php/Controllers/nb_execution_record.php',
+            url: '../php/Controllers/nb_execution_record.php',
             method: 'GET',
             data: {
                 func_id: fid,

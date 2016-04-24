@@ -4,47 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/pages/backoffice/login_success.php" description="&lt;div&gt;" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="modify the link of contact --&gt; use google form">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Google_API/client_id.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/login_failed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/login_form.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/login_success.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/success_modules/function_list.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/backoffice/success_modules/page_list.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/dkcard.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/loyalty.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/purchase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/pages/voucher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/Execution_Record.php" afterPath="" />
+    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a_Monitoring/bower.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a_Monitoring/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/BackOffice/nb_execution_record.js" afterPath="$PROJECT_DIR$/js/BackOffice/nb_execution_record.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/backoffice/index.php" afterPath="$PROJECT_DIR$/pages/backoffice/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/backoffice/login_form.php" afterPath="$PROJECT_DIR$/pages/backoffice/login_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/backoffice/login_success.php" afterPath="$PROJECT_DIR$/pages/backoffice/login_success.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/Controllers/getData3_internalData.php" afterPath="$PROJECT_DIR$/php/Controllers/getData3_internalData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/Controllers/login.php" afterPath="$PROJECT_DIR$/php/Controllers/login.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Google_API/quickstart_test.php" afterPath="$PROJECT_DIR$/a_Reporting/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/pages/points.php" afterPath="$PROJECT_DIR$/a_Monitoring/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Display.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Display.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Select_Scripts.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Select_Scripts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Time&amp;Record.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Time&amp;Record.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Triggers.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Triggers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Update_Scripts.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Update_Scripts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/Main_page/Waiting.js" afterPath="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Waiting.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/customer.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/customer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/dkcard.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/dkcard.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/loyalty.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/loyalty.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/points.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/points.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/purchase.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/purchase.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/voucher.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/pages/voucher.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Controllers/getData_BCZ_All.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_BCZ_All.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_BCZ_PurchaseCompleteCSV.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Controllers/getData_BCZ_PurchaseTransferCSV.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_BCZ_PurchaseTransferCSV.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Controllers/getData_Customer03.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_Customer03.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" afterPath="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" />
     </list>
     <ignored path="crm_helper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,123 +30,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="updateData_BCZ_SubscriptionForOneGuy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a_Troubleshooting/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a_Reporting/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.107143">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.071429">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="77" />
               <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1461300326928" expanded="true" signature="1515:1570" placeholder="select id fr... personne" />
-                <marker date="1461300326928" expanded="true" signature="1515:1572" placeholder="select id fr... personne" />
-                <marker date="1461300326928" expanded="true" signature="1515:1585" placeholder="select id fr... personne" />
-                <marker date="1461300326928" expanded="true" signature="1515:1650" placeholder="select * fro... ${$response}" />
-                <marker date="1461300326928" expanded="true" signature="2256:2310" placeholder="select per_i... compte_fid" />
-                <marker date="1461300326928" expanded="true" signature="2256:2323" placeholder="select per_i... compte_fid" />
-                <marker date="1461300326928" expanded="true" signature="2256:2324" placeholder="select per_i... compte_fid" />
-                <marker date="1461300326928" expanded="true" signature="2498:2530" placeholder="insert into compte_fid... " />
-                <marker date="1461300326928" expanded="true" signature="2498:2545" placeholder="insert into compte_fid... " />
-                <marker date="1461300326928" expanded="true" signature="2498:2559" placeholder="insert into compte_fid... " />
-                <marker date="1461300326928" expanded="true" signature="2707:2769" placeholder="select * fro... histo_adhesion_fid" />
-                <marker date="1461300326928" expanded="true" signature="2707:2799" placeholder="select * fro... histo_adhesion_fid" />
-                <marker date="1461300326928" expanded="true" signature="2879:2919" placeholder="insert into histo_adhesion_fid... " />
-                <marker date="1461300326928" expanded="true" signature="2879:2977" placeholder="insert into histo_adhesion_fid... " />
-                <marker date="1461300326928" expanded="true" signature="2879:2979" placeholder="insert into histo_adhesion_fid... " />
+                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer03_Manager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0328152">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/index.php">
+        <entry file="file://$PROJECT_DIR$/a_Troubleshooting/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="27.821428">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/login_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7142856">
-              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData3_internalData.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/Controllers/getData3_internalData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19689119">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/success_modules/page_list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/success_modules/function_list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_failed.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/login_failed.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_success.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/backoffice/login_success.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData_Customer03.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_Customer03.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="27.142857">
-              <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
               <folding>
-                <marker date="1461300230565" expanded="true" signature="1161:1371" placeholder="select count... tel_portable" />
-                <marker date="1461300230565" expanded="true" signature="1183:1360" placeholder="select tel_p... personne" />
-                <marker date="1461300230565" expanded="true" signature="1535:1755" placeholder="select sum(r... tel_portable" />
-                <marker date="1461300230565" expanded="true" signature="1562:1744" placeholder="select tel_p... personne" />
+                <marker date="1461226544043" expanded="true" signature="3260:3447" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -194,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -206,9 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/backoffice/index.php" />
-        <option value="$PROJECT_DIR$/pages/backoffice/success_modules/function_list.php" />
-        <option value="$PROJECT_DIR$/js/BackOffice/nb_execution_record.js" />
         <option value="$PROJECT_DIR$/pages/backoffice/success_modules/record_list.php" />
         <option value="$PROJECT_DIR$/Google_API/client_id.json" />
         <option value="$PROJECT_DIR$/Google_API/quickstart_test.php" />
@@ -246,8 +120,6 @@
         <option value="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Waiting.js" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/js/BackOffice/nb_execution_record.js" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/index.php" />
-        <option value="$PROJECT_DIR$/a_Reporting/index.php" />
-        <option value="$PROJECT_DIR$/a_Monitoring/index.php" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/js/Main_page/Select_Scripts.js" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_BCZ_All.php" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData3_internalData.php" />
@@ -257,6 +129,11 @@
         <option value="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/updateData_BCZ_SubscriptionForOneGuy.php" />
         <option value="$PROJECT_DIR$/pages/backoffice/login_form.php" />
         <option value="$PROJECT_DIR$/php/Controllers/getData3_internalData.php" />
+        <option value="$PROJECT_DIR$/a_Reporting/index.php" />
+        <option value="$PROJECT_DIR$/a_Monitoring/less/sb-admin-2.less" />
+        <option value="$PROJECT_DIR$/a_Monitoring/js/sb-admin-2.js" />
+        <option value="$PROJECT_DIR$/a_Monitoring/dashboard.html" />
+        <option value="$PROJECT_DIR$/a_Monitoring/index.php" />
       </list>
     </option>
   </component>
@@ -372,6 +249,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a_Troubleshooting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a_Reporting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a_Monitoring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a_Monitoring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -382,17 +333,18 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\wamp32\www\HOC\js\BackOffice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\wamp32\www\HOC\php\Controllers" />
-      <recent name="D:\wamp32\www\HOC\pages" />
-      <recent name="D:\wamp32\www\HOC\a_Troubleshooting\php" />
-      <recent name="D:\wamp32\www\HOC\js\BackOffice" />
-      <recent name="D:\wamp32\www\HOC\a_Troubleshooting\js\BackOffice" />
+      <recent name="D:\wamp32\www\HOC\a_Monitoring" />
+      <recent name="D:\wamp32\www\HOC\a_Monitoring\less" />
+      <recent name="D:\wamp32\www\HOC\less" />
+      <recent name="D:\wamp32\www\HOC\a_Monitoring\css" />
+      <recent name="D:\wamp32\www\HOC\a_Monitoring\js" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.crm_helper">
@@ -492,7 +444,19 @@
       <option name="project" value="LOCAL" />
       <updated>1461138702708</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="re-change the structure to have reporting/monitoring/troubleshooting equivalent folders">
+      <created>1461301293170</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1461301293170</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add new index.php for monitoring &amp; reporting">
+      <created>1461302612734</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1461302612734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -500,11 +464,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36530015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36530015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -542,7 +506,9 @@
     <MESSAGE value="The BCZ_Manager is not working properly: root cause: the call to Tool.php. Changed the structure in order to solve this problem." />
     <MESSAGE value="Subscription for one guy finished ( front - office &amp; back - office )" />
     <MESSAGE value="modify the link of contact --&gt; use google form" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify the link of contact --&gt; use google form" />
+    <MESSAGE value="re-change the structure to have reporting/monitoring/troubleshooting equivalent folders" />
+    <MESSAGE value="add new index.php for monitoring &amp; reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new index.php for monitoring &amp; reporting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,62 +532,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/Log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/alertify.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/BackOffice/display_function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/BackOffice/display_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a_Troubleshooting/pages/customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-33.25">
@@ -771,7 +681,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -800,37 +710,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a_Reporting/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.25">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/BackOffice/nb_execution_record.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a_Troubleshooting/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6491227">
-          <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
-          <folding>
-            <marker date="1461226544043" expanded="true" signature="3260:3447" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,7 +807,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1037,8 +921,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/Controllers/getData3_internalData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19689119">
+        <state vertical-scroll-proportion="-4.071429">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_Reporting/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_Troubleshooting/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <marker date="1461226544043" expanded="true" signature="3260:3447" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0328152">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

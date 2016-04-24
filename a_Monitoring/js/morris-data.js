@@ -1,115 +1,58 @@
 $(function() {
 
-    Morris.Area({
+    /**
+     * simulation datas got from API
+     * @type {Array}
+     */
+    var testLoyalty = new Array(new Array("2016-04-17",30000),new Array("2016-04-18",8000),new Array("2016-04-19",24000),
+        new Array("2016-04-20",7800),new Array("2016-04-21",20000)
+        ,new Array("2016-04-22",82222),new Array("2016-04-23",9333));
+    
+    var testCustomer = new Array(new Array("2016-04-17",20044),new Array("2016-04-18",18000),new Array("2016-04-19",4000),
+        new Array("2016-04-20",7000),new Array("2016-04-21",12000)
+        ,new Array("2016-04-22",8222),new Array("2016-04-23",19333));
+
+    /**
+     * build up the array of data for the graph
+     * @param loyalty_result
+     * @param customer_result
+     * @returns {Array}
+     */
+    function buildUpMorrisArea7Days(loyalty_result,customer_result){
+        var xkeys = 'day';
+        var ykeys = ['OneID', 'Loyalty', 'Gap'];
+        var labels = ykeys;
+    
+        var data = new Array();
+    
+        /**
+         * build up the array of data with the data from Loyalty Result & Customer Result
+         */
+        for(var i=0;i<loyalty_result.length;i++){
+            var oneDay = {
+                day:customer_result[i][0],
+                OneID:customer_result[i][1],
+                Loyalty:loyalty_result[i][1],
+                Gap:Math.abs(customer_result[i][1]-loyalty_result[i][1])
+            };
+            data.push(oneDay);
+        }
+    
+        return data;
+    }
+    
+    var data_n = buildUpMorrisArea7Days(testLoyalty,testCustomer);
+
+    /**
+     * declare this Morris graph
+     */
+    var graph = Morris.Area({
         element: 'morris-area-chart',
-        data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
-        }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
-        }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
-        }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
-        }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
-        }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
-        }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
-        }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
-        }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
-        }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        data: data_n,
+        xkey: 'day',
+        ykeys: ['OneID', 'Loyalty', 'Gap'],
+        labels: ['OneID', 'Loyalty', 'Gap'],
         pointSize: 2,
-        hideHover: 'auto',
-        resize: true
-    });
-
-    Morris.Donut({
-        element: 'morris-donut-chart',
-        data: [{
-            label: "Download Sales",
-            value: 12
-        }, {
-            label: "In-Store Sales",
-            value: 30
-        }, {
-            label: "Mail-Order Sales",
-            value: 20
-        }],
-        resize: true
-    });
-
-    Morris.Bar({
-        element: 'morris-bar-chart',
-        data: [{
-            y: '2006',
-            a: 100,
-            b: 90
-        }, {
-            y: '2007',
-            a: 75,
-            b: 65
-        }, {
-            y: '2008',
-            a: 50,
-            b: 40
-        }, {
-            y: '2009',
-            a: 75,
-            b: 65
-        }, {
-            y: '2010',
-            a: 50,
-            b: 40
-        }, {
-            y: '2011',
-            a: 75,
-            b: 65
-        }, {
-            y: '2012',
-            a: 100,
-            b: 90
-        }],
-        xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
         hideHover: 'auto',
         resize: true
     });

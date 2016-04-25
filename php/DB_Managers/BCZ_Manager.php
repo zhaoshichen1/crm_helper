@@ -74,8 +74,8 @@ class BCZ_Manager{
 	 * Set up the content of the query
 	 * @param $query
 	 */
-	private function setQuery($query){
-		$this->query = mssql_query($query);
+	public function setQuery($query){
+		return $this->query = mssql_query($query);
 	}
 
 	/**

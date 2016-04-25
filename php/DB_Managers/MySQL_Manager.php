@@ -12,7 +12,6 @@ error_reporting(-1);
 
 ini_set('display_errors', 'On');
 
-include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.
@@ -136,6 +135,7 @@ class MySQL_Manager{
         $date = date("D M d, Y G:i");
         openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
+        return $result;
     }
 
     public function queryMultiple($query){

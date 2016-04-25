@@ -89,8 +89,8 @@ ini_set('display_errors', 'On');
                                 <i class="fa fa-close fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>Unsubscribed - CN</div>
+                                <div class="huge" id="numberThirty">26</div>
+                                <div>Unsubscribed - CN</br>Last 30 days</div>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-green">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-tasks fa-5x"></i>
@@ -113,7 +113,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-yellow">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-shopping-cart fa-5x"></i>
@@ -128,7 +128,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-red">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-support fa-5x"></i>
@@ -209,7 +209,7 @@ ini_set('display_errors', 'On');
     <div class="footer-left">
 
         <p class="footer-links">
-            <a href="index.php">Troubleshoot</a>
+            <a href="../a_Troubleshooting/index.php">Troubleshoot</a>
             ·
             <a href="../a_Reporting/index.php">Report</a>
             ·

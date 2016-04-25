@@ -16,7 +16,7 @@ ini_set('display_errors', 'On');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>"H" of Customer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@ ini_set('display_errors', 'On');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">"H" of Customer</a>
+            <a class="navbar-brand" href="index.php">"H" of Customer</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -63,7 +63,12 @@ ini_set('display_errors', 'On');
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Unsubscribed - CN</a>
                     </li>
                 </ul>
             </div>

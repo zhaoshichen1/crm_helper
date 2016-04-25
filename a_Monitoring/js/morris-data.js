@@ -1,16 +1,74 @@
-$(function() {
+/**
+ * get 30 day's data from RFN's API and display in the front-office
+ */
+function set30DaysData(){
 
-    /**
-     * simulation datas got from API
-     * @type {Array}
-     */
-    var testLoyalty = new Array(new Array("2016-04-17",30000),new Array("2016-04-18",8000),new Array("2016-04-19",24000),
-        new Array("2016-04-20",7800),new Array("2016-04-21",20000)
-        ,new Array("2016-04-22",82222),new Array("2016-04-23",9333));
-    
-    var testCustomer = new Array(new Array("2016-04-17",20044),new Array("2016-04-18",18000),new Array("2016-04-19",4000),
-        new Array("2016-04-20",7000),new Array("2016-04-21",12000)
-        ,new Array("2016-04-22",8222),new Array("2016-04-23",19333));
+    $.ajax({
+            url: 'php/Controllers/getData_Monitor_Unsubscription.php',
+            method: 'GET',
+            data: {
+                unsubscribed_all: true
+            }
+        })
+        .done(function (data) {
+            document.getElementById("numberThirty").textContent = data;
+            console.log(data);
+        });
+}
+
+// update the last 30 days - data
+set30DaysData();
+
+var BCZ_data,Customer03_data,debug;
+
+function get7DaysData(){
+
+    // get BCZ 7 days - data
+    $.ajax({
+            url: 'php/Controllers/getData_Monitor_Unsubscription.php',
+            method: 'GET',
+            data: {
+                unsubscribed_all: false,
+                DataType: "BCZ"
+            }
+        })
+        .done(function (data) {
+            BCZ_data = JSON.parse(data);
+
+            // get Customer03 7 days - data
+            $.ajax({
+                    url: 'php/Controllers/getData_Monitor_Unsubscription.php',
+                    method: 'GET',
+                    data: {
+                        unsubscribed_all: false,
+                        DataType: "Customer03"
+                    }
+                })
+                .done(function (data) {
+                    Customer03_data = JSON.parse(data);
+                    var data_N = (buildUpMorrisArea7Days(BCZ_data,Customer03_data));
+
+                    /**
+                     * declare this Morris graph
+                     */
+                    debug = Morris.Line({
+                        element: 'morris-area-chart',
+                        data: data_N,
+                        xkey: 'day',
+                        ykeys: ['OneID', 'Loyalty', 'Gap'],
+                        labels: ['OneID', 'Loyalty', 'Gap'],
+                        pointSize: 2,
+                        hideHover: 'auto',
+                        parseTime:false,
+                        resize: true
+                    });
+                });
+        });
+
+}
+
+// set up the graph part of gaps
+get7DaysData();
 
     /**
      * build up the array of data for the graph
@@ -18,43 +76,37 @@ $(function() {
      * @param customer_result
      * @returns {Array}
      */
-    function buildUpMorrisArea7Days(loyalty_result,customer_result){
+    function buildUpMorrisArea7Days(lr,cr){
         var xkeys = 'day';
         var ykeys = ['OneID', 'Loyalty', 'Gap'];
         var labels = ykeys;
-    
+
         var data = new Array();
     
         /**
          * build up the array of data with the data from Loyalty Result & Customer Result
          */
-        for(var i=0;i<loyalty_result.length;i++){
+        for(var i=0;i<lr.length;i++){
             var oneDay = {
-                day:customer_result[i][0],
-                OneID:customer_result[i][1],
-                Loyalty:loyalty_result[i][1],
-                Gap:Math.abs(customer_result[i][1]-loyalty_result[i][1])
+                day:lr[i][0],
+                OneID:cr[i][1],
+                Loyalty:lr[i][1],
+                Gap:Math.abs(cr[i][1]-lr[i][1])
             };
             data.push(oneDay);
         }
-    
+
+        for(var i=lr.length;i<7;i++){
+            var oneDay = {
+                day:'--',
+                OneID:0,
+                Loyalty:0,
+                Gap:0
+            };
+            data.push(oneDay);
+        }
+
         return data;
     }
-    
-    var data_n = buildUpMorrisArea7Days(testLoyalty,testCustomer);
 
-    /**
-     * declare this Morris graph
-     */
-    var graph = Morris.Area({
-        element: 'morris-area-chart',
-        data: data_n,
-        xkey: 'day',
-        ykeys: ['OneID', 'Loyalty', 'Gap'],
-        labels: ['OneID', 'Loyalty', 'Gap'],
-        pointSize: 2,
-        hideHover: 'auto',
-        resize: true
-    });
 
-});

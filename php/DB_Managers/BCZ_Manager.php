@@ -11,7 +11,7 @@ date_default_timezone_set("Asia/Hong_Kong");
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-//include_once  '../Util/Tool.php';
+
 
 /**
  * Class Manager - used for Loyalty
@@ -75,8 +75,7 @@ class BCZ_Manager{
 	 * @param $query
 	 */
 	public function setQuery($query){
-		$this->query = mssql_query($query);
-		return $this->query;
+		return $this->query = mssql_query($query);
 	}
 
 	/**

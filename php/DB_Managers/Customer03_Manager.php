@@ -11,7 +11,6 @@ date_default_timezone_set("Asia/Hong_Kong");
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-//include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.
@@ -82,8 +81,7 @@ class Customer03_Manager{
      * @param $query
      */
     public function setQuery($query){
-        $this->query = pg_query($this->session,$query);
-        return $this->query;
+        return $this->query = pg_query($this->session,$query);
     }
 
     /**

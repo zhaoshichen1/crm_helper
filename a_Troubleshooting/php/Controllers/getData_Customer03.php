@@ -70,6 +70,26 @@ having count(*) >1) as result";;
         print $response->sum;
     }
 
+    /**
+     * if the user provides an email to search
+     */
+    if(isset($_GET['email_key'])){
+        $search_query = "select type_member,numero_carte from Customer03.personne where email = '"+$_GET['email_key']+
+            "'";
+        $response = $CustomerManager->query($account_query);
+        var_dump($response);
+    }
+
+    /**
+     * if the customer provideds the tel number to search
+     */
+    if(isset($_GET['tel_key'])){
+        $search_query = "select type_member,numero_carte from Customer03.personne where tel_portable = '"+$_GET['tel_key']+
+            "'";
+        $response = $CustomerManager->query($account_query);
+        var_dump($response);
+    }
+
 }
 
 get_customer($CustomerDB);

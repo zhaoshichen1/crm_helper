@@ -117,6 +117,47 @@ function displayTheTransferRecord(response,card_number){
     $("#treat").empty();
 }
 
+var debug;
+
+/**
+ * the function to show the result
+ * @param json_result
+ */
+function display_customer_type(json_result){
+
+    debug = json_result;
+
+    var real_result = JSON.parse(json_result);
+
+    if(real_result.length ==0 ){
+        $("#answerCheck").empty().append("No information has been found");
+        return;
+    }
+
+    var string_to_show = "";
+
+        switch(real_result[0][0]){
+            case "1":
+                string_to_show+= "Temp Customers - No Loyalty, Not recommended to use";
+                break;
+            case "2":
+                string_to_show+="Offline Customers - Need to activate on .CN";
+                break;
+            case "3":
+                string_to_show+="Complete Customers";
+                break;
+            default:
+                string_to_show+=real_result[0][0];
+                break;
+        }
+    string_to_show+=" --> "+real_result[0][1];
+
+    $("#answerCheck").empty().append(string_to_show);
+}
+
+/**
+ * time range choice functions for purchase
+ */
 function click_on_custom(){
     document.getElementById("ChooseTime").style.display = "";
     document.getElementById("ButtonTime").textContent = "Custom Range"
@@ -125,4 +166,19 @@ function click_on_custom(){
 function click_on_From_Begin(){
     document.getElementById("ChooseTime").style.display = "none";
     document.getElementById("ButtonTime").textContent = "From Beginning";
+}
+
+/**
+ * Email/Tel choice function
+ */
+function click_on_Email(){
+    document.getElementById("emailRow").style.display = "";
+    document.getElementById("telRow").style.display = "none";
+    document.getElementById("ButtonCheck").textContent = "Email"
+}
+
+function click_on_Tel(){
+    document.getElementById("emailRow").style.display = "none";
+    document.getElementById("telRow").style.display = "";
+    document.getElementById("ButtonCheck").textContent = "Telephone";
 }

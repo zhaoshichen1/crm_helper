@@ -34,3 +34,7 @@ function waitingtransfer(){
 function waitingCompletePurchase(){
     $("#answerCompletePurchase").empty().append('<img src="../images/squares.svg" alt="loading" style="width:120px; left: 40%;"/>');
 }
+
+function waitingCustomerCheck(){
+    $("#answerCheck").empty().append('<img src="../images/squares.svg" alt="loading" style="width:120px; left: 40%;"/>');
+}

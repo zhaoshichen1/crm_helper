@@ -50,6 +50,13 @@ $("#triggerCompletePurchase").keypress(function (e) {
     }
 });
 
+$("#triggerCustomerCheck").keypress(function (e) {
+    if (e.which == 13) {
+        getCustomerCheckType();
+    }
+});
+
+
 $('#myButton').click(function(){
     // clean last result
     $("#answerDup").empty();

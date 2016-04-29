@@ -335,4 +335,165 @@ having count(*) >1) as result
 Execution Duration is 0 ms
 
 
+test - 25th
+
+test - 25th
+
+Date: Mon Apr 25, 2016 23:42
+Query: select * from nb_execution where func_id = 500002 and date_exec = '2016-04-25'
+Execution Duration is 0.00051307678222656 ms
+
+
+Date: Mon Apr 25, 2016 23:42
+Query: update nb_execution set nb = nb+1 where func_id = 500002 and date_exec = '2016-04-25';
+Execution Duration is 0.00020003318786621 ms
+
+
+Date: Mon Apr 25, 2016 23:42
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.27261805534363 ms
+
+
+test - 25th
+
+Date: Mon Apr 25, 2016 23:42
+Query: select * from nb_execution where func_id = 500002 and date_exec = '2016-04-25'
+Execution Duration is 0.00035500526428223 ms
+
+
+Date: Mon Apr 25, 2016 23:42
+Query: update nb_execution set nb = nb+1 where func_id = 500002 and date_exec = '2016-04-25';
+Execution Duration is 0.0001678466796875 ms
+
+
+Date: Mon Apr 25, 2016 23:42
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.29865002632141 ms
+
+
+Date: Mon Apr 25, 2016 23:43
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.30703902244568 ms
+
+
+Date: Mon Apr 25, 2016 23:44
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.29491090774536 ms
+
+
+Date: Mon Apr 25, 2016 23:44
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000055555
+Execution Duration is 0.31294202804565 ms
+
+
+Date: Mon Apr 25, 2016 23:44
+Query: 13052104214
+Execution Duration is 0.017584085464478 ms
+
+
+Date: Mon Apr 25, 2016 23:46
+Query: 13052104214
+Execution Duration is 0.01777982711792 ms
+
+
+Date: Mon Apr 25, 2016 23:46
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.10253596305847 ms
+
+
+Date: Mon Apr 25, 2016 23:46
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.020472049713135 ms
+
+
+Date: Mon Apr 25, 2016 23:47
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.021734952926636 ms
+
+
+Date: Mon Apr 25, 2016 23:47
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 10.270107030869 ms
+
+
+Date: Tue Apr 26, 2016 0:08
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 10.10293507576 ms
+
+
+Date: Tue Apr 26, 2016 0:09
+Query: select type_member,numero_carte from Customer03.personne where email = '2090000011111'
+Execution Duration is 8.0484759807587 ms
+
+
+Date: Tue Apr 26, 2016 0:10
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 7.7967178821564 ms
+
+
+Date: Tue Apr 26, 2016 0:12
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000055555
+Execution Duration is 0.30347585678101 ms
+
+
+Date: Tue Apr 26, 2016 0:16
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.02059006690979 ms
+
+
+Date: Tue Apr 26, 2016 0:17
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.020929098129272 ms
+
+
+Date: Tue Apr 26, 2016 0:17
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.02048397064209 ms
+
+
+Date: Tue Apr 26, 2016 0:17
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2095555566666
+Execution Duration is 0.29915690422058 ms
+
+
+Date: Tue Apr 26, 2016 0:18
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 10.616743803024 ms
+
+
+Date: Tue Apr 26, 2016 0:19
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 7.7058870792389 ms
+
+
+Date: Tue Apr 26, 2016 0:21
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 8.008327960968 ms
+
+
+Date: Tue Apr 26, 2016 0:22
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 7.649111032486 ms
+
+
+Date: Tue Apr 26, 2016 0:23
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 7.720862865448 ms
+
+
+Date: Tue Apr 26, 2016 0:25
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 7.8691370487213 ms
+
+
+Date: Tue Apr 26, 2016 0:27
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 9.4164180755615 ms
+
+
+Date: Tue Apr 26, 2016 15:32
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.074413061141968 ms
+
+
 

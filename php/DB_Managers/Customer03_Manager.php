@@ -11,7 +11,6 @@ date_default_timezone_set("Asia/Hong_Kong");
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.
@@ -81,8 +80,8 @@ class Customer03_Manager{
      * Set up the content of the query and run the query
      * @param $query
      */
-    private function setQuery($query){
-        $this->query = pg_query($this->session,$query);
+    public function setQuery($query){
+        return $this->query = pg_query($this->session,$query);
     }
 
     /**
@@ -126,7 +125,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $data;
     }
@@ -138,9 +137,10 @@ class Customer03_Manager{
          */
         $msc = microtime(true);
 
-        $this->setQuery($query);
+
         $result = array();
-        while($response = pg_fetch_row($this->session,$this->query)) {
+        $this->setQuery($query);
+        while($response = pg_fetch_row($this->query)) {
             array_push($result,$response);
         }
 
@@ -149,7 +149,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $result;
     }
@@ -176,7 +176,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
     }
 }

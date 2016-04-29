@@ -267,7 +267,7 @@ function getCompletePurchaseHistory() {
      */
     record_execution(500006);
 
-    console.log("dsa");
+    var begin = noteCurrentSecond();
 
     waitingCompletePurchase();
     var card_number = $("#cardCompletePurchase").val();
@@ -303,5 +303,61 @@ function getCompletePurchaseHistory() {
                 window.location = 'php/Controllers/getData_BCZ_PurchaseCompleteCSV.php?fromBegin=true&numbercardcompletepurchase='+card_number+'&from='+from+'&to='+to;
             }
         }
+
+}
+
+/**
+ * get the complete purchase history of one guy, and generate a csv file to download
+ *
+ * FUNC_ID = 500007
+ */
+function getCustomerCheckType() {
+
+    /**
+     * record the execution numbers
+     */
+    record_execution(500007);
+
+    var begin = noteCurrentSecond();
+    waitingCustomerCheck();
+    
+    var email = $("#emailCheck").val();
+    var tel = $("#telCheck").val();
+
+    // if choose Email
+    if(document.getElementById("telRow").style.display == "none"){
+        var email = $("#emailCheck").val();
+        $.ajax({
+                url: "php/Controllers/getData_Customer03.php",
+                method: "GET",
+                data: {
+                    email_key: email
+                }
+            })
+            .done(function (data) {
+
+                console.log(data);
+                display_customer_type(data);
+                alertExecutionTime(giveDifferenceInMS(begin));
+            });
+    }
+
+    else{
+        var tel = $("#telCheck").val();
+        $.ajax({
+                url: "php/Controllers/getData_Customer03.php",
+                method: "GET",
+                data: {
+                    tel_key: tel
+                }
+            })
+            .done(function (data) {
+
+                console.log(data);
+                display_customer_type(data);
+                alertExecutionTime(giveDifferenceInMS(begin));
+            });
+    }
+
 
 }

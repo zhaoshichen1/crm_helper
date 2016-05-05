@@ -43,10 +43,27 @@ $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
+/**
+ * for test
+ */
+if(isset($_GET['shichen_test'])){
+    recover_last_thirty_days($CustomerDB,$MySqlDB,$LoyaltyDB);
+}
+
 if (isset($_GET['unsubscribed_all'])){
 
-    insert_Customer03_subscription($CustomerDB,$MySqlDB);
-    insert_BCZ_subscription($LoyaltyDB,$MySqlDB);
+    /**
+     * if we get the value force_update, we will force the refresh of the Data in our MySQL DB
+     */
+    if(isset($_GET['force_update'])){
+        insert_Customer03_subscription($CustomerDB,$MySqlDB,true);
+        insert_BCZ_subscription($LoyaltyDB,$MySqlDB,true);
+
+    }
+    else{
+        insert_Customer03_subscription($CustomerDB,$MySqlDB,false);
+        insert_BCZ_subscription($LoyaltyDB,$MySqlDB,false);
+    }
 
     if ($_GET['unsubscribed_all'] == 'true'){
         $total_Gap = get_Total_gap($MySqlDB);
@@ -66,12 +83,69 @@ if (isset($_GET['unsubscribed_all'])){
     else return 'Invalid input';
 }
 
+
+/**
+ * one method - will be called by a button from front-end
+ * to compare the data retrieved from Customer 03 & BCZ
+ * and then generate correction scripts to run in BCZ database
+ * - NB: need password to do this operation
+ *
+ */
+function recover_last_thirty_days($db_c,$db_m,$db_l){
+
+    /**
+     * first update our data in MySQL Database, not force them to update if data already exists
+     */
+    insert_Customer03_subscription($db_c,$db_m,false);
+    insert_BCZ_subscription($db_l,$db_m,false);
+
+    /**
+     * note the time before the execution
+     */
+    $msc = microtime(true);
+
+    /**
+     * init the object to manage the connection with MySQL
+     */
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+
+    var_dump($MySqlManager);
+
+    /**
+     * the request to find out the customers existing in Customer 03 not in BCZ during last 30 days from MySQL DB
+     */
+    $sql_Diff = "select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;";
+
+    $data = mysql_query($sql_Diff,$MySqlManager->session);
+    var_dump(mysql_fetch_row($data));
+//
+//    /**
+//     * the array that contains the Diff
+//     */
+//    $Result_real = $MySqlManager->queryMultiple($sql_Diff);// or die('Cannot select BCZ_subscription'.mysql_error());
+//    $diff = microtime(true)-$msc;
+//
+//    /**
+//     * write in the log
+//     */
+//    $date = date("D M d, Y G:i");
+//    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Diff."\n\rExecution Duration is ".$diff." ms\n\r");
+//
+//    /**
+//     * print the result
+//     */
+//    print json_encode($Result_real);
+}
+
 /**
  * The objective is to receive requests from ajax,
  * Then return data and arrays in format of array.
  */
 
-function insert_Customer03_subscription($db_c, $db_m)
+function insert_Customer03_subscription($db_c, $db_m,$force_update)
 {
 
     /**
@@ -84,22 +158,34 @@ function insert_Customer03_subscription($db_c, $db_m)
     $msc = microtime(true);
 
     /**
-     * check the flag
+     * if we are not asked to refresh the data, we will check the Flag
      */
-    $result = $MySqlManager->query("select * from Customer03_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
+    if($force_update == false){
+        /**
+         * check the flag
+         */
+        $result = $MySqlManager->query("select * from Customer03_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
 
-    // if the result is empty
-    if(!$result){
+        // if the result is empty
+        if(!$result){
 
-       // we will continue to insert new data
-        // so delete this flag to have a new one after
+            // we will continue to insert new data
+            // so delete this flag to have a new one after
+            $MySqlManager->queryUpdate("delete from Customer03_subscription where id = \"update_time\"");
+        }
+        else{
+            // we do nothing and quit
+            // will not update
+            return;
+        }
+    }
+    /**
+     * else means we are forced to update
+     */
+    else{
         $MySqlManager->queryUpdate("delete from Customer03_subscription where id = \"update_time\"");
     }
-    else{
-        // we do nothing and quit
-        // will not update
-        return;
-    }
+
 
     /**
      * clean old data
@@ -145,7 +231,7 @@ function insert_Customer03_subscription($db_c, $db_m)
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert Customer03_subscription\n\rExecution Duration is ".$diff." ms\n\r");
 }
 
-function insert_BCZ_subscription($db_b, $db_m)
+function insert_BCZ_subscription($db_b, $db_m,$force_update)
 {
 
     /**
@@ -158,21 +244,30 @@ function insert_BCZ_subscription($db_b, $db_m)
     $msc = microtime(true);
 
     /**
-     * check the flag
+     * same meaning as the Customer 03 one
      */
-    $result = $MySqlManager->query("select * from BCZ_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
+    if($force_update == false){
+        /**
+         * check the flag
+         */
+        $result = $MySqlManager->query("select * from BCZ_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
 
-    // if the result is empty
-    if(!$result){
-        // we will continue to insert new data
-        // so delete this flag to have a new one after
-        $MySqlManager->queryUpdate("delete from BCZ_subscription where id = \"update_time\"");
+        // if the result is empty
+        if(!$result){
+            // we will continue to insert new data
+            // so delete this flag to have a new one after
+            $MySqlManager->queryUpdate("delete from BCZ_subscription where id = \"update_time\"");
+        }
+        else{
+            // we do nothing and quit
+            // will not update
+            return;
+        }
     }
     else{
-        // we do nothing and quit
-        // will not update
-        return;
+        $MySqlManager->queryUpdate("delete from BCZ_subscription where id = \"update_time\"");
     }
+
 
     $MySqlManager->queryUpdate("delete from testDB.BCZ_subscription;");// or die('Cannot drop table'.mysql_error());
     /*$sql_create = "create table testDB.BCZ_subscription (
@@ -213,8 +308,8 @@ function get_Customer03_subscription($db_m)
     $msc = microtime(true);
     $sql_Customer03_count_7 = "select date_creation, count(*) 
             from testDB.Customer03_subscription 
-            where date_creation <= curdate()-1
-            and date_creation >= curdate()-7
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
             group by date_creation;";
     $Customer03_subscription_count_7 = $MySqlManager->queryMultiple($sql_Customer03_count_7);// or die('Cannot select Customer03_subscription'.mysql_error());
     $diff = microtime(true)-$msc;
@@ -231,8 +326,8 @@ function get_BCZ_subscription($db_m)
             from testDB.Customer03_subscription c
             inner join testDB.BCZ_subscription b
             on c.id = b.id and c.numero_carte = b.numero_carte
-            where c.date_creation <= curdate()-1
-            and c.date_creation >= curdate()-7
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
             group by c.date_creation;";
     $BCZ_subscription_count_7 = $MySqlManager->queryMultiple($sql_BCZ_count_7);// or die('Cannot select BCZ_subscription'.mysql_error());
     $diff = microtime(true)-$msc;
@@ -255,8 +350,8 @@ function get_Total_gap($db_m){
     // count how many person in Customer 03 created last 30 days
     $sql_Customer03_count_30 = "select count(*)
                 from testDB.Customer03_subscription 
-                where date_creation <= curdate()-1
-                and date_creation >= curdate()-30;";
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);";
     $Customer03_subscription_count_30 = $MySqlManager->queryUpdate($sql_Customer03_count_30);// or die('Cannot select Customer03_subscription total'.mysql_error());
     $Customer03_subscription_count_total = mysql_fetch_row($Customer03_subscription_count_30);
 
@@ -265,8 +360,8 @@ function get_Total_gap($db_m){
                 from testDB.Customer03_subscription c
                 inner join testDB.BCZ_subscription b
                 on c.id = b.id and c.numero_carte = b.numero_carte
-                where c.date_creation <= curdate()-1
-                and c.date_creation >= curdate()-30;";
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);";
     $BCZ_subscription_count_30 = $MySqlManager->queryUpdate($sql_BCZ_count_30);// or die('Cannot select BCZ_subscription total'.mysql_error());
     $BCZ_subscription_count_total = mysql_fetch_row($BCZ_subscription_count_30);
 

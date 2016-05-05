@@ -38,8 +38,8 @@ $LoyaltyDB->port = 1433;
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
-$CustomerDB->user = 'crm_helper';
-$CustomerDB->password = 'decathlon1';
+$CustomerDB->user = 'szhao30';
+$CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 

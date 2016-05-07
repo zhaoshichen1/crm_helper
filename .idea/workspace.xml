@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/Util/Test_of_OMS.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" afterPath="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" afterPath="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" />
     </list>
     <ignored path="crm_helper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,33 +57,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData_Monitor_Unsubscription.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getData_Monitor_Unsubscription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="718">
+              <caret line="281" column="65" selection-start-line="281" selection-start-column="65" selection-end-line="281" selection-end-column="65" />
               <folding>
-                <element signature="n#insert_Customer03_subscription#0;n#!!top" expanded="false" />
-                <element signature="n#insert_BCZ_subscription#0;n#!!top" expanded="false" />
-                <marker date="1462464492000" expanded="true" signature="3201:3325" placeholder="select c.dat... Customer03_subscription" />
-                <marker date="1462464492000" expanded="true" signature="4663:4775" placeholder="select * fro... Customer03_subscription" />
-                <marker date="1462464492000" expanded="true" signature="4988:5050" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="5287:5349" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="5431:5473" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="5949:6442" placeholder="select to_ch... personne" />
-                <marker date="1462464492000" expanded="true" signature="6682:6778" placeholder="insert into testDB.Customer03_subscription... " />
-                <marker date="1462464492000" expanded="true" signature="6929:7031" placeholder="insert into Customer03_subscription... " />
-                <marker date="1462464492000" expanded="true" signature="7874:7979" placeholder="select * fro... BCZ_subscription" />
-                <marker date="1462464492000" expanded="true" signature="8191:8246" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="8425:8480" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="8524:8559" placeholder="delete from " />
-                <marker date="1462464492000" expanded="true" signature="8996:9461" placeholder="select disti... compte_fid" />
-                <marker date="1462464492000" expanded="true" signature="9684:9773" placeholder="insert into testDB.BCZ_subscription... " />
-                <marker date="1462464492000" expanded="true" signature="9925:10020" placeholder="insert into BCZ_subscription... " />
-                <marker date="1462464492000" expanded="true" signature="10488:10743" placeholder="select date_... Customer03_subscription" />
-                <marker date="1462464492000" expanded="true" signature="11369:11744" placeholder="select c.dat... Customer03_subscription" />
-                <marker date="1462464492000" expanded="true" signature="12487:12704" placeholder="select count... Customer03_subscription" />
-                <marker date="1462464492000" expanded="true" signature="13051:13393" placeholder="select count... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="3295:3357" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="3594:3656" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="3738:3780" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
+                <marker date="1462611183000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
+                <marker date="1462611183000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
+                <marker date="1462611183000" expanded="true" signature="6181:6286" placeholder="select * fro... BCZ_subscription" />
+                <marker date="1462611183000" expanded="true" signature="6498:6553" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="6746:6801" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="6845:6880" placeholder="delete from " />
+                <marker date="1462611183000" expanded="true" signature="7317:7782" placeholder="select disti... compte_fid" />
+                <marker date="1462611183000" expanded="true" signature="8005:8094" placeholder="insert into testDB.BCZ_subscription... " />
+                <marker date="1462611183000" expanded="true" signature="8246:8341" placeholder="insert into BCZ_subscription... " />
+                <marker date="1462611183000" expanded="true" signature="8835:9090" placeholder="select date_... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="9766:9893" placeholder="select cs.nu... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="10258:10336" placeholder="insert into loyalty..compte_fid... " />
+                <marker date="1462611183000" expanded="true" signature="10375:10460" placeholder="insert into loyalty..histo_adhesion_fid... " />
+                <marker date="1462611183000" expanded="true" signature="10945:11320" placeholder="select c.dat... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="12063:12280" placeholder="select count... Customer03_subscription" />
+                <marker date="1462611183000" expanded="true" signature="12627:12969" placeholder="select count... Customer03_subscription" />
               </folding>
             </state>
           </provider>
@@ -152,11 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQL_Manager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MySQL_Manager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+            <state relative-caret-position="862">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -230,8 +229,8 @@
         <option value="$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php" />
         <option value="$PROJECT_DIR$/php/Util/Tool.php" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_Customer03.php" />
-        <option value="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" />
         <option value="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" />
+        <option value="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" />
       </list>
     </option>
   </component>
@@ -547,7 +546,7 @@
       <workItem from="1461489187118" duration="564000" />
       <workItem from="1461930536864" duration="515000" />
       <workItem from="1462458712876" duration="4754000" />
-      <workItem from="1462611004265" duration="37000" />
+      <workItem from="1462611004265" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="Rename several files">
       <created>1460601773209</created>
@@ -654,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462464650520</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="middle at the dev of the function to recover last 30 days - gap">
+      <created>1462611048965</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1462611048965</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19877000" />
+    <option name="totallyTimeSpent" value="20050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1382" height="744" extended-state="0" />
@@ -666,6 +672,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36396527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09037037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -673,7 +680,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -985,6 +991,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,41 +1098,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
+    <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="718">
+          <caret line="281" column="65" selection-start-line="281" selection-start-column="65" selection-end-line="281" selection-end-column="65" />
+          <folding>
+            <marker date="1462611183000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
+            <marker date="1462611183000" expanded="true" signature="3295:3357" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="3594:3656" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="3738:3780" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
+            <marker date="1462611183000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
+            <marker date="1462611183000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
+            <marker date="1462611183000" expanded="true" signature="6181:6286" placeholder="select * fro... BCZ_subscription" />
+            <marker date="1462611183000" expanded="true" signature="6498:6553" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="6746:6801" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="6845:6880" placeholder="delete from " />
+            <marker date="1462611183000" expanded="true" signature="7317:7782" placeholder="select disti... compte_fid" />
+            <marker date="1462611183000" expanded="true" signature="8005:8094" placeholder="insert into testDB.BCZ_subscription... " />
+            <marker date="1462611183000" expanded="true" signature="8246:8341" placeholder="insert into BCZ_subscription... " />
+            <marker date="1462611183000" expanded="true" signature="8835:9090" placeholder="select date_... Customer03_subscription" />
+            <marker date="1462611183000" expanded="true" signature="9766:9893" placeholder="select cs.nu... Customer03_subscription" />
+            <marker date="1462611183000" expanded="true" signature="10258:10336" placeholder="insert into loyalty..compte_fid... " />
+            <marker date="1462611183000" expanded="true" signature="10375:10460" placeholder="insert into loyalty..histo_adhesion_fid... " />
+            <marker date="1462611183000" expanded="true" signature="10945:11320" placeholder="select c.dat... Customer03_subscription" />
+            <marker date="1462611183000" expanded="true" signature="12063:12280" placeholder="select count... Customer03_subscription" />
+            <marker date="1462611183000" expanded="true" signature="12627:12969" placeholder="select count... Customer03_subscription" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
+    <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="n#insert_Customer03_subscription#0;n#!!top" expanded="false" />
-            <element signature="n#insert_BCZ_subscription#0;n#!!top" expanded="false" />
-            <marker date="1462464492000" expanded="true" signature="3201:3325" placeholder="select c.dat... Customer03_subscription" />
-            <marker date="1462464492000" expanded="true" signature="4663:4775" placeholder="select * fro... Customer03_subscription" />
-            <marker date="1462464492000" expanded="true" signature="4988:5050" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="5287:5349" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="5431:5473" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="5949:6442" placeholder="select to_ch... personne" />
-            <marker date="1462464492000" expanded="true" signature="6682:6778" placeholder="insert into testDB.Customer03_subscription... " />
-            <marker date="1462464492000" expanded="true" signature="6929:7031" placeholder="insert into Customer03_subscription... " />
-            <marker date="1462464492000" expanded="true" signature="7874:7979" placeholder="select * fro... BCZ_subscription" />
-            <marker date="1462464492000" expanded="true" signature="8191:8246" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="8425:8480" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="8524:8559" placeholder="delete from " />
-            <marker date="1462464492000" expanded="true" signature="8996:9461" placeholder="select disti... compte_fid" />
-            <marker date="1462464492000" expanded="true" signature="9684:9773" placeholder="insert into testDB.BCZ_subscription... " />
-            <marker date="1462464492000" expanded="true" signature="9925:10020" placeholder="insert into BCZ_subscription... " />
-            <marker date="1462464492000" expanded="true" signature="10488:10743" placeholder="select date_... Customer03_subscription" />
-            <marker date="1462464492000" expanded="true" signature="11369:11744" placeholder="select c.dat... Customer03_subscription" />
-            <marker date="1462464492000" expanded="true" signature="12487:12704" placeholder="select count... Customer03_subscription" />
-            <marker date="1462464492000" expanded="true" signature="13051:13393" placeholder="select count... Customer03_subscription" />
-          </folding>
+        <state relative-caret-position="862">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

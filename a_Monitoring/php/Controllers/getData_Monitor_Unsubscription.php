@@ -8,6 +8,9 @@
 
 error_reporting(-1);
 ini_set('display_errors', 'On');
+set_time_limit(0);
+ini_set('mysql.connect_timeout','60');
+ini_set('max_execution_time', '120');
 
 include '../../../php/DB_Managers/BCZ_Manager.php';
 include '../../../php/DB_Managers/Customer03_Manager.php';
@@ -43,15 +46,7 @@ $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
-/**
- * for test
- */
-if(isset($_GET['shichen_test'])){
-    recover_last_thirty_days($CustomerDB,$MySqlDB,$LoyaltyDB);
-}
-
 if (isset($_GET['unsubscribed_all'])){
-
     /**
      * if we get the value force_update, we will force the refresh of the Data in our MySQL DB
      */
@@ -72,72 +67,17 @@ if (isset($_GET['unsubscribed_all'])){
     }
     elseif ($_GET['unsubscribed_all'] == 'false'){
         if ($_GET['DataType'] == 'Customer03'){
-            $customer03_Subscription = get_Customer03_subscription($MySqlDB);
+            get_Customer03_subscription($MySqlDB);
         }
         elseif ($_GET['DataType'] == 'BCZ'){
-            $BCZ_Subscription = get_BCZ_subscription($MySqlDB);
-            return $BCZ_Subscription;
+            get_BCZ_subscription($MySqlDB);
+        }
+        elseif ($_GET['DataType'] == 'Recovery'){
+            recovery_subscription($MySqlDB,$LoyaltyDB);
         }
         else return 'Invalid input';
     }
     else return 'Invalid input';
-}
-
-
-/**
- * one method - will be called by a button from front-end
- * to compare the data retrieved from Customer 03 & BCZ
- * and then generate correction scripts to run in BCZ database
- * - NB: need password to do this operation
- *
- */
-function recover_last_thirty_days($db_c,$db_m,$db_l){
-
-    /**
-     * first update our data in MySQL Database, not force them to update if data already exists
-     */
-    insert_Customer03_subscription($db_c,$db_m,false);
-    insert_BCZ_subscription($db_l,$db_m,false);
-
-    /**
-     * note the time before the execution
-     */
-    $msc = microtime(true);
-
-    /**
-     * init the object to manage the connection with MySQL
-     */
-    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
-
-    var_dump($MySqlManager);
-
-    /**
-     * the request to find out the customers existing in Customer 03 not in BCZ during last 30 days from MySQL DB
-     */
-    $sql_Diff = "select cs.numero_carte,id from Customer03_subscription cs
-left join BCZ_subscription bs
-on cs.id = bs.id
-where bs.id is null;";
-
-    $data = mysql_query($sql_Diff,$MySqlManager->session);
-    var_dump(mysql_fetch_row($data));
-//
-//    /**
-//     * the array that contains the Diff
-//     */
-//    $Result_real = $MySqlManager->queryMultiple($sql_Diff);// or die('Cannot select BCZ_subscription'.mysql_error());
-//    $diff = microtime(true)-$msc;
-//
-//    /**
-//     * write in the log
-//     */
-//    $date = date("D M d, Y G:i");
-//    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Diff."\n\rExecution Duration is ".$diff." ms\n\r");
-//
-//    /**
-//     * print the result
-//     */
-//    print json_encode($Result_real);
 }
 
 /**
@@ -261,7 +201,7 @@ function insert_BCZ_subscription($db_b, $db_m,$force_update)
         else{
             // we do nothing and quit
             // will not update
-            return;
+            return $MySqlManager;
         }
     }
     else{
@@ -299,7 +239,9 @@ function insert_BCZ_subscription($db_b, $db_m,$force_update)
     unset($results);
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert BCZ_subscription\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert BCZ_subscription\n\rExecution Duration is ".$diff." s\n\r");
+
+    return $MySqlManager;
 }
 
 function get_Customer03_subscription($db_m)
@@ -314,8 +256,36 @@ function get_Customer03_subscription($db_m)
     $Customer03_subscription_count_7 = $MySqlManager->queryMultiple($sql_Customer03_count_7);// or die('Cannot select Customer03_subscription'.mysql_error());
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_7."\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_7."\n\rExecution Duration is ".$diff." s\n\r");
     print json_encode($Customer03_subscription_count_7);
+    //var_dump($Customer03_subscription_count_7);
+}
+
+function recovery_subscription($db_m,$db_b)
+{
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+    $msc = microtime(true);
+
+    $sql_diff = "select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null";
+    $data = mysql_query($sql_diff,$MySqlManager->getSession());
+
+    $BCZManager = new BCZ_Manager($db_b->host, $db_b->user, $db_b->password, $db_b->port);
+    $BCZManager->setBdd("loyalty");
+
+    /**
+     * for all the customers found not subscribed, recover in One shot
+     */
+    while($response = mysql_fetch_row($data)) {
+        $BCZManager->queryUpdate("insert into loyalty..compte_fid values ('".$response[0]."','".$response[1]."');");
+        $BCZManager->queryUpdate("insert into loyalty..histo_adhesion_fid values ('".$response[1]."',getdate(),1,'HOC');");
+
+        // for the test of Ruohong, only recover one guy per call
+        break;
+    }
+
+    $diff = microtime(true)-$msc;
+    $date = date("D M d, Y G:i");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
 }
 
 function get_BCZ_subscription($db_m)
@@ -370,6 +340,6 @@ function get_Total_gap($db_m){
 
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_30."\n\r".$sql_BCZ_count_30."\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_30."\n\r".$sql_BCZ_count_30."\n\rExecution Duration is ".$diff." s\n\r");
     return $Gap_total;
 }

@@ -40,7 +40,7 @@ class MySQL_Manager{
     /**
      * @var the object of the session
      */
-    private $session;
+    public $session;
 
     /**
      * @var the port to connect the DB server
@@ -146,6 +146,7 @@ class MySQL_Manager{
         $msc = microtime(true);
 
         $data = mysql_query($query,$this->session);
+        var_dump($data);
 
         $result = array();
         while($response = mysql_fetch_row($data)) {

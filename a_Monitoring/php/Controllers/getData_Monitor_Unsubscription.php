@@ -171,6 +171,12 @@ function insert_Customer03_subscription($db_c, $db_m,$force_update)
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert Customer03_subscription\n\rExecution Duration is ".$diff." ms\n\r");
 }
 
+/**
+ * @param $db_b
+ * @param $db_m
+ * @param $force_update
+ * @return MySQL_Manager
+ */
 function insert_BCZ_subscription($db_b, $db_m,$force_update)
 {
 
@@ -244,6 +250,9 @@ function insert_BCZ_subscription($db_b, $db_m,$force_update)
     return $MySqlManager;
 }
 
+/**
+ * @param $db_m
+ */
 function get_Customer03_subscription($db_m)
 {
     $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
@@ -261,6 +270,11 @@ function get_Customer03_subscription($db_m)
     //var_dump($Customer03_subscription_count_7);
 }
 
+/**
+ * Recovery all the unsubscribed customers during last 30 days - automatic
+ * @param $db_m MYSQL DB
+ * @param $db_b BCZ DB
+ */
 function recovery_subscription($db_m,$db_b)
 {
     $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
@@ -276,8 +290,22 @@ function recovery_subscription($db_m,$db_b)
      * for all the customers found not subscribed, recover in One shot
      */
     while($response = mysql_fetch_row($data)) {
+
+        /**
+         * add a new line in compte_fid
+         */
         $BCZManager->queryUpdate("insert into loyalty..compte_fid values ('".$response[0]."','".$response[1]."');");
+
+        /**
+         * add a new line in histo_adhesion_fid
+         */
         $BCZManager->queryUpdate("insert into loyalty..histo_adhesion_fid values ('".$response[1]."',getdate(),1,'HOC');");
+
+        /**
+         * leave a record in the mySQL db
+         */
+        $MySqlManager->queryUpdate
+        ("insert into testDB.operation_record (operation_name,operation_date,operation_details1) values ('Subscription_Recovery',curdate(),'".$response[0]."');");
 
         // for the test of Ruohong, only recover one guy per call
         break;
@@ -288,6 +316,9 @@ function recovery_subscription($db_m,$db_b)
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
 }
 
+/**
+ * @param $db_m
+ */
 function get_BCZ_subscription($db_m)
 {
     $msc = microtime(true);

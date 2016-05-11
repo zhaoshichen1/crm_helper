@@ -74,8 +74,8 @@ class BCZ_Manager{
 	 * Set up the content of the query
 	 * @param $query
 	 */
-	private function setQuery($query){
-		$this->query = mssql_query($query);
+	public function setQuery($query){
+		return $this->query = mssql_query($query);
 	}
 
 	/**
@@ -186,7 +186,7 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 		return $data;
 	}
@@ -209,7 +209,7 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 		return $result;
 	}
@@ -235,7 +235,7 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 	}
 
@@ -258,6 +258,6 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 	}
 }

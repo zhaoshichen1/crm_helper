@@ -16,7 +16,7 @@ ini_set('display_errors', 'On');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>"H" of Customer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@ ini_set('display_errors', 'On');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">"H" of Customer</a>
+            <a class="navbar-brand" href="index.php">"H" of Customer</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -63,7 +63,12 @@ ini_set('display_errors', 'On');
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Unsubscribed - CN</a>
                     </li>
                 </ul>
             </div>
@@ -89,8 +94,8 @@ ini_set('display_errors', 'On');
                                 <i class="fa fa-close fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">26</div>
-                                <div>Unsubscribed - CN</div>
+                                <div class="huge" id="numberThirty">26</div>
+                                <div>Unsubscribed - CN</br>Last 30 days</div>
                             </div>
                         </div>
                     </div>
@@ -98,7 +103,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-green">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-tasks fa-5x"></i>
@@ -113,7 +118,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-yellow">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-shopping-cart fa-5x"></i>
@@ -128,7 +133,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-red">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: grey">
                         <div class="row">
                             <div class="col-xs-3">
                                 <i class="fa fa-support fa-5x"></i>
@@ -209,7 +214,7 @@ ini_set('display_errors', 'On');
     <div class="footer-left">
 
         <p class="footer-links">
-            <a href="index.php">Troubleshoot</a>
+            <a href="../a_Troubleshooting/index.php">Troubleshoot</a>
             ·
             <a href="../a_Reporting/index.php">Report</a>
             ·

@@ -8,6 +8,9 @@
 
 error_reporting(-1);
 ini_set('display_errors', 'On');
+set_time_limit(0);
+ini_set('mysql.connect_timeout','60');
+ini_set('max_execution_time', '120');
 
 include '../../../php/DB_Managers/BCZ_Manager.php';
 include '../../../php/DB_Managers/Customer03_Manager.php';
@@ -38,15 +41,24 @@ $LoyaltyDB->port = 1433;
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
-$CustomerDB->user = 'crm_helper';
-$CustomerDB->password = 'decathlon1';
+$CustomerDB->user = 'szhao30';
+$CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
 if (isset($_GET['unsubscribed_all'])){
+    /**
+     * if we get the value force_update, we will force the refresh of the Data in our MySQL DB
+     */
+    if(isset($_GET['force_update'])){
+        insert_Customer03_subscription($CustomerDB,$MySqlDB,true);
+        insert_BCZ_subscription($LoyaltyDB,$MySqlDB,true);
 
-    insert_Customer03_subscription($CustomerDB,$MySqlDB);
-    insert_BCZ_subscription($LoyaltyDB,$MySqlDB);
+    }
+    else{
+        insert_Customer03_subscription($CustomerDB,$MySqlDB,false);
+        insert_BCZ_subscription($LoyaltyDB,$MySqlDB,false);
+    }
 
     if ($_GET['unsubscribed_all'] == 'true'){
         $total_Gap = get_Total_gap($MySqlDB);
@@ -55,25 +67,25 @@ if (isset($_GET['unsubscribed_all'])){
     }
     elseif ($_GET['unsubscribed_all'] == 'false'){
         if ($_GET['DataType'] == 'Customer03'){
-            $customer03_Subscription = get_Customer03_subscription($MySqlDB);
+            get_Customer03_subscription($MySqlDB);
         }
         elseif ($_GET['DataType'] == 'BCZ'){
-            $BCZ_Subscription = get_BCZ_subscription($MySqlDB);
-            var_dump($BCZ_Subscription);
-            return $BCZ_Subscription;
+            get_BCZ_subscription($MySqlDB);
+        }
+        elseif ($_GET['DataType'] == 'Recovery'){
+            recovery_subscription($MySqlDB,$LoyaltyDB);
         }
         else return 'Invalid input';
     }
     else return 'Invalid input';
 }
 
-
 /**
  * The objective is to receive requests from ajax,
  * Then return data and arrays in format of array.
  */
 
-function insert_Customer03_subscription($db_c, $db_m)
+function insert_Customer03_subscription($db_c, $db_m,$force_update)
 {
 
     /**
@@ -84,7 +96,42 @@ function insert_Customer03_subscription($db_c, $db_m)
     $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
 
     $msc = microtime(true);
+
+    /**
+     * if we are not asked to refresh the data, we will check the Flag
+     */
+    if($force_update == false){
+        /**
+         * check the flag
+         */
+        $result = $MySqlManager->query("select * from Customer03_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
+
+        // if the result is empty
+        if(!$result){
+
+            // we will continue to insert new data
+            // so delete this flag to have a new one after
+            $MySqlManager->queryUpdate("delete from Customer03_subscription where id = \"update_time\"");
+        }
+        else{
+            // we do nothing and quit
+            // will not update
+            return;
+        }
+    }
+    /**
+     * else means we are forced to update
+     */
+    else{
+        $MySqlManager->queryUpdate("delete from Customer03_subscription where id = \"update_time\"");
+    }
+
+
+    /**
+     * clean old data
+     */
     $MySqlManager->queryUpdate("delete from testDB.Customer03_subscription;");// or die('Cannot drop table Customer03_subscription'.mysql_error());
+
     /*$sql_create = "create table testDB.Customer03_subscription (
             date_creation CHARACTER(8) NOT NULL,
             numero_carte CHARACTER(13) NOT NULL,
@@ -101,17 +148,30 @@ function insert_Customer03_subscription($db_c, $db_m)
             and numero_carte is not null
             order by to_char(date_creation, 'YYYYMMDD');";
     $results = $Customer03Manager->setquery($sql_select);// or die('Cannot select Customer03'.pg_result_error());
+
+    /**
+     * insert new data
+     */
     while ($result = pg_fetch_row($results)){
         $MySqlManager->queryUpdate('insert into testDB.Customer03_subscription values ('.$result[0].','.$result[1].','.$result[2].');');
         //or die('Cannot insert'.mysql_error());
     }
+
+    /**
+     * insert the flag bit into the table
+     */
+    $MySqlManager->queryUpdate('insert into Customer03_subscription values (DATE_FORMAT(NOW(),\'%Y%m%d\'),"update_time","update_time")');
+
+    /**
+     * write the results
+     */
     unset($results);
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert Customer03_subscription\n\rExecution Duration is ".$diff." ms\n\r");
 }
 
-function insert_BCZ_subscription($db_b, $db_m)
+function insert_BCZ_subscription($db_b, $db_m,$force_update)
 {
 
     /**
@@ -122,6 +182,33 @@ function insert_BCZ_subscription($db_b, $db_m)
     $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
 
     $msc = microtime(true);
+
+    /**
+     * same meaning as the Customer 03 one
+     */
+    if($force_update == false){
+        /**
+         * check the flag
+         */
+        $result = $MySqlManager->query("select * from BCZ_subscription where id = \"update_time\" and date_creation = DATE_FORMAT(NOW(),'%Y%m%d');");
+
+        // if the result is empty
+        if(!$result){
+            // we will continue to insert new data
+            // so delete this flag to have a new one after
+            $MySqlManager->queryUpdate("delete from BCZ_subscription where id = \"update_time\"");
+        }
+        else{
+            // we do nothing and quit
+            // will not update
+            return $MySqlManager;
+        }
+    }
+    else{
+        $MySqlManager->queryUpdate("delete from BCZ_subscription where id = \"update_time\"");
+    }
+
+
     $MySqlManager->queryUpdate("delete from testDB.BCZ_subscription;");// or die('Cannot drop table'.mysql_error());
     /*$sql_create = "create table testDB.BCZ_subscription (
             date_creation CHARACTER(8) NOT NULL,
@@ -143,10 +230,18 @@ function insert_BCZ_subscription($db_b, $db_m)
         $MySqlManager->queryUpdate('insert into testDB.BCZ_subscription values ('.$result[0].','.$result[1].','.$result[2].');');
         // or die('Cannot insert'.mysql_error());
     }
+
+    /**
+     * insert the flag bit into the table
+     */
+    $MySqlManager->queryUpdate('insert into BCZ_subscription values (DATE_FORMAT(NOW(),\'%Y%m%d\'),"update_time","update_time")');
+
     unset($results);
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert BCZ_subscription\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_select."\n\rQuery: insert BCZ_subscription\n\rExecution Duration is ".$diff." s\n\r");
+
+    return $MySqlManager;
 }
 
 function get_Customer03_subscription($db_m)
@@ -155,14 +250,42 @@ function get_Customer03_subscription($db_m)
     $msc = microtime(true);
     $sql_Customer03_count_7 = "select date_creation, count(*) 
             from testDB.Customer03_subscription 
-            where date_creation <= curdate()-1
-            and date_creation >= curdate()-7
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
             group by date_creation;";
     $Customer03_subscription_count_7 = $MySqlManager->queryMultiple($sql_Customer03_count_7);// or die('Cannot select Customer03_subscription'.mysql_error());
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_7."\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_7."\n\rExecution Duration is ".$diff." s\n\r");
     print json_encode($Customer03_subscription_count_7);
+    //var_dump($Customer03_subscription_count_7);
+}
+
+function recovery_subscription($db_m,$db_b)
+{
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+    $msc = microtime(true);
+
+    $sql_diff = "select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null";
+    $data = mysql_query($sql_diff,$MySqlManager->getSession());
+
+    $BCZManager = new BCZ_Manager($db_b->host, $db_b->user, $db_b->password, $db_b->port);
+    $BCZManager->setBdd("loyalty");
+
+    /**
+     * for all the customers found not subscribed, recover in One shot
+     */
+    while($response = mysql_fetch_row($data)) {
+        $BCZManager->queryUpdate("insert into loyalty..compte_fid values ('".$response[0]."','".$response[1]."');");
+        $BCZManager->queryUpdate("insert into loyalty..histo_adhesion_fid values ('".$response[1]."',getdate(),1,'HOC');");
+
+        // for the test of Ruohong, only recover one guy per call
+        break;
+    }
+
+    $diff = microtime(true)-$msc;
+    $date = date("D M d, Y G:i");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
 }
 
 function get_BCZ_subscription($db_m)
@@ -173,8 +296,8 @@ function get_BCZ_subscription($db_m)
             from testDB.Customer03_subscription c
             inner join testDB.BCZ_subscription b
             on c.id = b.id and c.numero_carte = b.numero_carte
-            where c.date_creation <= curdate()-1
-            and c.date_creation >= curdate()-7
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
             group by c.date_creation;";
     $BCZ_subscription_count_7 = $MySqlManager->queryMultiple($sql_BCZ_count_7);// or die('Cannot select BCZ_subscription'.mysql_error());
     $diff = microtime(true)-$msc;
@@ -183,26 +306,40 @@ function get_BCZ_subscription($db_m)
     print json_encode($BCZ_subscription_count_7);
 }
 
+/**
+ *
+ * get the data of 30 days --> the gap
+ *
+ * @param $db_m
+ * @return mixed
+ */
 function get_Total_gap($db_m){
     $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
     $msc = microtime(true);
-    $sql_Customer03_count_30 = "select count(*) 
+
+    // count how many person in Customer 03 created last 30 days
+    $sql_Customer03_count_30 = "select count(*)
                 from testDB.Customer03_subscription 
-                where date_creation <= curdate()-1
-                and date_creation >= curdate()-30;";
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);";
     $Customer03_subscription_count_30 = $MySqlManager->queryUpdate($sql_Customer03_count_30);// or die('Cannot select Customer03_subscription total'.mysql_error());
+    $Customer03_subscription_count_total = mysql_fetch_row($Customer03_subscription_count_30);
+
+    // count how many person in BCZ created last 30 days
     $sql_BCZ_count_30 = "select count(*)
                 from testDB.Customer03_subscription c
                 inner join testDB.BCZ_subscription b
                 on c.id = b.id and c.numero_carte = b.numero_carte
-                where c.date_creation <= curdate()-1
-                and c.date_creation >= curdate()-30;";
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);";
     $BCZ_subscription_count_30 = $MySqlManager->queryUpdate($sql_BCZ_count_30);// or die('Cannot select BCZ_subscription total'.mysql_error());
-    $Customer03_subscription_count_total = mysql_fetch_row($Customer03_subscription_count_30);
     $BCZ_subscription_count_total = mysql_fetch_row($BCZ_subscription_count_30);
+
+    // calculate the gap
     $Gap_total = $Customer03_subscription_count_total[0]-$BCZ_subscription_count_total[0];
+
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_30."\n\r".$sql_BCZ_count_30."\n\rExecution Duration is ".$diff." ms\n\r");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_30."\n\r".$sql_BCZ_count_30."\n\rExecution Duration is ".$diff." s\n\r");
     return $Gap_total;
 }

@@ -8,7 +8,7 @@ include_once  '../../../php/Util/Tool.php';
  * Set up the CustomerDB basic information for the connection
  */
 $CustomerDB = new stdClass();
-$CustomerDB->host = '10.8.64.49';
+$CustomerDB->host = '10.8.64.89';
 //$CustomerDB->host = 'localhost';
 $CustomerDB->user = 'szhao30';
 //$CustomerDB->user = 'postgres';
@@ -68,6 +68,25 @@ having count(*) >1) as result";;
 
         $response = $CustomerManager->query($account_query);
         print $response->sum;
+    }
+
+    /**
+     * if the user provides an email to search
+     */
+    if(isset($_GET['email_key'])){
+        $search_query = "select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('".$_GET['email_key']."')";
+        $response = $CustomerManager->queryMultiple($search_query);
+        print json_encode($response);
+    }
+
+    /**
+     * if the customer provideds the tel number to search
+     */
+    if(isset($_GET['tel_key'])){
+        $search_query = "select type_member,numero_carte from Customer03.personne where tel_portable = '".$_GET['tel_key']. "'";
+
+        $response = $CustomerManager->queryMultiple($search_query);
+        print json_encode($response);
     }
 
 }

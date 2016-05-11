@@ -12,7 +12,6 @@ error_reporting(-1);
 
 ini_set('display_errors', 'On');
 
-include_once  '../Util/Tool.php';
 
 /**
  * Created by PhpStorm.
@@ -41,7 +40,7 @@ class MySQL_Manager{
     /**
      * @var the object of the session
      */
-    private $session;
+    public $session;
 
     /**
      * @var the port to connect the DB server
@@ -136,6 +135,7 @@ class MySQL_Manager{
         $date = date("D M d, Y G:i");
         openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
+        return $result;
     }
 
     public function queryMultiple($query){
@@ -146,6 +146,7 @@ class MySQL_Manager{
         $msc = microtime(true);
 
         $data = mysql_query($query,$this->session);
+        var_dump($data);
 
         $result = array();
         while($response = mysql_fetch_row($data)) {

@@ -126,7 +126,7 @@ echo $p
       <div class="footer-left">
 
           <p class="footer-links">
-              <a href="index.php">Troubleshoot</a>
+              <a href="../a_Troubleshooting/index.php">Troubleshoot</a>
               ·
               <a href="../a_Reporting/index.php">Report</a>
               ·

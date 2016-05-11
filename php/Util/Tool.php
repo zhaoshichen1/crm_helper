@@ -17,24 +17,26 @@ function openAndWriteALine($filename,$line){
 
     //echo "openAndWriteALine";
 
+    //print realpath($filename);
+
     if (is_writable($filename)) {
         //open the file
         if (!$fh = fopen($filename, 'a')) {
-        //    echo "Can't open".$filename;
+            // echo "Can't open".$filename;
             exit;
         }
         // 写入内容
         if (fwrite($fh, $line."\n\r\n\r") === FALSE) {
-        //    echo "Can't write".$filename;
+            // echo "Can't write".$filename;
             exit;
         }
         else{
-        //    echo 'Write '.$line.' successfully';
+            //echo 'Write '.$line.' successfully';
         }
 
         fclose($fh);
     } else {
-    //    echo "File $filename not writtable";
+        // echo "File $filename not writtable";
     }
 }
 

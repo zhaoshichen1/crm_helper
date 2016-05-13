@@ -29,6 +29,9 @@ ini_set('display_errors', 'On');
     <link rel="stylesheet" href="../css/footer-distributed.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
 
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="../css/alertify.min.css">
+
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -99,6 +102,17 @@ ini_set('display_errors', 'On');
                             </div>
                         </div>
                     </div>
+                    <a id="fixnow" onclick="recoversubscription()">
+                        <div class="panel-footer">
+                            <span class="pull-left">Fix now!</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right">
+                            </i>
+                        </span>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -196,6 +210,10 @@ ini_set('display_errors', 'On');
 
 <!-- Custom Theme JavaScript -->
 <script src="dist/js/sb-admin-2.js"></script>
+
+<!-- incredible beautiful js file -->
+<script src="../js/alertify.min.js"></script>
+<script src="js/Time&Record.js"></script>
 
 </body>
 

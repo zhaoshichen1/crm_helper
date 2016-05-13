@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -12,6 +10,7 @@ date_default_timezone_set("Asia/Hong_Kong");
  */
 error_reporting(-1);
 ini_set('display_errors', 'On');
+
 
 
 /**
@@ -30,7 +29,7 @@ class BCZ_Manager{
 	 */
 	private $host;
 
-	private $user;
+	private $user;	
 	private $password;
 
 	/**
@@ -75,8 +74,8 @@ class BCZ_Manager{
 	 * Set up the content of the query
 	 * @param $query
 	 */
-	private function setQuery($query){
-		$this->query = mssql_query($query);
+	public function setQuery($query){
+		return $this->query = mssql_query($query);
 	}
 
 	/**
@@ -187,7 +186,7 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 		return $data;
 	}
@@ -210,8 +209,55 @@ class BCZ_Manager{
 		 */
 		$diff = microtime(true)-$msc;
 		$date = date("D M d, Y G:i");
-		openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
 		return $result;
+	}
+
+	public function queryMultipleCSV($output,$query,$file_name,$header_array){
+
+		// enlarge the mssql timeout duration
+		ini_set('mssql.connect_timeout',10);
+		ini_set('mssql.timeout',120);
+
+		/**
+		 * Note the time before the execution
+		 */
+		$msc = microtime(true);
+
+		$this->setQuery($query);
+		while($response = mssql_fetch_row($this->query)) {
+			fputcsv($output, $response);
+		}
+
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
+	}
+
+	/**
+	 * Run the query
+	 * @param $query
+	 * @return object the response
+	 */
+	public function queryUpdate($query){
+
+		/**
+		 * Note the time before the execution
+		 */
+		$msc = microtime(true);
+
+		$this->setQuery($query);
+
+		/**
+		 * Note the time after the execution
+		 */
+		$diff = microtime(true)-$msc;
+		$date = date("D M d, Y G:i");
+		openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 	}
 }

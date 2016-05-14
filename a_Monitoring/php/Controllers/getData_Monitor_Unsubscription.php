@@ -46,7 +46,12 @@ $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
-if (isset($_GET['unsubscribed_all'])){
+// note the IP in the DB
+if (isset($_GET['please_note_IP'])){
+    note_massive_subscription_operator_IP_Time($MySqlDB,$_GET['please_note_IP']);
+}
+
+else if (isset($_GET['unsubscribed_all'])){
     /**
      * if we get the value force_update, we will force the refresh of the Data in our MySQL DB
      */
@@ -375,4 +380,16 @@ function recovery_subscription($db_m,$db_b)
     $diff = microtime(true)-$msc;
     $date = date("D M d, Y G:i");
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
+}
+
+/**
+ * to note the IP, operation time of the operator who carries out the operation of massive subscription
+ */
+function note_massive_subscription_operator_IP_Time($db_m,$ip){
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+    $msc = microtime(true);
+    $MySqlManager->queryUpdate
+    ("insert into testDB.operation_record
+(operation_name,operation_date,operation_details1)
+values ('User_Massive_Subscription_Recovery',curdate(),'".$ip."');");
 }

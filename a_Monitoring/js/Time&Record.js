@@ -11,10 +11,10 @@
  *  ________________________________________________________
  *  Date functions
  */
-$("#fromFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
-$("#toFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
-$("#PurchasefromFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
-$("#PurchasetoFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
+//$("#fromFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
+//$("#toFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
+//$("#PurchasefromFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
+//$("#PurchasetoFindCard").datepicker().datepicker("option", "dateFormat", "yy-mm-dd");
 
 /**
  * get the current tinme sheet

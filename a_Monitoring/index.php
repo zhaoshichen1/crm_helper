@@ -31,6 +31,7 @@ ini_set('display_errors', 'On');
 
     <!-- Alertify CSS -->
     <link rel="stylesheet" href="../css/alertify.min.css">
+    <link rel="stylesheet" href="../css/themes/default.min.css">
 
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -90,19 +91,19 @@ ini_set('display_errors', 'On');
         <!-- /.row -->
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <div class="panel panel-red">
+                <div class="panel panel-red" id="panel_of_unsubscription">
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-3">
-                                <i class="fa fa-close fa-5x"></i>
+                                <i class="fa fa-close fa-5x" id="icon_of_unsubscription"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge" id="numberThirty">26</div>
+                                <div class="huge" id="numberThirty">?</div>
                                 <div>Unsubscribed - CN</br>Last 30 days</div>
                             </div>
                         </div>
                     </div>
-                    <a id="fixnow" onclick="recoversubscription()">
+                    <a id="fixnow" onclick="recoverSubscription()">
                         <div class="panel-footer">
                             <span class="pull-left">Fix now!</span>
                         <span class="pull-right">
@@ -113,6 +114,27 @@ ini_set('display_errors', 'On');
                             </div>
                         </div>
                     </a>
+                    <div class="bs-example" id="progress_bar_recovery" style="display:none">
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar" style="margin-left:1%;margin-right:1%;width: 3%"></div>
+                        </div>
+                    </div>
+                    <a id="forceupdate" onclick="forceUpdate()">
+                        <div class="panel-footer">
+                            <span class="pull-left">Refresh the data</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right">
+                            </i>
+                        </span>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="bs-example" id="progress_bar_force_update" style="display:none">
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar" style="margin-left:1%;margin-right:1%;width: 3%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -214,7 +236,10 @@ ini_set('display_errors', 'On');
 <!-- incredible beautiful js file -->
 <script src="../js/alertify.min.js"></script>
 <script src="js/Time&Record.js"></script>
-
+<script src="js/Display_change.js"></script>
+<script src="js/Refresh_Data.js"></script>
+<script src="js/Massive_Subscription_Recovery.js"></script>
+<script src="http://l2.io/ip.js?var=myip"></script>
 </body>
 
 

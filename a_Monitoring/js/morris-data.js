@@ -1,5 +1,6 @@
 /**
  * get 30 day's data from RFN's API and display in the front-office
+ * without force update --> Update Frequency is 1 time per day if not demanded by other operations
  */
 function set30DaysData(){
 
@@ -11,15 +12,18 @@ function set30DaysData(){
             }
         })
         .done(function (data) {
-            document.getElementById("numberThirty").textContent = data;
-            console.log(data);
+
+            /**
+             * show the result by changing also the style of the panel to say good or not
+             */
+            change_subscription_panel_according_to_its_result(data);
         });
 }
 
 // update the last 30 days - data
 set30DaysData();
 
-var BCZ_data,Customer03_data,debug;
+var BCZ_data,Customer03_data,debug_Moris_Line;
 
 function get7DaysData(){
 
@@ -48,12 +52,14 @@ function get7DaysData(){
 			
             .done(function (data) {
                 Customer03_data = JSON.parse(data);
-				var data_N = (buildUpMorrisArea7Days(BCZ_data,Customer03_data));
+				var data_N = buildUpMorrisArea7Days(BCZ_data,Customer03_data);
 
+                // which means the chart doesn't exist, we need to create it
+                if(debug_Moris_Line == null){
                     /**
                      * declare this Morris graph
                      */
-                    debug = Morris.Line({
+                    debug_Moris_Line = Morris.Line({
                         element: 'morris-area-chart',
                         data: data_N,
                         xkey: 'day',
@@ -64,7 +70,13 @@ function get7DaysData(){
                         parseTime:false,
                         resize: true
                     });
-                });
+                }
+
+                    // otherwise, we will just update its value
+                else{
+                    debug_Moris_Line.setData(data_N);
+                }
+            });
         });
 
 }
@@ -111,71 +123,3 @@ get7DaysData();
         return data;
     }
 
-/**
- * launch massive repair of loyalty subscription by calling API of recovery_subscription
- *
- * FUNC_ID = ?
- */
-function recoversubscription() {
-
-    /**
-     * record the execution numbers
-     * record_execution(?);
-     */
-
-    alertify.confirm("Be Careful! Launch subscription recovery now?",
-        function(){
-
-            var begin = noteCurrentSecond();
-
-            alertify.success('Subscription recovery launched');
-
-            //Force update before repair
-            $.ajax({
-                    url: 'php/Controllers/getData_Monitor_Unsubscription.php',
-                    method: "GET",
-                    data: {
-                        unsubscribed_all: true,
-                        force_update:'true'
-                    }
-                })
-                .done(function () {
-                    alertExecutionTime(giveDifferenceInMS(begin));
-                    console.log("Before force update done");
-                    // use Ajax to call the PHP for the repair, but attention, we need to feed enough values
-                    $.ajax({
-                            url: 'php/Controllers/getData_Monitor_Unsubscription.php',
-                            method: "GET",
-                            data: {
-                                unsubscribed_all: false,
-                                DataType: 'Recovery'
-                            }
-                        })
-                        .done(function () {
-                            alertExecutionTime(giveDifferenceInMS(begin));
-                            console.log("Recovery done");
-                            //Force update after repair
-                            $.ajax({
-                                    url: 'php/Controllers/getData_Monitor_Unsubscription.php',
-                                    method: "GET",
-                                    data: {
-                                        unsubscribed_all: true,
-                                        force_update:'true'
-                                    }
-                                })
-                                .done(function () {
-                                    alertExecutionTime(giveDifferenceInMS(begin));
-                                    console.log("After force update done");
-                                    set30DaysData();
-                                    console.log("30days");
-                                    get7DaysData();
-                                    console.log("7days");
-                                });
-                        });
-                });
-        },
-        function(){
-            alertify.error('Subscription recovery cancelled');
-        }
-    );
-}

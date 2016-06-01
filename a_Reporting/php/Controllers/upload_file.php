@@ -9,8 +9,7 @@
 require_once "../../test_connect_oms.php";
 
 function receive_and_validate_file(){
-
-
+    
 
     /**
      * the file format must be csv and we limit the file size to 2M

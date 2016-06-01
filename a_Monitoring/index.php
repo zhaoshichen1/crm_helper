@@ -1,4 +1,10 @@
 <?php
+$p = 'Dashboard';
+if(isset($_GET['p']))
+    if(!is_null($_GET['p']))
+    {
+        $p = $_GET['p'];
+    }
 
 error_reporting(-1);
 ini_set('display_errors', 'On');
@@ -29,6 +35,10 @@ ini_set('display_errors', 'On');
     <link rel="stylesheet" href="../css/footer-distributed.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
 
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="../css/alertify.min.css">
+    <link rel="stylesheet" href="../css/themes/default.min.css">
+
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -42,6 +52,28 @@ ini_set('display_errors', 'On');
 </head>
 
 <body>
+
+<!--
+  NAVABR
+
+<?php
+// class active pour le menu
+$DashboardClass = "";
+$recoverSubscriptionClass = "";
+
+switch($p){
+    case 'recoverSubscription':
+        $recoverSubscriptionClass = " class=\"active\"";
+        break;
+    case 'Dashboard':
+        $DashboardClass = " class=\"active\"";
+        break;
+    default:
+        $DashboardClass = " class=\"active\"";
+        break;
+}
+
+?>
 
 <div id="wrapper">
 
@@ -62,13 +94,13 @@ ini_set('display_errors', 'On');
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <li <?php echo $DashboardClass;?>>
+                        <a href="index.php?p=Dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                 </ul>
                 <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Unsubscribed - CN</a>
+                    <li <?php echo $recoverSubscriptionClass;?>>
+                        <a href="index.php?p=recoverSubscription"><i class="fa fa-dashboard fa-fw"></i> Unsubscribed - CN</a>
                     </li>
                 </ul>
             </div>
@@ -78,105 +110,22 @@ ini_set('display_errors', 'On');
     </nav>
 
     <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header" style="font-size:36px">Dashboard</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-red">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="fa fa-close fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge" id="numberThirty">26</div>
-                                <div>Unsubscribed - CN</br>Last 30 days</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-green">
-                    <div class="panel-heading" style="background-color: grey">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="fa fa-tasks fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">12</div>
-                                <div>To define</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-yellow">
-                    <div class="panel-heading" style="background-color: grey">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="fa fa-shopping-cart fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">124</div>
-                                <div>To define</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-red">
-                    <div class="panel-heading" style="background-color: grey">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="fa fa-support fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">13</div>
-                                <div>To define</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Unsubscribed - CN - Data
-                        <div class="pull-right">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    Last 7 days
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu pull-right" role="menu">
-                                    <li><a>Last 7 days</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div id="morris-area-chart"></div>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
-            </div>
-            <!-- /.col-lg-8 -->
-        </div>
-        <!-- /.row -->
+        <?php
+        switch($p){
+            case 'Dashboard':
+                include 'pages/Dashboard.php';
+                break;
+            case 'recoverSubscription':
+                include 'pages/recoverSubscription.php';
+                break;
+            case 'creator':
+                echo '<br/><br/><br/><br/><br/><br/><h1 style="width: 914px; box-shadow: 13px 13px 7px #888888; background-color: #001244; margin-left: 27%; font-weight: 700; color: #00c21f; padding: 25px; border: 2px solid black; border-radius: 8px;">Made with love by Pierre Bodot  :-) </h1>';
+                break;
+            default:
+                include 'pages/Dashboard.php';
+                break;
+        }
+        ?>
     </div>
     <!-- /#page-wrapper -->
 
@@ -197,6 +146,16 @@ ini_set('display_errors', 'On');
 <!-- Custom Theme JavaScript -->
 <script src="dist/js/sb-admin-2.js"></script>
 
+<!-- incredible beautiful js file -->
+<script src="../js/alertify.min.js"></script>
+<script src="js/Time&Record.js"></script>
+<script src="js/Display_change.js"></script>
+<script src="js/Refresh_Data.js"></script>
+<script src="js/Massive_Subscription_Recovery.js"></script>
+<script src="http://l2.io/ip.js?var=myip"></script>
+
+<!-- nb of execution record js -->
+<script src="../js/BackOffice/nb_execution_record.js"></script>
 </body>
 
 

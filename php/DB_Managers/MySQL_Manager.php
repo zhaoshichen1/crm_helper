@@ -67,6 +67,11 @@ class MySQL_Manager{
         //echo "dsa";
     }
 
+    public function getSession(){
+        return $this->session;
+    }
+
+
     /**
      * Connect do the DB server
      * @return resource|the
@@ -106,7 +111,7 @@ class MySQL_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
         return $data;
     }
@@ -133,7 +138,7 @@ class MySQL_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
         return $result;
     }
@@ -146,7 +151,7 @@ class MySQL_Manager{
         $msc = microtime(true);
 
         $data = mysql_query($query,$this->session);
-        var_dump($data);
+        //var_dump($data);
 
         $result = array();
         while($response = mysql_fetch_row($data)) {
@@ -158,7 +163,7 @@ class MySQL_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
         return $result;
     }

@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -62,18 +60,11 @@ class MySQL_Manager{
         $this->password = $pass;
         $this->port = $port;
         $this->dbname = $dbname;
-        $this->session = $this->connexion();
-    }
 
-    /**
-     * To get the result of the executed script
-     * @param $data the query to run
-     * @return object the response of the query
-     */
-    private function fetch($data)
-    {
-        //var_dump($data);
-        return mysql_fetch_object($data);
+        //echo "nimabi";
+        $this->session = $this->connexion();
+
+        //echo "dsa";
     }
 
     /**
@@ -85,8 +76,10 @@ class MySQL_Manager{
             $this->session = mysql_connect($this->host.':'.$this->port,$this->user,$this->password);
             mysql_select_db($this->dbname);
 
+            //echo "connection successful";
             return $this->session;
         }
+        //echo "conncetion exists";
         return $this->session;
     }
 
@@ -106,16 +99,43 @@ class MySQL_Manager{
 
         //var_dump($query);
         $result = mysql_query($query,$this->session);
-        $data = $this->fetch($result);
+        $data = mysql_fetch_array($result);
 
         /**
          * Note the time after the execution
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $data;
+    }
+
+    /**
+     * Run the query
+     * @param $query
+     * @return object the response
+     */
+    public function queryUpdate($query){
+
+        //var_dump($this->session);
+
+        /**
+         * Note the time before the execution
+         */
+        $msc = microtime(true);
+
+        //var_dump($query);
+        $result = mysql_query($query,$this->session);
+
+        /**
+         * Note the time after the execution
+         */
+        $diff = microtime(true)-$msc;
+        $date = date("D M d, Y G:i");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
+        return $result;
     }
 
     public function queryMultiple($query){
@@ -137,7 +157,7 @@ class MySQL_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $result;
     }

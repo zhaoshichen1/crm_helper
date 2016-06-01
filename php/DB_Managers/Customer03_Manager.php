@@ -67,6 +67,10 @@ class Customer03_Manager{
         $this->session = $this->connexion();
     }
 
+    public function getSession(){
+        return $this->session;
+    }
+
     /**
      * Remove "," from the given string
      * @param $string
@@ -125,7 +129,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
         return $data;
     }
@@ -149,7 +153,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
         return $result;
     }
@@ -176,7 +180,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." s\n\r");
 
     }
 }

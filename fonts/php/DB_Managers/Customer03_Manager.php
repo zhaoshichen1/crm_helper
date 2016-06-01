@@ -1,7 +1,5 @@
 <?php
 
-include '../Util/Tool.php';
-
 /**
  * Chinese Time - UTF+8
  */
@@ -82,8 +80,8 @@ class Customer03_Manager{
      * Set up the content of the query and run the query
      * @param $query
      */
-    private function setQuery($query){
-        $this->query = pg_query($this->session,$query);
+    public function setQuery($query){
+        return $this->query = pg_query($this->session,$query);
     }
 
     /**
@@ -127,7 +125,7 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $data;
     }
@@ -141,7 +139,7 @@ class Customer03_Manager{
 
         $this->setQuery($query);
         $result = array();
-        while($response = pg_fetch_row($this->session,$this->query)) {
+        while($response = pg_fetch_row($this->query)) {
             array_push($result,$response);
         }
 
@@ -150,8 +148,34 @@ class Customer03_Manager{
          */
         $diff = microtime(true)-$msc;
         $date = date("D M d, Y G:i");
-        openAndWriteALine("../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
 
         return $result;
+    }
+
+    /**
+     * Run the query without fetch the result
+     * @param $query
+     * @return object the response
+     */
+    public function queryUpdate($query){
+
+        //var_dump($this->session);
+
+        /**
+         * Note the time before the execution
+         */
+        $msc = microtime(true);
+
+        //var_dump($query);
+        $this->setQuery($query);
+
+        /**
+         * Note the time after the execution
+         */
+        $diff = microtime(true)-$msc;
+        $date = date("D M d, Y G:i");
+        openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\rQuery: ".$query."\n\rExecution Duration is ".$diff." ms\n\r");
+
     }
 }

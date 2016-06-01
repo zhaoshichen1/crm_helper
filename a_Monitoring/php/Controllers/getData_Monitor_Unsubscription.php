@@ -46,7 +46,12 @@ $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
-if (isset($_GET['unsubscribed_all'])){
+// note the IP in the DB
+if (isset($_GET['please_note_IP'])){
+    note_massive_subscription_operator_IP_Time($MySqlDB,$_GET['please_note_IP']);
+}
+
+else if (isset($_GET['unsubscribed_all'])){
     /**
      * if we get the value force_update, we will force the refresh of the Data in our MySQL DB
      */
@@ -270,51 +275,6 @@ function get_Customer03_subscription($db_m)
     //var_dump($Customer03_subscription_count_7);
 }
 
-/**
- * Recovery all the unsubscribed customers during last 30 days - automatic
- * @param $db_m MYSQL DB
- * @param $db_b BCZ DB
- */
-function recovery_subscription($db_m,$db_b)
-{
-    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
-    $msc = microtime(true);
-
-    $sql_diff = "select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null";
-    $data = mysql_query($sql_diff,$MySqlManager->getSession());
-
-    $BCZManager = new BCZ_Manager($db_b->host, $db_b->user, $db_b->password, $db_b->port);
-    $BCZManager->setBdd("loyalty");
-
-    /**
-     * for all the customers found not subscribed, recover in One shot
-     */
-    while($response = mysql_fetch_row($data)) {
-
-        /**
-         * add a new line in compte_fid
-         */
-        $BCZManager->queryUpdate("insert into loyalty..compte_fid values ('".$response[0]."','".$response[1]."');");
-
-        /**
-         * add a new line in histo_adhesion_fid
-         */
-        $BCZManager->queryUpdate("insert into loyalty..histo_adhesion_fid values ('".$response[1]."',getdate(),1,'HOC');");
-
-        /**
-         * leave a record in the mySQL db
-         */
-        $MySqlManager->queryUpdate
-        ("insert into testDB.operation_record (operation_name,operation_date,operation_details1) values ('Subscription_Recovery',curdate(),'".$response[0]."');");
-
-        // for the test of Ruohong, only recover one guy per call
-        break;
-    }
-
-    $diff = microtime(true)-$msc;
-    $date = date("D M d, Y G:i");
-    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
-}
 
 /**
  * @param $db_m
@@ -373,4 +333,63 @@ function get_Total_gap($db_m){
     $date = date("D M d, Y G:i");
     openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_Customer03_count_30."\n\r".$sql_BCZ_count_30."\n\rExecution Duration is ".$diff." s\n\r");
     return $Gap_total;
+}
+
+
+/**
+ * @param $db_m
+ * @param $db_b
+ */
+function recovery_subscription($db_m,$db_b)
+{
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+    $msc = microtime(true);
+
+    $sql_diff = "select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null";
+    $data = mysql_query($sql_diff,$MySqlManager->getSession());
+    var_dump($data);
+
+    $BCZManager = new BCZ_Manager($db_b->host, $db_b->user, $db_b->password, $db_b->port);
+    $BCZManager->setBdd("loyalty");
+
+    /**
+     * for all the customers found not subscribed, recover in One shot
+     */
+    while($response = mysql_fetch_row($data)) {
+
+        /**
+         * add a new line in compte_fid
+         */
+        $BCZManager->queryUpdate("insert into loyalty..compte_fid values ('".$response[0]."','".$response[1]."');");
+
+        /**
+         * add a new line in histo_adhesion_fid
+         */
+        $BCZManager->queryUpdate("insert into loyalty..histo_adhesion_fid values ('".$response[1]."',getdate(),1,'HOC');");
+
+        /**
+         *
+         */
+        $MySqlManager->queryUpdate
+        ("insert into testDB.operation_record (operation_name,operation_date,operation_details1) values ('Subscription_Recovery',curdate(),'".$response[0]."');");
+
+        // for the test of Ruohong, only recover one guy per call
+        break;
+    }
+
+    $diff = microtime(true)-$msc;
+    $date = date("D M d, Y G:i");
+    openAndWriteALine("../../../log/Log.txt","Date: ".$date."\n\r".$sql_diff."\n\rExecution Duration is ".$diff." s\n\r");
+}
+
+/**
+ * to note the IP, operation time of the operator who carries out the operation of massive subscription
+ */
+function note_massive_subscription_operator_IP_Time($db_m,$ip){
+    $MySqlManager = new MySQL_Manager($db_m->host,$db_m->user,$db_m->password,$db_m->port,$db_m->dbname);
+    $msc = microtime(true);
+    $MySqlManager->queryUpdate
+    ("insert into testDB.operation_record
+(operation_name,operation_date,operation_details1)
+values ('User_Massive_Subscription_Recovery',curdate(),'".$ip."');");
 }

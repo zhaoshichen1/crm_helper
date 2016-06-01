@@ -14,8 +14,8 @@ include_once  '../../../php/Util/Tool.php';
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
-$CustomerDB->user = 'crm_helper';
-$CustomerDB->password = 'decathlon1';
+$CustomerDB->user = 'szhao30';
+$CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
 
@@ -59,7 +59,7 @@ function get_customer($db_customer03,$db_BCZ){
         $response = $CustomerManager->query($select_id_query);
         var_dump($response);
 
-        //.if the response is false ( no result )
+        //.if the response is false ( no no result )
         if(!$response){
             print "No_Card_Found";
         }

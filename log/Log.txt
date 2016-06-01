@@ -496,4 +496,1256 @@ having count(*) >1) as result
 Execution Duration is 0.074413061141968 ms
 
 
+Date: Tue Apr 26, 2016 17:29
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 12.049252986908 ms
+
+
+Date: Tue Apr 26, 2016 17:34
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 9.9848940372467 ms
+
+
+Date: Wed Apr 27, 2016 17:31
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 12.579231977463 ms
+
+
+Date: Wed Apr 27, 2016 17:31
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.038830995559692 ms
+
+
+Date: Wed Apr 27, 2016 17:39
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0 ms
+
+
+Date: Wed Apr 27, 2016 17:40
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 9.5367431640625E-7 ms
+
+
+Date: Wed Apr 27, 2016 17:40
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 9.5367431640625E-7 ms
+
+
+Date: Wed Apr 27, 2016 17:44
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.020092010498047 ms
+
+
+Date: Wed Apr 27, 2016 17:44
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.021462917327881 ms
+
+
+Date: Wed Apr 27, 2016 17:44
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.02056097984314 ms
+
+
+Date: Wed Apr 27, 2016 17:52
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.020549058914185 ms
+
+
+Date: Wed Apr 27, 2016 17:52
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 10.880640983582 ms
+
+
+Date: Wed Apr 27, 2016 17:52
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.01988697052002 ms
+
+
+Date: Wed Apr 27, 2016 17:53
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.023511171340942 ms
+
+
+Date: Wed Apr 27, 2016 17:56
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.020690202713013 ms
+
+
+Date: Wed Apr 27, 2016 17:58
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13880191148'
+Execution Duration is 0.024995088577271 ms
+
+
+Date: Wed Apr 27, 2016 17:59
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 9.830235004425 ms
+
+
+Date: Wed Apr 27, 2016 18:02
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '18321985625'
+Execution Duration is 0.022469997406006 ms
+
+
+Date: Wed Apr 27, 2016 18:03
+Query: select type_member,numero_carte from Customer03.personne where email = 'ruohong.fan@decathlon'
+Execution Duration is 9.943286895752 ms
+
+
+Date: Wed Apr 27, 2016 18:04
+Query: select type_member,numero_carte from Customer03.personne where email = 'ruohong.fan@decathlon.com'
+Execution Duration is 8.2648260593414 ms
+
+
+Date: Wed Apr 27, 2016 18:04
+Query: select type_member,numero_carte from Customer03.personne where email = 'ruohong.fan@decathlon.com'
+Execution Duration is 8.2434549331665 ms
+
+
+Date: Wed Apr 27, 2016 18:05
+Query: select type_member,numero_carte from Customer03.personne where email = 'ruohong.fan1@decathlon.com'
+Execution Duration is 7.9194917678833 ms
+
+
+Date: Wed Apr 27, 2016 18:18
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zha2o@decathlon.com'
+Execution Duration is 10.370646953583 ms
+
+
+Date: Wed Apr 27, 2016 18:18
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '1305210421'
+Execution Duration is 0.019723176956177 ms
+
+
+Date: Wed Apr 27, 2016 18:20
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zha2o@decathlon.com'
+Execution Duration is 9.2477447986603 ms
+
+
+Date: Wed Apr 27, 2016 18:22
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen@de.com'
+Execution Duration is 9.2787899971008 ms
+
+
+Date: Wed Apr 27, 2016 18:23
+Query: select type_member,numero_carte from Customer03.personne where email = 'dsa.@'
+Execution Duration is 8.4069740772247 ms
+
+
+Date: Wed Apr 27, 2016 18:30
+Query: select type_member,numero_carte from Customer03.personne where email = 'dsa@de.com'
+Execution Duration is 10.284476995468 ms
+
+
+Date: Wed Apr 27, 2016 18:46
+Query: select type_member,numero_carte from Customer03.personne where email = 'jasoisdf'
+Execution Duration is 10.447607040405 ms
+
+
+Date: Thu Apr 28, 2016 11:13
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen@d.com'
+Execution Duration is 10.67414689064 ms
+
+
+Date: Thu Apr 28, 2016 15:10
+Query: select type_member,numero_carte from Customer03.personne where email = 'shichen.zhao@decathlon.com'
+Execution Duration is 11.699875116348 ms
+
+
+Date: Fri Apr 29, 2016 10:58
+Query: select * from personne where searchpersonfct(email) = LOWER('shichen.zhao@decathlon.com')
+Execution Duration is 0.067677021026611 ms
+
+
+Date: Fri Apr 29, 2016 10:58
+Query: select * from personne where searchpersonfct(email) = LOWER('14018789')
+Execution Duration is 0.046405076980591 ms
+
+
+Date: Fri Apr 29, 2016 10:58
+Query: select * from personne where searchpersonfct(email) = LOWER('frh19911027@163.com')
+Execution Duration is 0.042407989501953 ms
+
+
+Date: Fri Apr 29, 2016 10:59
+Query: select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('shichen.zhao@decathlon.com')
+Execution Duration is 0.021727085113525 ms
+
+
+Date: Fri Apr 29, 2016 11:00
+Query: select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('frh19911027@163.com')
+Execution Duration is 0.020805835723877 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.00045514106750488 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.00014591217041016 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.00027012825012207 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.00013995170593262 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.0002589225769043 ms
+
+
+Date: Fri Apr 29, 2016 11:12
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.00013208389282227 ms
+
+
+Date: Fri Apr 29, 2016 11:13
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.00025796890258789 ms
+
+
+Date: Fri Apr 29, 2016 11:13
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.00012493133544922 ms
+
+
+Date: Fri Apr 29, 2016 11:13
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.0002751350402832 ms
+
+
+Date: Fri Apr 29, 2016 11:13
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.0001368522644043 ms
+
+
+Date: Fri Apr 29, 2016 11:14
+Query: select type_member,numero_carte from Customer03.personne where tel_portable = '13052104214'
+Execution Duration is 0.023046970367432 ms
+
+
+Date: Fri Apr 29, 2016 11:14
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-04-29'
+Execution Duration is 0.00042295455932617 ms
+
+
+Date: Fri Apr 29, 2016 11:14
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-04-29';
+Execution Duration is 0.00017309188842773 ms
+
+
+Date: Fri Apr 29, 2016 11:14
+Query: select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('shichen.zhao@decathlon.com')
+Execution Duration is 0.020982027053833 ms
+
+
+Date: Fri Apr 29, 2016 11:46
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= curdate()-1
+                and date_creation >= curdate()-30;
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= curdate()-1
+                and c.date_creation >= curdate()-30;
+Execution Duration is 0.66212582588196 ms
+
+
+Date: Fri Apr 29, 2016 11:46
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= curdate()-1
+            and c.date_creation >= curdate()-7
+            group by c.date_creation;
+Execution Duration is 0.036366939544678 ms
+
+
+Date: Fri Apr 29, 2016 11:57
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= curdate()-1
+            and c.date_creation >= curdate()-7
+            group by c.date_creation;
+Execution Duration is 0.038655996322632 ms
+
+
+Date: Fri Apr 29, 2016 11:57
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= curdate()-1
+                and date_creation >= curdate()-30;
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= curdate()-1
+                and c.date_creation >= curdate()-30;
+Execution Duration is 0.63713192939758 ms
+
+
+Date: Fri Apr 29, 2016 12:00
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= curdate()-1
+            and c.date_creation >= curdate()-7
+            group by c.date_creation;
+Execution Duration is 0.038856983184814 ms
+
+
+Date: Fri Apr 29, 2016 12:00
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= curdate()-1
+            and date_creation >= curdate()-7
+            group by date_creation;
+Execution Duration is 0.038450002670288 ms
+
+
+Date: Fri Apr 29, 2016 12:00
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= curdate()-1
+                and date_creation >= curdate()-30;
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= curdate()-1
+                and c.date_creation >= curdate()-30;
+Execution Duration is 0.66759300231934 ms
+
+
+Date: Thu May 05, 2016 23:14
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.0577230453491 ms
+
+
+Date: Thu May 05, 2016 23:15
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 30.128564119339 ms
+
+
+Date: Thu May 05, 2016 23:16
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 26.496968984604 ms
+
+
+Date: Thu May 05, 2016 23:16
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.0561029911041 ms
+
+
+Date: Thu May 05, 2016 23:58
+select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;
+Execution Duration is 0.00025105476379395 ms
+
+
+Date: Fri May 06, 2016 0:01
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 30.869503974915 ms
+
+
+Date: Fri May 06, 2016 0:02
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 27.349262952805 ms
+
+
+Date: Fri May 06, 2016 0:02
+select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;
+Execution Duration is 0.00049901008605957 ms
+
+
+Date: Fri May 06, 2016 0:02
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-05-06'
+Execution Duration is 0.00049400329589844 ms
+
+
+Date: Fri May 06, 2016 0:02
+Query: insert into nb_execution (func_id,date_exec,nb) values (500007,'2016-05-06',1);
+Execution Duration is 0.00015521049499512 ms
+
+
+Date: Fri May 06, 2016 0:02
+Query: select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('shichen.zhao@decathlon.com')
+Execution Duration is 3.7193298339844E-5 ms
+
+
+Date: Fri May 06, 2016 0:03
+Query: select * from nb_execution where func_id = 500002 and date_exec = '2016-05-06'
+Execution Duration is 0.00021100044250488 ms
+
+
+Date: Fri May 06, 2016 0:03
+Query: insert into nb_execution (func_id,date_exec,nb) values (500002,'2016-05-06',1);
+Execution Duration is 8.6069107055664E-5 ms
+
+
+Date: Fri May 06, 2016 0:03
+Query: SELECT rti_code_erreur  FROM reservoir_avantage WHERE car_numero_carte = 2090000011111
+Execution Duration is 0.52904605865479 ms
+
+
+Date: Fri May 06, 2016 0:05
+select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;
+Execution Duration is 0.00023293495178223 ms
+
+
+Date: Fri May 06, 2016 0:05
+select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;
+Execution Duration is 0.00018095970153809 ms
+
+
+Date: Fri May 06, 2016 0:06
+select cs.numero_carte,id from Customer03_subscription cs
+left join BCZ_subscription bs
+on cs.id = bs.id
+where bs.id is null;
+Execution Duration is 0.00019311904907227 ms
+
+
+Date: Fri May 06, 2016 12:59
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 31.96114397049 ms
+
+
+Date: Fri May 06, 2016 13:01
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 29.286233901978 ms
+
+
+Date: Fri May 06, 2016 13:02
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 29.093935966492 ms
+
+
+Date: Fri May 06, 2016 13:03
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 30.735801935196 ms
+
+
+Date: Fri May 06, 2016 13:07
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 32.09676194191 ms
+
+
+Date: Fri May 06, 2016 13:09
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 29.705250024796 ms
+
+
+Date: Fri May 06, 2016 13:10
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 30.744837999344 ms
+
+
+Date: Fri May 06, 2016 13:12
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 31.527852058411 ms
+
+
+Date: Fri May 06, 2016 13:12
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.085969209671021 ms
+
+
+Date: Fri May 06, 2016 13:15
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 28.964390993118 ms
+
+
+Date: Fri May 06, 2016 13:15
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 26.202974081039 ms
+
+
+Date: Fri May 06, 2016 13:15
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.085439920425415 ms
+
+
+Date: Fri May 06, 2016 13:17
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 29.396642923355 ms
+
+
+Date: Fri May 06, 2016 13:18
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 28.587502002716 ms
+
+
+Date: Fri May 06, 2016 13:18
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 28.288864850998 ms
+
+
+Date: Fri May 06, 2016 13:18
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.08649206161499 ms
+
+
+Date: Fri May 06, 2016 13:19
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 28.291478157043 ms
+
+
+Date: Fri May 06, 2016 13:20
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 37.44845700264 ms
+
+
+Date: Fri May 06, 2016 13:20
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.088849782943726 ms
+
+
+Date: Fri May 06, 2016 13:20
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 37.792882919312 ms
+
+
+Date: Fri May 06, 2016 13:20
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.093210220336914 ms
+
+
+Date: Fri May 06, 2016 13:22
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 31.565292835236 ms
+
+
+Date: Fri May 06, 2016 13:22
+select date_creation, count(*)
+            from testDB.Customer03_subscription
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.094633817672729 ms
+
+
+Date: Fri May 06, 2016 13:24
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 33.786925077438 ms
+
+
+Date: Fri May 06, 2016 13:24
+select * from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.89514207839966 ms
+
+
+Date: Fri May 06, 2016 13:27
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 31.012274980545 ms
+
+
+Date: Fri May 06, 2016 13:27
+select * from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.85542392730713 s
+
+
+Date: Fri May 06, 2016 13:28
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 30.442345142365 ms
+
+
+Date: Fri May 06, 2016 13:28
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.62306690216064 s
+
+
+Date: Fri May 06, 2016 13:30
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.63327383995056 s
+
+
+Date: Fri May 06, 2016 13:35
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.63758707046509 s
+
+
+Date: Fri May 06, 2016 13:37
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.6298360824585 s
+
+
+Date: Fri May 06, 2016 13:38
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.62739586830139 s
+
+
+Date: Fri May 06, 2016 13:44
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.65003299713135 s
+
+
+Date: Fri May 06, 2016 13:45
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.63191103935242 s
+
+
+Date: Fri May 06, 2016 13:46
+Query: insert into loyalty..compte_fid values ('2090738651672','99001960003');
+Execution Duration is 0.023649930953979 s
+
+
+Date: Fri May 06, 2016 13:46
+Query: insert into loyalty..histo_adhesion_fid values ('99001960003',getdate(),1,'HOC');
+Execution Duration is 0.021084070205688 s
+
+
+Date: Fri May 06, 2016 13:46
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.75560808181763 s
+
+
+Date: Fri May 06, 2016 13:49
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.0941710472107 s
+
+
+Date: Fri May 06, 2016 13:49
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.47401309013367 ms
+
+
+Date: Fri May 06, 2016 13:49
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.087265014648438 s
+
+
+Date: Fri May 06, 2016 15:56
+Query: insert into loyalty..compte_fid values ('2090738651672','99001960003');
+Execution Duration is 0.040418148040771 s
+
+
+Date: Fri May 06, 2016 15:56
+Query: insert into loyalty..histo_adhesion_fid values ('99001960003',getdate(),1,'HOC');
+Execution Duration is 0.020208835601807 s
+
+
+Date: Fri May 06, 2016 15:56
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.82888793945312 s
+
+
+Date: Fri May 06, 2016 15:58
+Query: select * from nb_execution where func_id = 500007 and date_exec = '2016-05-06'
+Execution Duration is 0.00040698051452637 s
+
+
+Date: Fri May 06, 2016 15:58
+Query: update nb_execution set nb = nb+1 where func_id = 500007 and date_exec = '2016-05-06';
+Execution Duration is 0.00022602081298828 s
+
+
+Date: Fri May 06, 2016 15:58
+Query: select type_member,numero_carte from personne where searchpersonfct(email) = LOWER('shichen.zhao@decathlon.com')
+Execution Duration is 3.4809112548828E-5 s
+
+
+Date: Fri May 06, 2016 16:11
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.65427684783936 ms
+
+
+Date: Fri May 06, 2016 16:11
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.087117910385132 s
+
+
+Date: Fri May 06, 2016 16:11
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.3584790229797 s
+
+
+Date: Fri May 06, 2016 16:50
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.089460849761963 s
+
+
+Date: Fri May 06, 2016 16:55
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.088741779327393 s
+
+
+Date: Fri May 06, 2016 17:05
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.090590953826904 s
+
+
+Date: Fri May 06, 2016 17:05
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.086994886398315 s
+
+
+Date: Fri May 06, 2016 17:09
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.65551590919495 ms
+
+
+Date: Fri May 06, 2016 17:09
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.088005065917969 s
+
+
+Date: Fri May 06, 2016 17:09
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.3444178104401 s
+
+
+Date: Fri May 06, 2016 17:09
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.090750932693481 s
+
+
+Date: Sat May 07, 2016 18:08
+select to_char(date_creation, 'YYYYMMDD') as date_creation, numero_carte, id from personne 
+            where date_creation >= current_date-30 and date_creation <= current_date-1
+            and code_pays_tiers_habituel = 'CN'
+            and (est_supprime is false or est_supprime is null)
+            and type_personne = 1
+            and type_member IN (2, 3, 6) --type_member 6 = client_light
+            and numero_carte is not null
+            order by to_char(date_creation, 'YYYYMMDD');
+Query: insert Customer03_subscription
+Execution Duration is 32.866806983948 ms
+
+
+Date: Sat May 07, 2016 18:09
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 27.399373054504 s
+
+
+Date: Sat May 07, 2016 18:09
+Query: insert into loyalty..compte_fid values ('2090738510818','99001941285');
+Execution Duration is 0.022540092468262 s
+
+
+Date: Sat May 07, 2016 18:09
+Query: insert into loyalty..histo_adhesion_fid values ('99001941285',getdate(),1,'HOC');
+Execution Duration is 0.020918846130371 s
+
+
+Date: Sat May 07, 2016 18:09
+select cs.numero_carte,cs.id from Customer03_subscription cs left join BCZ_subscription bs on cs.id = bs.id where bs.id is null
+Execution Duration is 0.7841968536377 s
+
+
+Date: Mon May 09, 2016 14:55
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 194.03732585907 s
+
+
+Date: Mon May 09, 2016 14:55
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 194.05585408211 s
+
+
+Date: Mon May 09, 2016 14:55
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.74400115013123 ms
+
+
+Date: Mon May 09, 2016 14:55
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 2.6044461727142 s
+
+
+Date: Mon May 09, 2016 14:56
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 210.69976902008 s
+
+
+Date: Mon May 09, 2016 14:56
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 215.26839900017 s
+
+
+Date: Mon May 09, 2016 14:56
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 210.72866201401 s
+
+
+Date: Mon May 09, 2016 14:56
+select distinct max(convert(char(8),h.date_insertion,112)) as date_creation, 
+            c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER
+            from compte_fid c inner join histo_adhesion_fid h
+            on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
+            where convert(char(8),h.date_insertion,112) 
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;
+Query: insert BCZ_subscription
+Execution Duration is 215.33671402931 s
+
+
+Date: Mon May 09, 2016 14:56
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.86547493934631 ms
+
+
+Date: Mon May 09, 2016 14:56
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.70595121383667 ms
+
+
+Date: Mon May 09, 2016 14:56
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 3.1690018177032 s
+
+
+Date: Mon May 09, 2016 14:56
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 3.1298000812531 s
+
+
+Date: Wed May 11, 2016 10:06
+select count(*)
+                from testDB.Customer03_subscription 
+                where date_creation <= date_sub(curdate(), interval 1 day)
+                and date_creation >= date_sub(curdate(), interval 30 day);
+select count(*)
+                from testDB.Customer03_subscription c
+                inner join testDB.BCZ_subscription b
+                on c.id = b.id and c.numero_carte = b.numero_carte
+                where c.date_creation <= date_sub(curdate(), interval 1 day)
+                and c.date_creation >= date_sub(curdate(), interval 30 day);
+Execution Duration is 1.0756211280823 s
+
+
+Date: Wed May 11, 2016 10:06
+select c.date_creation, count(*)
+            from testDB.Customer03_subscription c
+            inner join testDB.BCZ_subscription b
+            on c.id = b.id and c.numero_carte = b.numero_carte
+            where c.date_creation <= date_sub(curdate(), interval 1 day)
+            and c.date_creation >= date_sub(curdate(), interval 7 day)
+            group by c.date_creation;
+Execution Duration is 0.28949999809265 ms
+
+
+Date: Wed May 11, 2016 10:06
+select date_creation, count(*) 
+            from testDB.Customer03_subscription 
+            where date_creation <= date_sub(curdate(), interval 1 day)
+            and date_creation >= date_sub(curdate(), interval 7 day)
+            group by date_creation;
+Execution Duration is 0.082237958908081 s
+
+
 

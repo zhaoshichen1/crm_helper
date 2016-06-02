@@ -8,13 +8,15 @@
 
 require_once "../../test_connect_oms.php";
 
+/**
+ * Receive the CSV file and validate its format & size
+ * @return bool|string whether the validation succeed or not
+ */
 function receive_and_validate_file(){
-    
 
     /**
      * the file format must be csv and we limit the file size to 2M
      */
-
     $mimes = array('application/vnd.ms-excel','text/plain','text/csv','text/tsv');
     if(in_array($_FILES['file']['type'],$mimes) && ($_FILES["file"]["size"] < 2000000)){
         if ($_FILES["file"]["error"] > 0)
@@ -23,46 +25,19 @@ function receive_and_validate_file(){
         }
         else
         {
-            // show_file_info();
-
-            $contents= file_get_contents($_FILES['file']['tmp_name']);
-            $items = treat_csv_content($contents);
-
-            $m = new show_Message();
-
-            // parse the result to array
-            $result = $m->show_call_result("treat_item_codes_for_price_name",json_encode($items,TRUE));
-            $result = json_decode($result);
-
-            $header = array('item_code','name','cost');
-            $file_name = "item_price_name".date('Y-m-d').".csv";
-
-            header("Content-Type:application/csv");
-            header("Content-Disposition:attachment;filename=".$file_name);
-            $output = fopen("php://output",'w') or die("Can't open php://output");
-
-
-            // pre-write the headers as the first line
-            fputcsv($output, $header);
-
-            foreach($result as $r){
-                fputcsv($output, $r);
-            }
-
-            fclose($output) or die("Can't close php://output");
+            return treat_upload_csv_file();
         }
 
     } else {
         echo "Invalid file";
+        return false;
     }
     
-    return "";
-
-    // var_dump($_FILES["file"]);
+    return false;
 }
 
 /**
- *
+ * display the information of file in case of needs
  */
 function show_file_info(){
     echo "Upload: " . $_FILES["file"]["name"] . "<br />";
@@ -72,31 +47,63 @@ function show_file_info(){
 }
 
 /**
- * remove all the white space
- * @param $contentr
+ * @return bool
  */
-function treat_csv_content($content){
-
-    $string = str_replace(' ', '', $content);
-    $string2 = preg_replace('/\s+/', '', $string);
-    $string3 = trim($string2);
+function treat_upload_csv_file(){
 
     /**
-     * get all the item codes
+     * a new array for item codes
      */
-    $item_codes = explode(";",$string3);
+    $items = array();
+
+    /**
+     * open the file uploaded
+     */
+    if(!$fp = fopen($_FILES['file']['tmp_name'], 'r')) {
+        return false;
+    }
+    else{
 
         /**
-         * pick only the valid item codes whose length > 3
+         * add the items line by line into the array
          */
-    $new_item_codes = array();
-    foreach ( $item_codes as $item ){
-        if(strlen($item) >= 1){
-            array_push($new_item_codes,$item);
-        }
-    }
+        while($line = fgets($fp)){
+            $string2 = preg_replace('/\s+/', '', $line);
+            $string3 = trim($string2);
 
-    return $new_item_codes;
+            // if it's valid string
+            if(strlen($string3)>2)
+                array_push($items,$string3);
+        }
+
+        // parse the result to array
+        // and call the OMS API for the result given back
+        $m = new show_Message();
+        $result = $m->show_call_result("treat_item_codes_for_price_name",json_encode($items,TRUE));
+
+        // decode the result
+        $result = json_decode($result);
+
+        // write the CSV file and provide it to user to download
+        $header = array('item_code','name','cost');
+        $file_name = "item_price_name".date('Y-m-d').".csv";
+
+        header("Content-Type:application/csv");
+        header("Content-Disposition:attachment;filename=".$file_name);
+
+        $output = fopen("php://output",'w') or die("Can't open php://output");
+
+        // pre-write the headers as the first line
+        fputcsv($output, $header);
+
+        foreach($result as $r){
+            fputcsv($output, $r);
+        }
+
+        fclose($output) or die("Can't close php://output");
+
+        return true;
+    }
 }
 
 receive_and_validate_file();

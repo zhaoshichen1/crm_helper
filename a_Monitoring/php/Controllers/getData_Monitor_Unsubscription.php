@@ -41,7 +41,7 @@ $LoyaltyDB->port = 1433;
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
-$CustomerDB->user = 'szhao30';
+$CustomerDB->user = 'crm_helper';
 $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
@@ -373,8 +373,6 @@ function recovery_subscription($db_m,$db_b)
         $MySqlManager->queryUpdate
         ("insert into testDB.operation_record (operation_name,operation_date,operation_details1) values ('Subscription_Recovery',curdate(),'".$response[0]."');");
 
-        // for the test of Ruohong, only recover one guy per call
-        break;
     }
 
     $diff = microtime(true)-$msc;

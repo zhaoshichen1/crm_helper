@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/pages/backoffice/login_success.php" description="&lt;div&gt;" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="">
+    <list default="true" id="ada962b0-3598-431c-825e-f8f749642190" name="Default" comment="finish the dev of recover 30 days&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/PHPMailer/PHPMailerAutoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/PHPMailer/class.phpmailer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/PHPMailer/class.smtp.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/Util/Test_of_OMS.php" afterPath="$PROJECT_DIR$/php/Util/Test_of_Email.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" afterPath="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" />
     </list>
@@ -45,46 +49,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Execution_Record.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Util/Execution_Record.php">
+      <file leaf-file-name="getData_Monitor_Unsubscription.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="2400">
+              <caret line="273" column="74" selection-start-line="273" selection-start-column="74" selection-end-line="273" selection-end-column="74" />
               <folding>
-                <marker date="1461489180000" expanded="true" signature="939:958" placeholder="select * fro... pages" />
+                <marker date="1462615978000" expanded="false" signature="9:92" placeholder=" Created by PhpStorm. ..." />
+                <marker date="1462615978000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
+                <marker date="1462615978000" expanded="true" signature="3295:3357" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="3594:3656" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="3738:3780" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
+                <marker date="1462615978000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
+                <marker date="1462615978000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
+                <marker date="1462615978000" expanded="true" signature="6270:6375" placeholder="select * fro... BCZ_subscription" />
+                <marker date="1462615978000" expanded="true" signature="6587:6642" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="6835:6890" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="6934:6969" placeholder="delete from " />
+                <marker date="1462615978000" expanded="true" signature="7406:7871" placeholder="select disti... compte_fid" />
+                <marker date="1462615978000" expanded="true" signature="8094:8183" placeholder="insert into testDB.BCZ_subscription... " />
+                <marker date="1462615978000" expanded="true" signature="8335:8430" placeholder="insert into BCZ_subscription... " />
+                <marker date="1462615978000" expanded="true" signature="8948:9203" placeholder="select date_... Customer03_subscription" />
+                <marker date="1462615978000" expanded="true" signature="10010:10137" placeholder="select cs.nu... Customer03_subscription" />
+                <marker date="1462615978000" expanded="true" signature="10567:10645" placeholder="insert into loyalty..compte_fid... " />
+                <marker date="1462615978000" expanded="true" signature="10757:10842" placeholder="insert into loyalty..histo_adhesion_fid... " />
+                <marker date="1462615978000" expanded="true" signature="10959:11089" placeholder="insert into testDB.operation_record... " />
+                <marker date="1462615978000" expanded="true" signature="10959:11107" placeholder="insert into testDB.operation_record... " />
+                <marker date="1462615978000" expanded="true" signature="11616:11991" placeholder="select c.dat... Customer03_subscription" />
+                <marker date="1462615978000" expanded="true" signature="12734:12951" placeholder="select count... Customer03_subscription" />
+                <marker date="1462615978000" expanded="true" signature="13298:13640" placeholder="select count... Customer03_subscription" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData_Monitor_Unsubscription.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="281" column="65" selection-start-line="281" selection-start-column="65" selection-end-line="281" selection-end-column="65" />
-              <folding>
-                <marker date="1462611183000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
-                <marker date="1462611183000" expanded="true" signature="3295:3357" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="3594:3656" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="3738:3780" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
-                <marker date="1462611183000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
-                <marker date="1462611183000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
-                <marker date="1462611183000" expanded="true" signature="6181:6286" placeholder="select * fro... BCZ_subscription" />
-                <marker date="1462611183000" expanded="true" signature="6498:6553" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="6746:6801" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="6845:6880" placeholder="delete from " />
-                <marker date="1462611183000" expanded="true" signature="7317:7782" placeholder="select disti... compte_fid" />
-                <marker date="1462611183000" expanded="true" signature="8005:8094" placeholder="insert into testDB.BCZ_subscription... " />
-                <marker date="1462611183000" expanded="true" signature="8246:8341" placeholder="insert into BCZ_subscription... " />
-                <marker date="1462611183000" expanded="true" signature="8835:9090" placeholder="select date_... Customer03_subscription" />
-                <marker date="1462611183000" expanded="true" signature="9766:9893" placeholder="select cs.nu... Customer03_subscription" />
-                <marker date="1462611183000" expanded="true" signature="10258:10336" placeholder="insert into loyalty..compte_fid... " />
-                <marker date="1462611183000" expanded="true" signature="10375:10460" placeholder="insert into loyalty..histo_adhesion_fid... " />
-                <marker date="1462611183000" expanded="true" signature="10945:11320" placeholder="select c.dat... Customer03_subscription" />
-                <marker date="1462611183000" expanded="true" signature="12063:12280" placeholder="select count... Customer03_subscription" />
-                <marker date="1462611183000" expanded="true" signature="12627:12969" placeholder="select count... Customer03_subscription" />
-              </folding>
+            <state relative-caret-position="3165">
+              <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,48 +104,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQL_Info.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Util/MySQL_Info.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flot-data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a_Monitoring/js/flot-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Util/Tool.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="morris-data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a_Monitoring/js/morris-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!block;n#get7DaysData#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Customer03_Manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DB_Managers/Customer03_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,12 +114,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQL_Manager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MySQL_Manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+            <state relative-caret-position="1410">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.smtp.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/PHPMailer/class.smtp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="1143" column="1" selection-start-line="1143" selection-start-column="1" selection-end-line="1143" selection-end-column="1" />
+              <folding>
+                <element signature="e#8#823#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.phpmailer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/PHPMailer/class.phpmailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#8#837#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PHPMailerAutoload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/PHPMailer/PHPMailerAutoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#809#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_of_Email.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Util/Test_of_Email.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+              <folding>
+                <element signature="e#6#92#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,10 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/Util/Test_of_CSV.php" />
-        <option value="$PROJECT_DIR$/js/Main_page/Run_Scripts.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/Main_page/Triggers.js" />
         <option value="$PROJECT_DIR$/js/Main_page/Waiting.js" />
         <option value="$PROJECT_DIR$/php/Controllers/getData.php" />
         <option value="$PROJECT_DIR$/js/Main_page/Update_Scripts.js" />
@@ -230,6 +237,10 @@
         <option value="$PROJECT_DIR$/php/Util/Tool.php" />
         <option value="$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData_Customer03.php" />
         <option value="$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php" />
+        <option value="$PROJECT_DIR$/php/PHPMailer/class.smtp.php" />
+        <option value="$PROJECT_DIR$/php/PHPMailer/class.phpmailer.php" />
+        <option value="$PROJECT_DIR$/php/PHPMailer/PHPMailerAutoload.php" />
+        <option value="$PROJECT_DIR$/php/Util/Test_of_Email.php" />
         <option value="$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php" />
       </list>
     </option>
@@ -324,6 +335,24 @@
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHPMailer" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HOC2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -353,47 +382,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="a_Troubleshooting" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HOC2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_Troubleshooting" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HOC2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_Troubleshooting" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,24 +423,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HOC2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_Monitoring" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,7 +521,7 @@
       <workItem from="1461489187118" duration="564000" />
       <workItem from="1461930536864" duration="515000" />
       <workItem from="1462458712876" duration="4754000" />
-      <workItem from="1462611004265" duration="210000" />
+      <workItem from="1462611004265" duration="4259000" />
     </task>
     <task id="LOCAL-00001" summary="Rename several files">
       <created>1460601773209</created>
@@ -660,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462611048965</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finish the dev of recover 30 days&#10;">
+      <created>1462611242408</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1462611242408</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20050000" />
+    <option name="totallyTimeSpent" value="24099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1382" height="744" extended-state="0" />
@@ -716,7 +698,8 @@
     <MESSAGE value="sb-admin integration into Monitoring" />
     <MESSAGE value="temp solution for problem of not able to connect to Customer 03 PGS91 Database - use SZO's account" />
     <MESSAGE value="middle at the dev of the function to recover last 30 days - gap" />
-    <option name="LAST_COMMIT_MESSAGE" value="middle at the dev of the function to recover last 30 days - gap" />
+    <MESSAGE value="finish the dev of recover 30 days&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish the dev of recover 30 days&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,27 +723,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a_Troubleshooting/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a_Troubleshooting/pages/purchase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="126" column="103" selection-start-line="126" selection-start-column="103" selection-end-line="126" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -972,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="211" column="51" selection-start-line="211" selection-start-column="51" selection-end-line="211" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a_Monitoring/dist/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -987,14 +942,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a_Troubleshooting/php/Controllers/getData3_internalData.php" />
-    <entry file="file://$PROJECT_DIR$/php/Util/Test_of_OMS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a_Troubleshooting/pages/customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -1098,40 +1045,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
+    <entry file="file://$PROJECT_DIR$/php/PHPMailer/class.smtp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="281" column="65" selection-start-line="281" selection-start-column="65" selection-end-line="281" selection-end-column="65" />
+        <state relative-caret-position="487">
+          <caret line="1143" column="1" selection-start-line="1143" selection-start-column="1" selection-end-line="1143" selection-end-column="1" />
           <folding>
-            <marker date="1462611183000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
-            <marker date="1462611183000" expanded="true" signature="3295:3357" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="3594:3656" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="3738:3780" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
-            <marker date="1462611183000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
-            <marker date="1462611183000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
-            <marker date="1462611183000" expanded="true" signature="6181:6286" placeholder="select * fro... BCZ_subscription" />
-            <marker date="1462611183000" expanded="true" signature="6498:6553" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="6746:6801" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="6845:6880" placeholder="delete from " />
-            <marker date="1462611183000" expanded="true" signature="7317:7782" placeholder="select disti... compte_fid" />
-            <marker date="1462611183000" expanded="true" signature="8005:8094" placeholder="insert into testDB.BCZ_subscription... " />
-            <marker date="1462611183000" expanded="true" signature="8246:8341" placeholder="insert into BCZ_subscription... " />
-            <marker date="1462611183000" expanded="true" signature="8835:9090" placeholder="select date_... Customer03_subscription" />
-            <marker date="1462611183000" expanded="true" signature="9766:9893" placeholder="select cs.nu... Customer03_subscription" />
-            <marker date="1462611183000" expanded="true" signature="10258:10336" placeholder="insert into loyalty..compte_fid... " />
-            <marker date="1462611183000" expanded="true" signature="10375:10460" placeholder="insert into loyalty..histo_adhesion_fid... " />
-            <marker date="1462611183000" expanded="true" signature="10945:11320" placeholder="select c.dat... Customer03_subscription" />
-            <marker date="1462611183000" expanded="true" signature="12063:12280" placeholder="select count... Customer03_subscription" />
-            <marker date="1462611183000" expanded="true" signature="12627:12969" placeholder="select count... Customer03_subscription" />
+            <element signature="e#8#823#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/PHPMailer/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#8#837#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/PHPMailer/PHPMailerAutoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#809#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Util/Test_of_Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/DB_Managers/MySQL_Manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+        <state relative-caret-position="1410">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_Monitoring/php/Controllers/getData_Monitor_Unsubscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="273" column="74" selection-start-line="273" selection-start-column="74" selection-end-line="273" selection-end-column="74" />
+          <folding>
+            <marker date="1462615978000" expanded="false" signature="9:92" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1462615978000" expanded="true" signature="2970:3082" placeholder="select * fro... Customer03_subscription" />
+            <marker date="1462615978000" expanded="true" signature="3295:3357" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="3594:3656" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="3738:3780" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="4256:4749" placeholder="select to_ch... personne" />
+            <marker date="1462615978000" expanded="true" signature="4989:5085" placeholder="insert into testDB.Customer03_subscription... " />
+            <marker date="1462615978000" expanded="true" signature="5236:5338" placeholder="insert into Customer03_subscription... " />
+            <marker date="1462615978000" expanded="true" signature="6270:6375" placeholder="select * fro... BCZ_subscription" />
+            <marker date="1462615978000" expanded="true" signature="6587:6642" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="6835:6890" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="6934:6969" placeholder="delete from " />
+            <marker date="1462615978000" expanded="true" signature="7406:7871" placeholder="select disti... compte_fid" />
+            <marker date="1462615978000" expanded="true" signature="8094:8183" placeholder="insert into testDB.BCZ_subscription... " />
+            <marker date="1462615978000" expanded="true" signature="8335:8430" placeholder="insert into BCZ_subscription... " />
+            <marker date="1462615978000" expanded="true" signature="8948:9203" placeholder="select date_... Customer03_subscription" />
+            <marker date="1462615978000" expanded="true" signature="10010:10137" placeholder="select cs.nu... Customer03_subscription" />
+            <marker date="1462615978000" expanded="true" signature="10567:10645" placeholder="insert into loyalty..compte_fid... " />
+            <marker date="1462615978000" expanded="true" signature="10757:10842" placeholder="insert into loyalty..histo_adhesion_fid... " />
+            <marker date="1462615978000" expanded="true" signature="10959:11089" placeholder="insert into testDB.operation_record... " />
+            <marker date="1462615978000" expanded="true" signature="10959:11107" placeholder="insert into testDB.operation_record... " />
+            <marker date="1462615978000" expanded="true" signature="11616:11991" placeholder="select c.dat... Customer03_subscription" />
+            <marker date="1462615978000" expanded="true" signature="12734:12951" placeholder="select count... Customer03_subscription" />
+            <marker date="1462615978000" expanded="true" signature="13298:13640" placeholder="select count... Customer03_subscription" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_Monitoring/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3165">
+          <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,7 @@ error_reporting(-1);
 ini_set('display_errors', 'On');
 
 ?>
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,10 +13,25 @@ ini_set('display_errors', 'On');
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/footer-distributed.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="css/component.css">
 </head>
 <body style="background-color: #f5f5f5">
-<img id="image" src="../images/under-construction.jpg" style="margin-top:3%">
+
+    <form action="php/Controllers/upload_file.php" method="post"
+          enctype="multipart/form-data" style="text-align:center;font-family:'Trebuchet MS'" onclick="change()">
+        <br />
+        <label for="file" class="custom-file-upload" id="label"><i class="fa fa-cloud-upload"></i> Choose your CSV File</label>
+        <br />
+            <input type="file" name="file" id="file" onclick="function(){
+            document.getElementById('label').textContent = document.getElementById('file').value;
+        }" />
+        <br />
+        <div class="upload">
+        <input type="submit" name="submit" value="Submit" class="submit" />
+        </div>
+    </form>
 </body>
+
 </div>
 
 <footer class="footer-distributed">
@@ -49,18 +64,12 @@ ini_set('display_errors', 'On');
 
 </footer>
 
-<script type="text/javascript">
-
-    /**
-     * use javascript to change the size of the picture dynamically
-     */
-    function size_calculate(){
-        var globalW = document.body.offsetWidth;
-        var imageW = document.getElementById("image").offsetWidth;
-        var percentage = (globalW-imageW)/2/globalW*100;
-        document.getElementById("image").style.marginLeft = percentage+"%";
+<script>
+    function change(){
+        setTimeout(function(){
+            document.getElementById('label').textContent = 'File Selected';
+        },3000)
     }
-    window.onload = size_calculate();
 </script>
 
 </html>

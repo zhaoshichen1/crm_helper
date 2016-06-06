@@ -41,7 +41,7 @@ $LoyaltyDB->port = 1433;
  */
 $CustomerDB = new stdClass();
 $CustomerDB->host = '10.8.64.89';
-$CustomerDB->user = 'crm_helper';
+$CustomerDB->user = 'szhao30';
 $CustomerDB->password = 'decathlon';
 $CustomerDB->port = 60904;
 $CustomerDB->dbname = 'customer03';
@@ -220,7 +220,8 @@ function insert_BCZ_subscription($db_b, $db_m,$force_update)
     }
 
 
-    $MySqlManager->queryUpdate("delete from testDB.BCZ_subscription;");// or die('Cannot drop table'.mysql_error());
+    $MySqlManager->queryUpdate("delete from testDB.BCZ_subscription;");
+    // or die('Cannot drop table'.mysql_error());
     /*$sql_create = "create table testDB.BCZ_subscription (
             date_creation CHARACTER(8) NOT NULL,
             numero_carte CHARACTER(13) NOT NULL,
@@ -233,7 +234,7 @@ function insert_BCZ_subscription($db_b, $db_m,$force_update)
             from compte_fid c inner join histo_adhesion_fid h
             on c.PER_IDENTIFIANT_PER = h.PER_IDENTIFIANT_PER
             where convert(char(8),h.date_insertion,112) 
-            between convert(char(8),getdate()-30,112) and convert(char(8),getdate()-1,112)
+            between convert(char(8),getdate()-30,112) and convert(char(8),getdate(),112)
             group by c.CAR_NUMERO_CARTE, h.PER_IDENTIFIANT_PER;";
     $BCZManager->setBdd("loyalty");
     $results = $BCZManager->setquery($sql_select);// or die('Cannot select BCZ'.sqlsrv_errors());
